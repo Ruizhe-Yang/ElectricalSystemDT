@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<digital_twin_:DigitalTwinPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:component_="http://cnsa.ee.digital.twin/component" xmlns:digital_twin_="http://cnsa.ee.digital.twin/digital_twin">
+  <componentPackages>
+    <name content="New Component Package"/>
+    <description>
+      <content>
+        <value content="Component Description"/>
+      </content>
+    </description>
+    <externalReference>
+      <location content="location"/>
+      <type content="type"/>
+      <metadata content="metadata"/>
+      <implementationConstraint>
+        <content>
+          <value content="Query"/>
+        </content>
+      </implementationConstraint>
+    </externalReference>
+    <components xsi:type="component_:Component">
+      <name content="Component"/>
+      <description>
+        <content>
+          <value content="Component Description"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="\model\my.example"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Query Result"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="simout"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content=""/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+      <inputs>
+        <name content="I"/>
+        <description>
+          <content>
+            <value content="Input Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </inputs>
+      <inputs>
+        <name content="I"/>
+        <description>
+          <content>
+            <value content="Input Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </inputs>
+      <outputs>
+        <name content="O"/>
+        <description>
+          <content>
+            <value content="Output Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </outputs>
+    </components>
+    <components xsi:type="component_:Component">
+      <name content="Component"/>
+      <description>
+        <content>
+          <value content="Component Description"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Query Result"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="simout"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Result"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+      <inputs>
+        <name content="I"/>
+        <description>
+          <content>
+            <value content="Input Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </inputs>
+      <outputs>
+        <name content="O"/>
+        <description>
+          <content>
+            <value content="Output Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </outputs>
+    </components>
+    <components xsi:type="component_:Component">
+      <name content="Scope"/>
+      <description>
+        <content>
+          <value content="Component Description"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Query Result"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Variable"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Result"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+      <inputs>
+        <name content="I"/>
+        <description>
+          <content>
+            <value content="Input Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </inputs>
+    </components>
+    <components xsi:type="component_:Component">
+      <name content="Signal Generator"/>
+      <description>
+        <content>
+          <value content="Component Description"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Query Result"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Variable"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Result"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+      <outputs>
+        <name content="O"/>
+        <description>
+          <content>
+            <value content="Output Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </outputs>
+      <outputs>
+        <name content="O"/>
+        <description>
+          <content>
+            <value content="Output Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </outputs>
+    </components>
+  </componentPackages>
+  <componentPackages>
+    <name content="New Component Package"/>
+    <description>
+      <content>
+        <value content="Component Description"/>
+      </content>
+    </description>
+    <externalReference>
+      <location content="location"/>
+      <type content="type"/>
+      <metadata content="metadata"/>
+      <implementationConstraint>
+        <content>
+          <value content="Query"/>
+        </content>
+      </implementationConstraint>
+    </externalReference>
+    <components xsi:type="component_:Component">
+      <name content="D1"/>
+      <description>
+        <content>
+          <value content="Diode d1"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Query Result"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Variable"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Result"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+      <inputs lower="1.0">
+        <name content="I"/>
+        <description>
+          <content>
+            <value content="Input Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading value="5.0"/>
+      </inputs>
+      <outputs>
+        <name content="O"/>
+        <description>
+          <content>
+            <value content="Output Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </outputs>
+    </components>
+    <components xsi:type="component_:Component">
+      <name content="DC"/>
+      <description>
+        <content>
+          <value content="DC Power Supply"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Query Result"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Variable"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Result"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+      <outputs upper="7.14" lower="3.5">
+        <name content="O"/>
+        <description>
+          <content>
+            <value content="Output Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading value="4.9"/>
+      </outputs>
+    </components>
+    <components xsi:type="component_:Fork">
+      <name content="F"/>
+      <description>
+        <content>
+          <value content="Input Description"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+      <reading/>
+    </components>
+    <components xsi:type="component_:DirectedRelationship" source="//@componentPackages.1/@components.1/@outputs.0" target="//@componentPackages.1/@components.0/@inputs.0"/>
+    <components xsi:type="component_:DirectedRelationship" source="//@componentPackages.1/@components.0/@outputs.0"/>
+    <components xsi:type="component_:DirectedRelationship" source="//@componentPackages.1/@components.0/@outputs.0" target="//@componentPackages.1/@components.2"/>
+    <components xsi:type="component_:Component">
+      <name content="C1"/>
+      <description>
+        <content>
+          <value content="Capacitor C1"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Query Result"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Variable"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Result"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+      <inputs>
+        <name content="I"/>
+        <description>
+          <content>
+            <value content="Input Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </inputs>
+      <outputs>
+        <name content="O"/>
+        <description>
+          <content>
+            <value content="Output Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </outputs>
+    </components>
+    <components xsi:type="component_:DirectedRelationship" source="//@componentPackages.1/@components.2" target="//@componentPackages.1/@components.6/@inputs.0"/>
+    <components xsi:type="component_:Component">
+      <name content="C1"/>
+      <description>
+        <content>
+          <value content="Capacitor C2"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Query Result"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Variable"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Result"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+      <inputs>
+        <name content="I"/>
+        <description>
+          <content>
+            <value content="Input Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </inputs>
+      <outputs>
+        <name content="O"/>
+        <description>
+          <content>
+            <value content="Output Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </outputs>
+    </components>
+    <components xsi:type="component_:DirectedRelationship" source="//@componentPackages.1/@components.6/@outputs.0" target="//@componentPackages.1/@components.8/@inputs.0"/>
+    <components xsi:type="component_:Component">
+      <name content="GND1"/>
+      <description>
+        <content>
+          <value content="Ground 1"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Query Result"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Variable"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Result"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+      <inputs>
+        <name content="I"/>
+        <description>
+          <content>
+            <value content="Input Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </inputs>
+      <outputs>
+        <name content="O"/>
+        <description>
+          <content>
+            <value content="Output Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </outputs>
+    </components>
+    <components xsi:type="component_:DirectedRelationship" source="//@componentPackages.1/@components.8/@outputs.0" target="//@componentPackages.1/@components.10/@inputs.0"/>
+    <components xsi:type="component_:Component">
+      <name content="L1"/>
+      <description>
+        <content>
+          <value content="Inductance L1"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Query Result"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Variable"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Result"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+      <inputs>
+        <name content="I"/>
+        <description>
+          <content>
+            <value content="Input Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </inputs>
+      <outputs>
+        <name content="O"/>
+        <description>
+          <content>
+            <value content="Output Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </outputs>
+    </components>
+    <components xsi:type="component_:DirectedRelationship" source="//@componentPackages.1/@components.2" target="//@componentPackages.1/@components.12/@inputs.0"/>
+    <components xsi:type="component_:Component">
+      <name content="MC1"/>
+      <description>
+        <content>
+          <value content="MCU 1"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Query Result"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Variable"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Result"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+      <inputs>
+        <name content="I"/>
+        <description>
+          <content>
+            <value content="Input Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </inputs>
+      <outputs>
+        <name content="O"/>
+        <description>
+          <content>
+            <value content="Output Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </outputs>
+    </components>
+    <components xsi:type="component_:DirectedRelationship" source="//@componentPackages.1/@components.12/@outputs.0" target="//@componentPackages.1/@components.14/@inputs.0"/>
+    <components xsi:type="component_:Component">
+      <name content="CS1"/>
+      <description>
+        <content>
+          <value content="Current Sensor Output"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Query Result"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Variable"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Result"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+      <inputs>
+        <name content="I"/>
+        <description>
+          <content>
+            <value content="Input Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </inputs>
+      <outputs>
+        <name content="O"/>
+        <description>
+          <content>
+            <value content="Output Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </outputs>
+    </components>
+    <components xsi:type="component_:DirectedRelationship" source="//@componentPackages.1/@components.14/@outputs.0" target="//@componentPackages.1/@components.16/@inputs.0"/>
+  </componentPackages>
+  <terminologyPackages>
+    <name content="New Terminology Package"/>
+    <description>
+      <content>
+        <value content="Component Description"/>
+      </content>
+    </description>
+    <externalReference>
+      <location content="location"/>
+      <type content="type"/>
+      <metadata content="metadata"/>
+      <implementationConstraint>
+        <content>
+          <value content="Query"/>
+        </content>
+      </implementationConstraint>
+    </externalReference>
+  </terminologyPackages>
+</digital_twin_:DigitalTwinPackage>

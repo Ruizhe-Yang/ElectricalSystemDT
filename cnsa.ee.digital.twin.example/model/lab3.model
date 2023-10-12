@@ -1,0 +1,4446 @@
+<?xml version="1.0" encoding="ASCII"?>
+<digital_twin_:DigitalTwinPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:component_="http://cnsa.ee.digital.twin/component" xmlns:digital_twin_="http://cnsa.ee.digital.twin/digital_twin" xmlns:terminology_="http://cnsa.ee.digital.twin/terminology">
+  <componentPackages>
+    <name content="New ComponentPackage"/>
+    <description>
+      <content>
+        <value content="ComponentPackage Description"/>
+      </content>
+    </description>
+    <externalReference>
+      <location content="location"/>
+      <type content="type"/>
+      <metadata content="metadata"/>
+      <implementationConstraint>
+        <content>
+          <value content="Query"/>
+        </content>
+      </implementationConstraint>
+    </externalReference>
+    <components xsi:type="component_:Component" component_name="RootSystem">
+      <name content="lab3"/>
+      <description>
+        <content>
+          <value content=""/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Query Result"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Variable"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Simulation Result"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+      <sub_components xsi:type="component_:Component" gid="3629.0001220703125" component_name="SubSystem">
+        <name content="CurrentPI&#xA;ACR"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5170.00048828125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <outputs gid="5317.000244140625">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+        <sub_components xsi:type="component_:Component" gid="3630.0001220703125" component_name="Inport">
+          <name content="In1"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <inputs>
+            <name content="I"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <outputs gid="5369.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </outputs>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3631.0001220703125" component_name="Gain">
+          <name content="Ki&#xA;"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <inputs gid="5370.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <outputs gid="5371.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </outputs>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3632.0001220703125" component_name="Gain">
+          <name content="Kp"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <inputs gid="5372.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <outputs gid="5373.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </outputs>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3633.0001220703125" component_name="Saturate">
+          <name content="Saturation"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <inputs gid="5374.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <outputs gid="5375.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </outputs>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3634.0001220703125" component_name="Sum">
+          <name content="Sum"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <inputs gid="5376.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <inputs gid="5377.0001220703125">
+            <name content="1.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <outputs gid="5378.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </outputs>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3635.0001220703125" component_name="TransferFcn">
+          <name content="Transfer Fcn"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <inputs gid="5379.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <outputs gid="5380.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </outputs>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3636.0001220703125" component_name="Outport">
+          <name content="Out1"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <inputs gid="5381.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <outputs>
+            <name content="O"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </outputs>
+        </sub_components>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.0/@inputs.0" target="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.0/@inputs.0"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.6/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.0/@outputs.0"/>
+        <sub_components xsi:type="component_:Fork" gid="5369.0001220703125" source="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.0/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.1/@inputs.0 //@componentPackages.0/@components.0/@sub_components.0/@sub_components.2/@inputs.0">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </sub_components>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.0/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.9"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.9" target="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.1/@inputs.0"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.9" target="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.2/@inputs.0"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.1/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.5/@inputs.0"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.2/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.4/@inputs.0"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.3/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.6/@inputs.0"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.4/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.3/@inputs.0"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.5/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.0/@sub_components.4/@inputs.1"/>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3645.0001220703125" component_name="SubSystem">
+        <name content="DC Machine"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5321.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <outputs gid="5322.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+        <lports gid="5323.0001220703125">
+          <name content="L"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </lports>
+        <lports gid="5324.0001220703125">
+          <name content="L"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </lports>
+        <rports gid="5325.0001220703125">
+          <name content="R"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </rports>
+        <rports gid="5326.0001220703125">
+          <name content="R"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </rports>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3646.0001220703125" component_name="SubSystem">
+        <name content="DC Voltage Source"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <lports gid="5327.0001220703125">
+          <name content="L"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </lports>
+        <rports gid="5328.0001220703125">
+          <name content="R"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </rports>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3647.0001220703125" component_name="Demux">
+        <name content="Demux"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5329.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <outputs gid="5330.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+        <outputs gid="5331.0001220703125">
+          <name content="1.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+        <outputs gid="5332.0001220703125">
+          <name content="2.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+        <outputs gid="5333.0001220703125">
+          <name content="3.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3648.0001220703125" component_name="Gain">
+        <name content="Gain1"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5334.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <outputs gid="5335.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3649.0001220703125" component_name="Gain">
+        <name content="Gain2"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5336.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <outputs gid="5337.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3650.0001220703125" component_name="Gain">
+        <name content="Gain3"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5338.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <outputs gid="5339.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3651.0001220703125" component_name="Step">
+        <name content="Load Torque"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <outputs gid="5340.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3652.0001220703125" component_name="Mux">
+        <name content="Mux"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5341.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <inputs gid="5342.0001220703125">
+          <name content="1.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <outputs gid="5343.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3653.0001220703125" component_name="SubSystem">
+        <name content="PID Controller&#xA;ASR"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5344.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <outputs gid="5345.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3654.0001220703125" component_name="SubSystem">
+        <name content="Pwm0"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5346.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <outputs gid="5347.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+        <rports gid="5348.0001220703125">
+          <name content="R"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </rports>
+        <rports gid="5349.0001220703125">
+          <name content="R"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </rports>
+        <sub_components xsi:type="component_:Component" gid="3655.0001220703125" component_name="Inport">
+          <name content="In1"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <inputs>
+            <name content="I"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <outputs gid="5382.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </outputs>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3656.0001220703125" component_name="SubSystem">
+          <name content="Controlled Voltage Source1"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <inputs gid="5383.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <lports gid="5384.0001220703125">
+            <name content="L"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </lports>
+          <rports gid="5385.0001220703125">
+            <name content="R"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </rports>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3657.0001220703125" component_name="SubSystem">
+          <name content="IGBT"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <inputs gid="5386.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <lports gid="5387.0001220703125">
+            <name content="L"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </lports>
+          <lports gid="5388.0001220703125">
+            <name content="L"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </lports>
+          <rports gid="5389.0001220703125">
+            <name content="R"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </rports>
+          <rports gid="5390.0001220703125">
+            <name content="R"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </rports>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3658.0001220703125" component_name="Mux">
+          <name content="Mux"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <inputs gid="5391.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <inputs gid="5392.0001220703125">
+            <name content="1.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <outputs gid="5393.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </outputs>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3659.0001220703125" component_name="SubSystem">
+          <name content="PWM Generator2"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <inputs gid="5394.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <outputs gid="5395.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </outputs>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3660.0001220703125" component_name="SubSystem">
+          <name content="PWM Generator3"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <inputs gid="5396.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <outputs gid="5397.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </outputs>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3661.0001220703125" component_name="Selector">
+          <name content="Selector"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <inputs gid="5398.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <outputs gid="5399.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </outputs>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3662.0001220703125" component_name="Step">
+          <name content="Step"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <outputs gid="5400.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </outputs>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3663.0001220703125" component_name="SubSystem">
+          <name content="Voltage Measurement"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <outputs gid="5401.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </outputs>
+          <lports gid="5402.0001220703125">
+            <name content="L"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </lports>
+          <lports gid="5403.0001220703125">
+            <name content="L"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </lports>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3664.0001220703125" component_name="PMIOPort">
+          <name content="Connection Port"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <rports gid="5404.0001220703125">
+            <name content="R"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </rports>
+          <rports>
+            <name content="RP"/>
+            <description>
+              <content>
+                <value content="Input Description"/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </rports>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3665.0001220703125" component_name="PMIOPort">
+          <name content="Connection Port1"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <rports gid="5405.0001220703125">
+            <name content="R"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </rports>
+          <rports>
+            <name content="RP"/>
+            <description>
+              <content>
+                <value content="Input Description"/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </rports>
+        </sub_components>
+        <sub_components xsi:type="component_:Component" gid="3666.0001220703125" component_name="Outport">
+          <name content="Out1"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Query Result"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Variable"/>
+              </content>
+            </implementationConstraint>
+            <implementationConstraint>
+              <content>
+                <value content="Simulation Result"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <inputs gid="5406.0001220703125">
+            <name content="0.0"/>
+            <description>
+              <content>
+                <value content=""/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </inputs>
+          <outputs>
+            <name content="O"/>
+            <description>
+              <content>
+                <value content="Output Description"/>
+              </content>
+            </description>
+            <externalReference>
+              <location content="location"/>
+              <type content="type"/>
+              <metadata content="metadata"/>
+              <implementationConstraint>
+                <content>
+                  <value content="Query"/>
+                </content>
+              </implementationConstraint>
+            </externalReference>
+            <reading/>
+          </outputs>
+        </sub_components>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@inputs.0" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.0/@inputs.0"/>
+        <sub_components xsi:type="component_:DirectedRelationship" target="//@componentPackages.0/@components.0/@sub_components.10/@outputs.0"/>
+        <sub_components xsi:type="component_:UndirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@rports.0"/>
+        <sub_components xsi:type="component_:UndirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@rports.1"/>
+        <sub_components xsi:type="component_:Fork" gid="5382.0001220703125" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.0/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.5/@inputs.0 //@componentPackages.0/@components.0/@sub_components.10/@sub_components.4/@inputs.0">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </sub_components>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.0/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.16"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.16" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.5/@inputs.0"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.16" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.4/@inputs.0"/>
+        <sub_components xsi:type="component_:Switch" ports="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.1/@lports.0 //@componentPackages.0/@components.0/@sub_components.10/@sub_components.2/@rports.1 //@componentPackages.0/@components.0/@sub_components.10/@sub_components.8/@lports.1">
+          <name content="S"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </sub_components>
+        <sub_components xsi:type="component_:UndirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.1/@lports.0" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.20"/>
+        <sub_components xsi:type="component_:UndirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.20" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.2/@rports.1"/>
+        <sub_components xsi:type="component_:UndirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.20" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.8/@lports.1"/>
+        <sub_components xsi:type="component_:Switch" ports="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.1/@rports.0 //@componentPackages.0/@components.0/@sub_components.10/@sub_components.8/@lports.0 //@componentPackages.0/@components.0/@sub_components.10/@sub_components.2/@rports.0">
+          <name content="S"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </sub_components>
+        <sub_components xsi:type="component_:UndirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.1/@rports.0" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.24"/>
+        <sub_components xsi:type="component_:UndirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.24" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.8/@lports.0"/>
+        <sub_components xsi:type="component_:UndirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.24" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.2/@rports.0"/>
+        <sub_components xsi:type="component_:UndirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.2/@lports.0" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.9/@rports.0"/>
+        <sub_components xsi:type="component_:UndirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.2/@lports.1" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.10/@rports.0"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.3/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.6/@inputs.0"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.4/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.3/@inputs.0"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.5/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.3/@inputs.1"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.6/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.2/@inputs.0"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.7/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.1/@inputs.0"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.8/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.11/@inputs.0"/>
+        <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.11/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.10/@outputs.0"/>
+        <sub_components xsi:type="component_:UndirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.9/@rports.1" target="//@componentPackages.0/@components.0/@sub_components.10/@rports.0"/>
+        <sub_components xsi:type="component_:UndirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.10/@sub_components.10/@rports.1" target="//@componentPackages.0/@components.0/@sub_components.10/@rports.1"/>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3684.0001220703125" component_name="Scope">
+        <name content="Scope"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5350.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3685.0001220703125" component_name="Step">
+        <name content="Step"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <outputs gid="5351.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3686.0001220703125" component_name="Sum">
+        <name content="Sum"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5352.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <inputs gid="5353.0001220703125">
+          <name content="1.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <outputs gid="5354.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3687.0001220703125" component_name="Sum">
+        <name content="Sum1"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5355.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <inputs gid="5356.0001220703125">
+          <name content="1.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <outputs gid="5357.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3688.0001220703125" component_name="Terminator">
+        <name content="Terminator"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5358.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3689.0001220703125" component_name="Terminator">
+        <name content="Terminator1"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5359.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3690.0001220703125" component_name="ToFile">
+        <name content="To File"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5360.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3691.0001220703125" component_name="TransferFcn">
+        <name content="Transfer Fcn"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5361.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <outputs gid="5362.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3692.0001220703125" component_name="TransferFcn">
+        <name content="Transfer Fcn1"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5363.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <outputs gid="5364.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3693.0001220703125" component_name="TransferFcn">
+        <name content="Transfer Fcn2"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5365.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <outputs gid="5366.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3694.0001220703125" component_name="TransferFcn">
+        <name content="Transfer Fcn3"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs gid="5367.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </inputs>
+        <outputs gid="5368.0001220703125">
+          <name content="0.0"/>
+          <description>
+            <content>
+              <value content=""/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading/>
+        </outputs>
+      </sub_components>
+      <sub_components xsi:type="component_:Component" gid="3695.0001220703125" component_name="SubSystem">
+        <name content="powergui"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Variable"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Simulation Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+      </sub_components>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.0/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.6/@inputs.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.1/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.3/@inputs.0"/>
+      <sub_components xsi:type="component_:UndirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.1/@lports.0" target="//@componentPackages.0/@components.0/@sub_components.10/@rports.0"/>
+      <sub_components xsi:type="component_:UndirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.1/@lports.1" target="//@componentPackages.0/@components.0/@sub_components.2/@rports.0"/>
+      <sub_components xsi:type="component_:UndirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.1/@rports.0" target="//@componentPackages.0/@components.0/@sub_components.10/@rports.1"/>
+      <sub_components xsi:type="component_:UndirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.1/@rports.1" target="//@componentPackages.0/@components.0/@sub_components.2/@lports.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.3/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.5/@inputs.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.3/@outputs.1" target="//@componentPackages.0/@components.0/@sub_components.20/@inputs.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.3/@outputs.2" target="//@componentPackages.0/@components.0/@sub_components.15/@inputs.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.3/@outputs.3" target="//@componentPackages.0/@components.0/@sub_components.16/@inputs.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.4/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.8/@inputs.0"/>
+      <sub_components xsi:type="component_:Fork" gid="5337.0001220703125" source="//@componentPackages.0/@components.0/@sub_components.5/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.21/@inputs.0 //@componentPackages.0/@components.0/@sub_components.11/@inputs.0 //@componentPackages.0/@components.0/@sub_components.8/@inputs.1">
+        <name content="0.0"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </sub_components>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.5/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.34"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.34" target="//@componentPackages.0/@components.0/@sub_components.21/@inputs.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.34" target="//@componentPackages.0/@components.0/@sub_components.11/@inputs.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.34" target="//@componentPackages.0/@components.0/@sub_components.8/@inputs.1"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.6/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.10/@inputs.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.7/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.1/@inputs.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.8/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.17/@inputs.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.9/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.19/@inputs.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.12/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.18/@inputs.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.13/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.9/@inputs.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.14/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.0/@inputs.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.18/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.13/@inputs.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.19/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.14/@inputs.0"/>
+      <sub_components xsi:type="component_:Fork" gid="5366.0001220703125" source="//@componentPackages.0/@components.0/@sub_components.20/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.4/@inputs.0 //@componentPackages.0/@components.0/@sub_components.14/@inputs.1">
+        <name content="0.0"/>
+        <description>
+          <content>
+            <value content=""/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <reading/>
+      </sub_components>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.20/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.48"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.48" target="//@componentPackages.0/@components.0/@sub_components.4/@inputs.0"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.48" target="//@componentPackages.0/@components.0/@sub_components.14/@inputs.1"/>
+      <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.0/@sub_components.21/@outputs.0" target="//@componentPackages.0/@components.0/@sub_components.13/@inputs.1"/>
+    </components>
+  </componentPackages>
+  <terminologyPackages>
+    <name content="New TerminologyPackage"/>
+    <description>
+      <content>
+        <value content="TerminologyPackage Description"/>
+      </content>
+    </description>
+    <externalReference>
+      <location content="location"/>
+      <type content="type"/>
+      <metadata content="metadata"/>
+      <implementationConstraint>
+        <content>
+          <value content="Query"/>
+        </content>
+      </implementationConstraint>
+    </externalReference>
+    <terminologyElement xsi:type="terminology_:Category">
+      <name content="SubSystem"/>
+      <description>
+        <content>
+          <value content=""/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Category">
+      <name content="Inport"/>
+      <description>
+        <content>
+          <value content=""/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Category">
+      <name content="Gain"/>
+      <description>
+        <content>
+          <value content=""/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Category">
+      <name content="Saturate"/>
+      <description>
+        <content>
+          <value content=""/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Category">
+      <name content="Sum"/>
+      <description>
+        <content>
+          <value content=""/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Category">
+      <name content="TransferFcn"/>
+      <description>
+        <content>
+          <value content=""/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Category">
+      <name content="Outport"/>
+      <description>
+        <content>
+          <value content=""/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Category">
+      <name content="Demux"/>
+      <description>
+        <content>
+          <value content=""/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Category">
+      <name content="Step"/>
+      <description>
+        <content>
+          <value content=""/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Category">
+      <name content="Mux"/>
+      <description>
+        <content>
+          <value content=""/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Category">
+      <name content="Selector"/>
+      <description>
+        <content>
+          <value content=""/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Category">
+      <name content="PMIOPort"/>
+      <description>
+        <content>
+          <value content=""/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Category">
+      <name content="Scope"/>
+      <description>
+        <content>
+          <value content=""/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Category">
+      <name content="Terminator"/>
+      <description>
+        <content>
+          <value content=""/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Category">
+      <name content="ToFile"/>
+      <description>
+        <content>
+          <value content=""/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.0">
+      <name content="CurrentPI&#xA;ACR"/>
+      <description>
+        <content>
+          <value content="Gid = 3629.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.1">
+      <name content="In1"/>
+      <description>
+        <content>
+          <value content="Gid = 3630.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.2">
+      <name content="Ki&#xA;"/>
+      <description>
+        <content>
+          <value content="Gid = 3631.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.2">
+      <name content="Kp"/>
+      <description>
+        <content>
+          <value content="Gid = 3632.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.3">
+      <name content="Saturation"/>
+      <description>
+        <content>
+          <value content="Gid = 3633.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.4">
+      <name content="Sum"/>
+      <description>
+        <content>
+          <value content="Gid = 3634.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.5">
+      <name content="Transfer Fcn"/>
+      <description>
+        <content>
+          <value content="Gid = 3635.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.6">
+      <name content="Out1"/>
+      <description>
+        <content>
+          <value content="Gid = 3636.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.0">
+      <name content="DC Machine"/>
+      <description>
+        <content>
+          <value content="Gid = 3645.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.0">
+      <name content="DC Voltage Source"/>
+      <description>
+        <content>
+          <value content="Gid = 3646.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.7">
+      <name content="Demux"/>
+      <description>
+        <content>
+          <value content="Gid = 3647.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.2">
+      <name content="Gain1"/>
+      <description>
+        <content>
+          <value content="Gid = 3648.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.2">
+      <name content="Gain2"/>
+      <description>
+        <content>
+          <value content="Gid = 3649.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.2">
+      <name content="Gain3"/>
+      <description>
+        <content>
+          <value content="Gid = 3650.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.8">
+      <name content="Load Torque"/>
+      <description>
+        <content>
+          <value content="Gid = 3651.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.9">
+      <name content="Mux"/>
+      <description>
+        <content>
+          <value content="Gid = 3652.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.0">
+      <name content="PID Controller&#xA;ASR"/>
+      <description>
+        <content>
+          <value content="Gid = 3653.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.0">
+      <name content="Pwm0"/>
+      <description>
+        <content>
+          <value content="Gid = 3654.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.1">
+      <name content="In1"/>
+      <description>
+        <content>
+          <value content="Gid = 3655.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.0">
+      <name content="Controlled Voltage Source1"/>
+      <description>
+        <content>
+          <value content="Gid = 3656.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.0">
+      <name content="IGBT"/>
+      <description>
+        <content>
+          <value content="Gid = 3657.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.9">
+      <name content="Mux"/>
+      <description>
+        <content>
+          <value content="Gid = 3658.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.0">
+      <name content="PWM Generator2"/>
+      <description>
+        <content>
+          <value content="Gid = 3659.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.0">
+      <name content="PWM Generator3"/>
+      <description>
+        <content>
+          <value content="Gid = 3660.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.10">
+      <name content="Selector"/>
+      <description>
+        <content>
+          <value content="Gid = 3661.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.8">
+      <name content="Step"/>
+      <description>
+        <content>
+          <value content="Gid = 3662.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.0">
+      <name content="Voltage Measurement"/>
+      <description>
+        <content>
+          <value content="Gid = 3663.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.11">
+      <name content="Connection Port"/>
+      <description>
+        <content>
+          <value content="Gid = 3664.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.11">
+      <name content="Connection Port1"/>
+      <description>
+        <content>
+          <value content="Gid = 3665.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.6">
+      <name content="Out1"/>
+      <description>
+        <content>
+          <value content="Gid = 3666.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.12">
+      <name content="Scope"/>
+      <description>
+        <content>
+          <value content="Gid = 3684.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.8">
+      <name content="Step"/>
+      <description>
+        <content>
+          <value content="Gid = 3685.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.4">
+      <name content="Sum"/>
+      <description>
+        <content>
+          <value content="Gid = 3686.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.4">
+      <name content="Sum1"/>
+      <description>
+        <content>
+          <value content="Gid = 3687.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.13">
+      <name content="Terminator"/>
+      <description>
+        <content>
+          <value content="Gid = 3688.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.13">
+      <name content="Terminator1"/>
+      <description>
+        <content>
+          <value content="Gid = 3689.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.14">
+      <name content="To File"/>
+      <description>
+        <content>
+          <value content="Gid = 3690.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.5">
+      <name content="Transfer Fcn"/>
+      <description>
+        <content>
+          <value content="Gid = 3691.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.5">
+      <name content="Transfer Fcn1"/>
+      <description>
+        <content>
+          <value content="Gid = 3692.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.5">
+      <name content="Transfer Fcn2"/>
+      <description>
+        <content>
+          <value content="Gid = 3693.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.5">
+      <name content="Transfer Fcn3"/>
+      <description>
+        <content>
+          <value content="Gid = 3694.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+    <terminologyElement xsi:type="terminology_:Term" category="//@terminologyPackages.0/@terminologyElement.0">
+      <name content="powergui"/>
+      <description>
+        <content>
+          <value content="Gid = 3695.0001220703125"/>
+        </content>
+      </description>
+      <externalReference>
+        <location content="location"/>
+        <type content="type"/>
+        <metadata content="metadata"/>
+        <implementationConstraint>
+          <content>
+            <value content="Query"/>
+          </content>
+        </implementationConstraint>
+      </externalReference>
+    </terminologyElement>
+  </terminologyPackages>
+</digital_twin_:DigitalTwinPackage>

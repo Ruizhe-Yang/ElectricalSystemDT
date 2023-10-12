@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated artifact -->
+      <package
+            uri="http://cnsa.ee.digital.twin/artifact"
+            class="artifact.Artifact_Package"
+            genModel="metamodel/artifact.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated terminology -->
+      <package
+            uri="http://cnsa.ee.digital.twin/terminology"
+            class="terminology.Terminology_Package"
+            genModel="metamodel/terminology.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated digital_twin -->
+      <package
+            uri="http://cnsa.ee.digital.twin/digital_twin"
+            class="digital_twin.Digital_twin_Package"
+            genModel="metamodel/digital_twin.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated component -->
+      <package
+            uri="http://cnsa.ee.digital.twin/component"
+            class="component.Component_Package"
+            genModel="metamodel/component.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated base -->
+      <package
+            uri="http://cnsa.ee.digital.twin/base"
+            class="base.Base_Package"
+            genModel="metamodel/base.genmodel"/>
+   </extension>
+
+</plugin>

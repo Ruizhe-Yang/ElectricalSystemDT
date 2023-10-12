@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+  <extension point="org.eclipse.sirius.componentization">
+    <component class="cnsa.ee.digital.twin.design.Activator"
+               id="cnsa.ee.digital.twin.design"
+	       name="dt">
+    </component>
+  </extension>
+  <extension
+        point="org.eclipse.sirius.externalJavaAction">
+     <javaActions
+           actionClass="cnsa.ee.digital.twin.design.utils.BrowseTypeAction"
+           id="cnsa.ee.digital.twin.design.browse.type.action">
+     </javaActions>
+     <javaActions
+           actionClass="cnsa.ee.digital.twin.design.utils.BrowseFileAction"
+           id="cnsa.ee.digital.twin.design.browse.file.action">
+     </javaActions>
+     <javaActions
+           actionClass="cnsa.ee.digital.twin.design.utils.BrowseMetadataAction"
+           id="cnsa.ee.digital.twin.design.browse.metadata.action">
+     </javaActions>
+     <javaActions
+           actionClass="cnsa.ee.digital.twin.design.utils.PerformQueryActionEMF"
+           id="cnsa.ee.digital.twin.design.perform.query.emf">
+     </javaActions>
+     <javaActions
+           actionClass="cnsa.ee.digital.twin.design.utils.ClearQueryResultAction"
+           id="cnsa.ee.digital.twin.design.clear.query.result">
+     </javaActions>
+     <javaActions
+           actionClass="cnsa.ee.digital.twin.design.utils.ImportSimulinkAction"
+           id="cnsa.ee.digital.twin.design.import.simulink.action">
+     </javaActions>
+     <javaActions
+           actionClass="cnsa.ee.digital.twin.design.utils.SimulateAction_Simulink"
+           id="cnsa.ee.digital.twin.design.simulate.simulink.action">
+     </javaActions>
+     <javaActions
+           actionClass="cnsa.ee.digital.twin.design.utils.ClearSimulationResultAction"
+           id="cnsa.ee.digital.twin.design.clear.simulation.result">
+     </javaActions>
+     <javaActions
+           actionClass="cnsa.ee.digital.twin.design.utils.SimulateAction"
+           id="cnsa.ee.digital.twin.design.simulate.action">
+     </javaActions>
+  </extension>
+</plugin>
