@@ -8,7 +8,6 @@ import base.provider.ArtifactElementItemProvider;
 import component.ComponentElement;
 
 import digital_twin.provider.Digital_twinEditPlugin;
-
 import java.util.Collection;
 import java.util.List;
 

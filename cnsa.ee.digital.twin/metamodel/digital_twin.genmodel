@@ -93,6 +93,14 @@
       <genEnumLiterals ecoreEnumLiteral="http://cnsa.ee.digital.twin/component#//ToleranceType/oneoo3"/>
       <genEnumLiterals ecoreEnumLiteral="http://cnsa.ee.digital.twin/component#//ToleranceType/twooo3"/>
     </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="http://cnsa.ee.digital.twin/component#//FailureEffectEnum">
+      <genEnumLiterals ecoreEnumLiteral="http://cnsa.ee.digital.twin/component#//FailureEffectEnum/LossOfFunction"/>
+      <genEnumLiterals ecoreEnumLiteral="http://cnsa.ee.digital.twin/component#//FailureEffectEnum/UnintededDeliveryOfFunction"/>
+      <genEnumLiterals ecoreEnumLiteral="http://cnsa.ee.digital.twin/component#//FailureEffectEnum/EarlyDeployment"/>
+      <genEnumLiterals ecoreEnumLiteral="http://cnsa.ee.digital.twin/component#//FailureEffectEnum/LateDeployment"/>
+      <genEnumLiterals ecoreEnumLiteral="http://cnsa.ee.digital.twin/component#//FailureEffectEnum/ProvisionValueHigh"/>
+      <genEnumLiterals ecoreEnumLiteral="http://cnsa.ee.digital.twin/component#//FailureEffectEnum/ProvisionValueLow"/>
+    </genEnums>
     <genClasses image="false" ecoreClass="http://cnsa.ee.digital.twin/component#//ComponentElement"/>
     <genClasses ecoreClass="http://cnsa.ee.digital.twin/component#//ComponentPackage">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference http://cnsa.ee.digital.twin/component#//ComponentPackage/components"/>
@@ -105,7 +113,7 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference http://cnsa.ee.digital.twin/component#//ComponentPackageBinding/participantPackage"/>
     </genClasses>
     <genClasses ecoreClass="http://cnsa.ee.digital.twin/component#//Component">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//Component/dynamic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//Component/dyamic"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//Component/identity"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//Component/component_name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//Component/reuse"/>
@@ -128,11 +136,15 @@
     </genClasses>
     <genClasses image="false" ecoreClass="http://cnsa.ee.digital.twin/component#//ComponentRelationship">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//ComponentRelationship/label"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference http://cnsa.ee.digital.twin/component#//ComponentRelationship/source"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference http://cnsa.ee.digital.twin/component#//ComponentRelationship/target"/>
     </genClasses>
-    <genClasses ecoreClass="http://cnsa.ee.digital.twin/component#//DirectedRelationship"/>
-    <genClasses ecoreClass="http://cnsa.ee.digital.twin/component#//UndirectedRelationship"/>
+    <genClasses ecoreClass="http://cnsa.ee.digital.twin/component#//DirectedRelationship">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference http://cnsa.ee.digital.twin/component#//DirectedRelationship/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference http://cnsa.ee.digital.twin/component#//DirectedRelationship/target"/>
+    </genClasses>
+    <genClasses ecoreClass="http://cnsa.ee.digital.twin/component#//UndirectedRelationship">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference http://cnsa.ee.digital.twin/component#//UndirectedRelationship/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference http://cnsa.ee.digital.twin/component#//UndirectedRelationship/target"/>
+    </genClasses>
     <genClasses image="false" ecoreClass="http://cnsa.ee.digital.twin/component#//ComponentAsset"/>
     <genClasses image="false" ecoreClass="http://cnsa.ee.digital.twin/component#//UtilityNodes">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference http://cnsa.ee.digital.twin/component#//UtilityNodes/reading"/>
@@ -155,6 +167,7 @@
     <genClasses ecoreClass="http://cnsa.ee.digital.twin/component#//RPort"/>
     <genClasses ecoreClass="http://cnsa.ee.digital.twin/component#//Function">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//Function/func"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//Function/toleranceType"/>
     </genClasses>
     <genClasses ecoreClass="http://cnsa.ee.digital.twin/component#//Reading">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//Reading/value"/>
@@ -168,6 +181,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//FailureMode/cause"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//FailureMode/probability"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//FailureMode/safety_related"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//FailureMode/failureSeverity"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference http://cnsa.ee.digital.twin/component#//FailureMode/hazards"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference http://cnsa.ee.digital.twin/component#//FailureMode/regional"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference http://cnsa.ee.digital.twin/component#//FailureMode/higher_level"/>
@@ -177,9 +191,14 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference http://cnsa.ee.digital.twin/component#//SafetyMechanism/handle"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//SafetyMechanism/mechanism"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//SafetyMechanism/coverage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference http://cnsa.ee.digital.twin/component#//SafetyMechanism/costs"/>
+    </genClasses>
+    <genClasses ecoreClass="http://cnsa.ee.digital.twin/component#//Cost">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//Cost/unit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//Cost/cost"/>
     </genClasses>
     <genClasses image="false" ecoreClass="http://cnsa.ee.digital.twin/component#//FailureEffect">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//FailureEffect/desc"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://cnsa.ee.digital.twin/component#//FailureEffect/effect"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference http://cnsa.ee.digital.twin/component#//FailureEffect/affected"/>
     </genClasses>
     <genClasses ecoreClass="http://cnsa.ee.digital.twin/component#//RegionalEffect"/>

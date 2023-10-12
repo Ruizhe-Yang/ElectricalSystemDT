@@ -2173,8 +2173,11 @@
       </defaultLayer>
     </ownedRepresentations>
     <ownedRepresentations xsi:type="description_2:EditionTableDescription" name="Terminology" domainClass="terminology::TerminologyPackage" initialHeaderColumnWidth="10">
-      <metamodel href="http://cnsa.ee.digital.twin/terminology#/"/>
+      <metamodel href="http://cnsa.ee.digital.twin/artifact#/"/>
       <metamodel href="http://cnsa.ee.digital.twin/base#/"/>
+      <metamodel href="http://cnsa.ee.digital.twin/component#/"/>
+      <metamodel href="http://cnsa.ee.digital.twin/digital_twin#/"/>
+      <metamodel href="http://cnsa.ee.digital.twin/terminology#/"/>
       <ownedLineMappings name="term" domainClass="terminology::Term" semanticCandidatesExpression="aql:self.terminologyElement->select(s|s.oclIsTypeOf(terminology::Term))" headerLabelExpression="aql:self.name.content">
         <defaultForeground>
           <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>

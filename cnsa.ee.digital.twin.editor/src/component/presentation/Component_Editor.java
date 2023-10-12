@@ -158,15 +158,11 @@ import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 import component.provider.Component_ItemProviderAdapterFactory;
 
 import artifact.provider.Artifact_ItemProviderAdapterFactory;
-
-import base.provider.BaseItemProviderAdapterFactory;
+import base.provider.Base_ItemProviderAdapterFactory;
 
 import digital_twin.presentation.Digital_twinEditorPlugin;
-
 import digital_twin.provider.Digital_twin_ItemProviderAdapterFactory;
-
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
-
 import terminology.provider.Terminology_ItemProviderAdapterFactory;
 
 
@@ -721,7 +717,7 @@ public class Component_Editor
 
 		adapterFactory.addAdapterFactory(new ResourceItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new Digital_twin_ItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new BaseItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new Base_ItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new Component_ItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new Artifact_ItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new Terminology_ItemProviderAdapterFactory());

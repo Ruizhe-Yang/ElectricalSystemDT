@@ -163,28 +163,16 @@ public class Terminology_PackageImpl extends EPackageImpl implements Terminology
 		isInited = true;
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Digital_twin_Package.eNS_URI);
-		Digital_twin_PackageImpl theDigital_twin_Package = (Digital_twin_PackageImpl)(registeredPackage instanceof Digital_twin_PackageImpl ? registeredPackage : Digital_twin_Package.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Base_Package.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Base_Package.eNS_URI);
 		Base_PackageImpl theBase_Package = (Base_PackageImpl)(registeredPackage instanceof Base_PackageImpl ? registeredPackage : Base_Package.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Component_Package.eNS_URI);
-		Component_PackageImpl theComponent_Package = (Component_PackageImpl)(registeredPackage instanceof Component_PackageImpl ? registeredPackage : Component_Package.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Artifact_Package.eNS_URI);
-		Artifact_PackageImpl theArtifact_Package = (Artifact_PackageImpl)(registeredPackage instanceof Artifact_PackageImpl ? registeredPackage : Artifact_Package.eINSTANCE);
 
 		// Create package meta-data objects
 		theTerminology_Package.createPackageContents();
-		theDigital_twin_Package.createPackageContents();
 		theBase_Package.createPackageContents();
-		theComponent_Package.createPackageContents();
-		theArtifact_Package.createPackageContents();
 
 		// Initialize created meta-data
 		theTerminology_Package.initializePackageContents();
-		theDigital_twin_Package.initializePackageContents();
 		theBase_Package.initializePackageContents();
-		theComponent_Package.initializePackageContents();
-		theArtifact_Package.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theTerminology_Package.freeze();

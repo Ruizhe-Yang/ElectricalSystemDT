@@ -21,22 +21,16 @@ import base.Base_Package;
 import base.impl.Base_PackageImpl;
 
 import component.Component_Package;
-
 import component.impl.Component_PackageImpl;
-
 import digital_twin.Digital_twin_Package;
-
 import digital_twin.impl.Digital_twin_PackageImpl;
-
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
 import terminology.Terminology_Package;
-
 import terminology.impl.Terminology_PackageImpl;
 
 /**

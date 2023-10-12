@@ -73,6 +73,7 @@ public class Component_FactoryImpl extends EFactoryImpl implements Component_Fac
 			case Component_Package.READING: return createReading();
 			case Component_Package.FAILURE_MODE: return createFailureMode();
 			case Component_Package.SAFETY_MECHANISM: return createSafetyMechanism();
+			case Component_Package.COST: return createCost();
 			case Component_Package.REGIONAL_EFFECT: return createRegionalEffect();
 			case Component_Package.HIGHER_LEVEL_EFFECT: return createHigherLevelEffect();
 			case Component_Package.FINAL_EFFECT: return createFinalEffect();
@@ -95,6 +96,8 @@ public class Component_FactoryImpl extends EFactoryImpl implements Component_Fac
 				return createComponentTypeFromString(eDataType, initialValue);
 			case Component_Package.TOLERANCE_TYPE:
 				return createToleranceTypeFromString(eDataType, initialValue);
+			case Component_Package.FAILURE_EFFECT_ENUM:
+				return createFailureEffectEnumFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -114,6 +117,8 @@ public class Component_FactoryImpl extends EFactoryImpl implements Component_Fac
 				return convertComponentTypeToString(eDataType, instanceValue);
 			case Component_Package.TOLERANCE_TYPE:
 				return convertToleranceTypeToString(eDataType, instanceValue);
+			case Component_Package.FAILURE_EFFECT_ENUM:
+				return convertFailureEffectEnumToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -301,6 +306,17 @@ public class Component_FactoryImpl extends EFactoryImpl implements Component_Fac
 	 * @generated
 	 */
 	@Override
+	public Cost createCost() {
+		CostImpl cost = new CostImpl();
+		return cost;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public RegionalEffect createRegionalEffect() {
 		RegionalEffectImpl regionalEffect = new RegionalEffectImpl();
 		return regionalEffect;
@@ -385,6 +401,26 @@ public class Component_FactoryImpl extends EFactoryImpl implements Component_Fac
 	 * @generated
 	 */
 	public String convertToleranceTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FailureEffectEnum createFailureEffectEnumFromString(EDataType eDataType, String initialValue) {
+		FailureEffectEnum result = FailureEffectEnum.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertFailureEffectEnumToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

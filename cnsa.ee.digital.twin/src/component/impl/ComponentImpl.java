@@ -41,7 +41,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link component.impl.ComponentImpl#isDynamic <em>Dynamic</em>}</li>
+ *   <li>{@link component.impl.ComponentImpl#isDyamic <em>Dyamic</em>}</li>
  *   <li>{@link component.impl.ComponentImpl#getIdentity <em>Identity</em>}</li>
  *   <li>{@link component.impl.ComponentImpl#getComponent_name <em>Component name</em>}</li>
  *   <li>{@link component.impl.ComponentImpl#getReuse <em>Reuse</em>}</li>
@@ -67,24 +67,24 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class ComponentImpl extends ComponentElementImpl implements Component {
 	/**
-	 * The default value of the '{@link #isDynamic() <em>Dynamic</em>}' attribute.
+	 * The default value of the '{@link #isDyamic() <em>Dyamic</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isDynamic()
+	 * @see #isDyamic()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final boolean DYNAMIC_EDEFAULT = false;
+	protected static final boolean DYAMIC_EDEFAULT = false;
 
 	/**
-	 * The cached value of the '{@link #isDynamic() <em>Dynamic</em>}' attribute.
+	 * The cached value of the '{@link #isDyamic() <em>Dyamic</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isDynamic()
+	 * @see #isDyamic()
 	 * @generated
 	 * @ordered
 	 */
-	protected boolean dynamic = DYNAMIC_EDEFAULT;
+	protected boolean dyamic = DYAMIC_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getIdentity() <em>Identity</em>}' attribute.
@@ -381,8 +381,8 @@ public class ComponentImpl extends ComponentElementImpl implements Component {
 	 * @generated
 	 */
 	@Override
-	public boolean isDynamic() {
-		return dynamic;
+	public boolean isDyamic() {
+		return dyamic;
 	}
 
 	/**
@@ -391,11 +391,11 @@ public class ComponentImpl extends ComponentElementImpl implements Component {
 	 * @generated
 	 */
 	@Override
-	public void setDynamic(boolean newDynamic) {
-		boolean oldDynamic = dynamic;
-		dynamic = newDynamic;
+	public void setDyamic(boolean newDyamic) {
+		boolean oldDyamic = dyamic;
+		dyamic = newDyamic;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Component_Package.COMPONENT__DYNAMIC, oldDynamic, dynamic));
+			eNotify(new ENotificationImpl(this, Notification.SET, Component_Package.COMPONENT__DYAMIC, oldDyamic, dyamic));
 	}
 
 	/**
@@ -815,8 +815,8 @@ public class ComponentImpl extends ComponentElementImpl implements Component {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case Component_Package.COMPONENT__DYNAMIC:
-				return isDynamic();
+			case Component_Package.COMPONENT__DYAMIC:
+				return isDyamic();
 			case Component_Package.COMPONENT__IDENTITY:
 				return getIdentity();
 			case Component_Package.COMPONENT__COMPONENT_NAME:
@@ -870,8 +870,8 @@ public class ComponentImpl extends ComponentElementImpl implements Component {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case Component_Package.COMPONENT__DYNAMIC:
-				setDynamic((Boolean)newValue);
+			case Component_Package.COMPONENT__DYAMIC:
+				setDyamic((Boolean)newValue);
 				return;
 			case Component_Package.COMPONENT__IDENTITY:
 				setIdentity((Integer)newValue);
@@ -951,8 +951,8 @@ public class ComponentImpl extends ComponentElementImpl implements Component {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case Component_Package.COMPONENT__DYNAMIC:
-				setDynamic(DYNAMIC_EDEFAULT);
+			case Component_Package.COMPONENT__DYAMIC:
+				setDyamic(DYAMIC_EDEFAULT);
 				return;
 			case Component_Package.COMPONENT__IDENTITY:
 				setIdentity(IDENTITY_EDEFAULT);
@@ -1023,8 +1023,8 @@ public class ComponentImpl extends ComponentElementImpl implements Component {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case Component_Package.COMPONENT__DYNAMIC:
-				return dynamic != DYNAMIC_EDEFAULT;
+			case Component_Package.COMPONENT__DYAMIC:
+				return dyamic != DYAMIC_EDEFAULT;
 			case Component_Package.COMPONENT__IDENTITY:
 				return identity != IDENTITY_EDEFAULT;
 			case Component_Package.COMPONENT__COMPONENT_NAME:
@@ -1077,8 +1077,8 @@ public class ComponentImpl extends ComponentElementImpl implements Component {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (dynamic: ");
-		result.append(dynamic);
+		result.append(" (dyamic: ");
+		result.append(dyamic);
 		result.append(", identity: ");
 		result.append(identity);
 		result.append(", component_name: ");

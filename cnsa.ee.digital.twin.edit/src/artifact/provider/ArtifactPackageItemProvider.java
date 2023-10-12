@@ -10,11 +10,8 @@ import artifact.Artifact_Package;
 import base.provider.ArtifactElementItemProvider;
 
 import component.Component_Factory;
-
 import digital_twin.Digital_twin_Factory;
-
 import digital_twin.provider.Digital_twinEditPlugin;
-
 import java.util.Collection;
 import java.util.List;
 
@@ -28,7 +25,6 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
-
 import terminology.Terminology_Factory;
 
 /**
@@ -311,6 +307,11 @@ public class ArtifactPackageItemProvider extends ArtifactElementItemProvider {
 			(createChildParameter
 				(Artifact_Package.Literals.ARTIFACT_PACKAGE__ARTIFACT_ELEMENT,
 				 Component_Factory.eINSTANCE.createSafetyMechanism()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Artifact_Package.Literals.ARTIFACT_PACKAGE__ARTIFACT_ELEMENT,
+				 Component_Factory.eINSTANCE.createCost()));
 
 		newChildDescriptors.add
 			(createChildParameter

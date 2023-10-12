@@ -48,19 +48,6 @@
    <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
       <!-- @generated digital_twin -->
       <factory
-            uri="http://cnsa.ee.digital.twin/base"
-            class="base.provider.BaseItemProviderAdapterFactory"
-            supportedTypes=
-              "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
-               org.eclipse.emf.edit.provider.IStructuredItemContentProvider
-               org.eclipse.emf.edit.provider.ITreeItemContentProvider
-               org.eclipse.emf.edit.provider.IItemLabelProvider
-               org.eclipse.emf.edit.provider.IItemPropertySource"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
-      <!-- @generated digital_twin -->
-      <factory
             uri="http://cnsa.ee.digital.twin/component"
             class="component.provider.Component_ItemProviderAdapterFactory"
             supportedTypes=
@@ -75,7 +62,7 @@
       <!-- @generated base -->
       <factory
             uri="http://cnsa.ee.digital.twin/base"
-            class="base.provider.BaseItemProviderAdapterFactory"
+            class="base.provider.Base_ItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider

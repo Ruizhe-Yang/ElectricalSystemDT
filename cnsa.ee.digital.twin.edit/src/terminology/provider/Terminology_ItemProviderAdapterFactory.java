@@ -13,6 +13,7 @@ import org.eclipse.emf.edit.provider.ChangeNotifier;
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.ComposedAdapterFactory;
 import org.eclipse.emf.edit.provider.IChangeNotifier;
+import org.eclipse.emf.edit.provider.IDisposable;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertySource;
@@ -31,7 +32,7 @@ import terminology.util.Terminology_AdapterFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Terminology_ItemProviderAdapterFactory extends Terminology_AdapterFactory implements ComposeableAdapterFactory, IChangeNotifier {
+public class Terminology_ItemProviderAdapterFactory extends Terminology_AdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
 	/**
 	 * This keeps track of the root adapter factory that delegates to this adapter factory.
 	 * <!-- begin-user-doc -->
@@ -326,6 +327,23 @@ public class Terminology_ItemProviderAdapterFactory extends Terminology_AdapterF
 		if (parentAdapterFactory != null) {
 			parentAdapterFactory.fireNotifyChanged(notification);
 		}
+	}
+
+	/**
+	 * This disposes all of the item providers created by this factory. 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void dispose() {
+		if (terminologyGroupItemProvider != null) terminologyGroupItemProvider.dispose();
+		if (terminologyPackageItemProvider != null) terminologyPackageItemProvider.dispose();
+		if (terminologyPackageBindingItemProvider != null) terminologyPackageBindingItemProvider.dispose();
+		if (terminologyPackageInterfaceItemProvider != null) terminologyPackageInterfaceItemProvider.dispose();
+		if (categoryItemProvider != null) categoryItemProvider.dispose();
+		if (expressionItemProvider != null) expressionItemProvider.dispose();
+		if (termItemProvider != null) termItemProvider.dispose();
 	}
 
 }

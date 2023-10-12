@@ -766,13 +766,13 @@ public interface Component_Package extends EPackage {
 	int COMPONENT__EXTERNAL_REFERENCE = COMPONENT_ELEMENT__EXTERNAL_REFERENCE;
 
 	/**
-	 * The feature id for the '<em><b>Dynamic</b></em>' attribute.
+	 * The feature id for the '<em><b>Dyamic</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COMPONENT__DYNAMIC = COMPONENT_ELEMENT_FEATURE_COUNT + 0;
+	int COMPONENT__DYAMIC = COMPONENT_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Identity</b></em>' attribute.
@@ -1091,31 +1091,13 @@ public interface Component_Package extends EPackage {
 	int COMPONENT_RELATIONSHIP__LABEL = COMPONENT_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Source</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMPONENT_RELATIONSHIP__SOURCE = COMPONENT_ELEMENT_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Target</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMPONENT_RELATIONSHIP__TARGET = COMPONENT_ELEMENT_FEATURE_COUNT + 2;
-
-	/**
 	 * The number of structural features of the '<em>Component Relationship</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COMPONENT_RELATIONSHIP_FEATURE_COUNT = COMPONENT_ELEMENT_FEATURE_COUNT + 3;
+	int COMPONENT_RELATIONSHIP_FEATURE_COUNT = COMPONENT_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link component.impl.DirectedRelationshipImpl <em>Directed Relationship</em>}' class.
@@ -1260,7 +1242,7 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIRECTED_RELATIONSHIP__SOURCE = COMPONENT_RELATIONSHIP__SOURCE;
+	int DIRECTED_RELATIONSHIP__SOURCE = COMPONENT_RELATIONSHIP_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Target</b></em>' reference.
@@ -1269,7 +1251,7 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIRECTED_RELATIONSHIP__TARGET = COMPONENT_RELATIONSHIP__TARGET;
+	int DIRECTED_RELATIONSHIP__TARGET = COMPONENT_RELATIONSHIP_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Directed Relationship</em>' class.
@@ -1278,7 +1260,7 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIRECTED_RELATIONSHIP_FEATURE_COUNT = COMPONENT_RELATIONSHIP_FEATURE_COUNT + 0;
+	int DIRECTED_RELATIONSHIP_FEATURE_COUNT = COMPONENT_RELATIONSHIP_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link component.impl.UndirectedRelationshipImpl <em>Undirected Relationship</em>}' class.
@@ -1423,7 +1405,7 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDIRECTED_RELATIONSHIP__SOURCE = COMPONENT_RELATIONSHIP__SOURCE;
+	int UNDIRECTED_RELATIONSHIP__SOURCE = COMPONENT_RELATIONSHIP_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Target</b></em>' reference.
@@ -1432,7 +1414,7 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDIRECTED_RELATIONSHIP__TARGET = COMPONENT_RELATIONSHIP__TARGET;
+	int UNDIRECTED_RELATIONSHIP__TARGET = COMPONENT_RELATIONSHIP_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Undirected Relationship</em>' class.
@@ -1441,7 +1423,7 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDIRECTED_RELATIONSHIP_FEATURE_COUNT = COMPONENT_RELATIONSHIP_FEATURE_COUNT + 0;
+	int UNDIRECTED_RELATIONSHIP_FEATURE_COUNT = COMPONENT_RELATIONSHIP_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link component.impl.ComponentAssetImpl <em>Component Asset</em>}' class.
@@ -3138,13 +3120,22 @@ public interface Component_Package extends EPackage {
 	int FUNCTION__FUNC = COMPONENT_ASSET_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Tolerance Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION__TOLERANCE_TYPE = COMPONENT_ASSET_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Function</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FUNCTION_FEATURE_COUNT = COMPONENT_ASSET_FEATURE_COUNT + 1;
+	int FUNCTION_FEATURE_COUNT = COMPONENT_ASSET_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link component.impl.ReadingImpl <em>Reading</em>}' class.
@@ -3618,13 +3609,22 @@ public interface Component_Package extends EPackage {
 	int FAILURE_MODE__SAFETY_RELATED = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
+	 * The feature id for the '<em><b>Failure Severity</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAILURE_MODE__FAILURE_SEVERITY = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 4;
+
+	/**
 	 * The feature id for the '<em><b>Hazards</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FAILURE_MODE__HAZARDS = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 4;
+	int FAILURE_MODE__HAZARDS = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Regional</b></em>' containment reference.
@@ -3633,7 +3633,7 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FAILURE_MODE__REGIONAL = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 5;
+	int FAILURE_MODE__REGIONAL = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Higher level</b></em>' containment reference.
@@ -3642,7 +3642,7 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FAILURE_MODE__HIGHER_LEVEL = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 6;
+	int FAILURE_MODE__HIGHER_LEVEL = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Final</b></em>' containment reference.
@@ -3651,7 +3651,7 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FAILURE_MODE__FINAL = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 7;
+	int FAILURE_MODE__FINAL = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Failure Mode</em>' class.
@@ -3660,7 +3660,7 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FAILURE_MODE_FEATURE_COUNT = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 8;
+	int FAILURE_MODE_FEATURE_COUNT = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link component.impl.SafetyMechanismImpl <em>Safety Mechanism</em>}' class.
@@ -3826,13 +3826,185 @@ public interface Component_Package extends EPackage {
 	int SAFETY_MECHANISM__COVERAGE = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Costs</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SAFETY_MECHANISM__COSTS = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>Safety Mechanism</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SAFETY_MECHANISM_FEATURE_COUNT = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 3;
+	int SAFETY_MECHANISM_FEATURE_COUNT = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 4;
+
+	/**
+	 * The meta object id for the '{@link component.impl.CostImpl <em>Cost</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see component.impl.CostImpl
+	 * @see component.impl.Component_PackageImpl#getCost()
+	 * @generated
+	 */
+	int COST = 23;
+
+	/**
+	 * The feature id for the '<em><b>Gid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__GID = COMPONENT_SAFETY_ELEMENT__GID;
+
+	/**
+	 * The feature id for the '<em><b>Is Citation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__IS_CITATION = COMPONENT_SAFETY_ELEMENT__IS_CITATION;
+
+	/**
+	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__IS_ABSTRACT = COMPONENT_SAFETY_ELEMENT__IS_ABSTRACT;
+
+	/**
+	 * The feature id for the '<em><b>Cited Element</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__CITED_ELEMENT = COMPONENT_SAFETY_ELEMENT__CITED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Coordinate</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__COORDINATE = COMPONENT_SAFETY_ELEMENT__COORDINATE;
+
+	/**
+	 * The feature id for the '<em><b>Dimension</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__DIMENSION = COMPONENT_SAFETY_ELEMENT__DIMENSION;
+
+	/**
+	 * The feature id for the '<em><b>Heading</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__HEADING = COMPONENT_SAFETY_ELEMENT__HEADING;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__NAME = COMPONENT_SAFETY_ELEMENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__DESCRIPTION = COMPONENT_SAFETY_ELEMENT__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Implementation Constraint</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__IMPLEMENTATION_CONSTRAINT = COMPONENT_SAFETY_ELEMENT__IMPLEMENTATION_CONSTRAINT;
+
+	/**
+	 * The feature id for the '<em><b>Note</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__NOTE = COMPONENT_SAFETY_ELEMENT__NOTE;
+
+	/**
+	 * The feature id for the '<em><b>Tagged Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__TAGGED_VALUE = COMPONENT_SAFETY_ELEMENT__TAGGED_VALUE;
+
+	/**
+	 * The feature id for the '<em><b>External Reference</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__EXTERNAL_REFERENCE = COMPONENT_SAFETY_ELEMENT__EXTERNAL_REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Identity</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__IDENTITY = COMPONENT_SAFETY_ELEMENT__IDENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Unit</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__UNIT = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Cost</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__COST = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Cost</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST_FEATURE_COUNT = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link component.impl.FailureEffectImpl <em>Failure Effect</em>}' class.
@@ -3842,7 +4014,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getFailureEffect()
 	 * @generated
 	 */
-	int FAILURE_EFFECT = 23;
+	int FAILURE_EFFECT = 24;
 
 	/**
 	 * The feature id for the '<em><b>Gid</b></em>' attribute.
@@ -3971,13 +4143,13 @@ public interface Component_Package extends EPackage {
 	int FAILURE_EFFECT__IDENTITY = COMPONENT_SAFETY_ELEMENT__IDENTITY;
 
 	/**
-	 * The feature id for the '<em><b>Desc</b></em>' attribute.
+	 * The feature id for the '<em><b>Effect</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FAILURE_EFFECT__DESC = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 0;
+	int FAILURE_EFFECT__EFFECT = COMPONENT_SAFETY_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Affected</b></em>' reference list.
@@ -4005,7 +4177,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getRegionalEffect()
 	 * @generated
 	 */
-	int REGIONAL_EFFECT = 24;
+	int REGIONAL_EFFECT = 25;
 
 	/**
 	 * The feature id for the '<em><b>Gid</b></em>' attribute.
@@ -4134,13 +4306,13 @@ public interface Component_Package extends EPackage {
 	int REGIONAL_EFFECT__IDENTITY = FAILURE_EFFECT__IDENTITY;
 
 	/**
-	 * The feature id for the '<em><b>Desc</b></em>' attribute.
+	 * The feature id for the '<em><b>Effect</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REGIONAL_EFFECT__DESC = FAILURE_EFFECT__DESC;
+	int REGIONAL_EFFECT__EFFECT = FAILURE_EFFECT__EFFECT;
 
 	/**
 	 * The feature id for the '<em><b>Affected</b></em>' reference list.
@@ -4168,7 +4340,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getHigherLevelEffect()
 	 * @generated
 	 */
-	int HIGHER_LEVEL_EFFECT = 25;
+	int HIGHER_LEVEL_EFFECT = 26;
 
 	/**
 	 * The feature id for the '<em><b>Gid</b></em>' attribute.
@@ -4297,13 +4469,13 @@ public interface Component_Package extends EPackage {
 	int HIGHER_LEVEL_EFFECT__IDENTITY = FAILURE_EFFECT__IDENTITY;
 
 	/**
-	 * The feature id for the '<em><b>Desc</b></em>' attribute.
+	 * The feature id for the '<em><b>Effect</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HIGHER_LEVEL_EFFECT__DESC = FAILURE_EFFECT__DESC;
+	int HIGHER_LEVEL_EFFECT__EFFECT = FAILURE_EFFECT__EFFECT;
 
 	/**
 	 * The feature id for the '<em><b>Affected</b></em>' reference list.
@@ -4331,7 +4503,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getFinalEffect()
 	 * @generated
 	 */
-	int FINAL_EFFECT = 26;
+	int FINAL_EFFECT = 27;
 
 	/**
 	 * The feature id for the '<em><b>Gid</b></em>' attribute.
@@ -4460,13 +4632,13 @@ public interface Component_Package extends EPackage {
 	int FINAL_EFFECT__IDENTITY = FAILURE_EFFECT__IDENTITY;
 
 	/**
-	 * The feature id for the '<em><b>Desc</b></em>' attribute.
+	 * The feature id for the '<em><b>Effect</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FINAL_EFFECT__DESC = FAILURE_EFFECT__DESC;
+	int FINAL_EFFECT__EFFECT = FAILURE_EFFECT__EFFECT;
 
 	/**
 	 * The feature id for the '<em><b>Affected</b></em>' reference list.
@@ -4494,7 +4666,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getFailureSeverity()
 	 * @generated
 	 */
-	int FAILURE_SEVERITY = 27;
+	int FAILURE_SEVERITY = 28;
 
 	/**
 	 * The meta object id for the '{@link component.ComponentType <em>Component Type</em>}' enum.
@@ -4504,7 +4676,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getComponentType()
 	 * @generated
 	 */
-	int COMPONENT_TYPE = 28;
+	int COMPONENT_TYPE = 29;
 
 	/**
 	 * The meta object id for the '{@link component.ToleranceType <em>Tolerance Type</em>}' enum.
@@ -4514,7 +4686,17 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getToleranceType()
 	 * @generated
 	 */
-	int TOLERANCE_TYPE = 29;
+	int TOLERANCE_TYPE = 30;
+
+	/**
+	 * The meta object id for the '{@link component.FailureEffectEnum <em>Failure Effect Enum</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see component.FailureEffectEnum
+	 * @see component.impl.Component_PackageImpl#getFailureEffectEnum()
+	 * @generated
+	 */
+	int FAILURE_EFFECT_ENUM = 31;
 
 
 	/**
@@ -4612,15 +4794,15 @@ public interface Component_Package extends EPackage {
 	EClass getComponent();
 
 	/**
-	 * Returns the meta object for the attribute '{@link component.Component#isDynamic <em>Dynamic</em>}'.
+	 * Returns the meta object for the attribute '{@link component.Component#isDyamic <em>Dyamic</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Dynamic</em>'.
-	 * @see component.Component#isDynamic()
+	 * @return the meta object for the attribute '<em>Dyamic</em>'.
+	 * @see component.Component#isDyamic()
 	 * @see #getComponent()
 	 * @generated
 	 */
-	EAttribute getComponent_Dynamic();
+	EAttribute getComponent_Dyamic();
 
 	/**
 	 * Returns the meta object for the attribute '{@link component.Component#getIdentity <em>Identity</em>}'.
@@ -4853,28 +5035,6 @@ public interface Component_Package extends EPackage {
 	EAttribute getComponentRelationship_Label();
 
 	/**
-	 * Returns the meta object for the reference '{@link component.ComponentRelationship#getSource <em>Source</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source</em>'.
-	 * @see component.ComponentRelationship#getSource()
-	 * @see #getComponentRelationship()
-	 * @generated
-	 */
-	EReference getComponentRelationship_Source();
-
-	/**
-	 * Returns the meta object for the reference '{@link component.ComponentRelationship#getTarget <em>Target</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target</em>'.
-	 * @see component.ComponentRelationship#getTarget()
-	 * @see #getComponentRelationship()
-	 * @generated
-	 */
-	EReference getComponentRelationship_Target();
-
-	/**
 	 * Returns the meta object for class '{@link component.DirectedRelationship <em>Directed Relationship</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4885,6 +5045,28 @@ public interface Component_Package extends EPackage {
 	EClass getDirectedRelationship();
 
 	/**
+	 * Returns the meta object for the reference '{@link component.DirectedRelationship#getSource <em>Source</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source</em>'.
+	 * @see component.DirectedRelationship#getSource()
+	 * @see #getDirectedRelationship()
+	 * @generated
+	 */
+	EReference getDirectedRelationship_Source();
+
+	/**
+	 * Returns the meta object for the reference '{@link component.DirectedRelationship#getTarget <em>Target</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target</em>'.
+	 * @see component.DirectedRelationship#getTarget()
+	 * @see #getDirectedRelationship()
+	 * @generated
+	 */
+	EReference getDirectedRelationship_Target();
+
+	/**
 	 * Returns the meta object for class '{@link component.UndirectedRelationship <em>Undirected Relationship</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4893,6 +5075,28 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 */
 	EClass getUndirectedRelationship();
+
+	/**
+	 * Returns the meta object for the reference '{@link component.UndirectedRelationship#getSource <em>Source</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source</em>'.
+	 * @see component.UndirectedRelationship#getSource()
+	 * @see #getUndirectedRelationship()
+	 * @generated
+	 */
+	EReference getUndirectedRelationship_Source();
+
+	/**
+	 * Returns the meta object for the reference '{@link component.UndirectedRelationship#getTarget <em>Target</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target</em>'.
+	 * @see component.UndirectedRelationship#getTarget()
+	 * @see #getUndirectedRelationship()
+	 * @generated
+	 */
+	EReference getUndirectedRelationship_Target();
 
 	/**
 	 * Returns the meta object for class '{@link component.ComponentAsset <em>Component Asset</em>}'.
@@ -5082,6 +5286,17 @@ public interface Component_Package extends EPackage {
 	EAttribute getFunction_Func();
 
 	/**
+	 * Returns the meta object for the attribute '{@link component.Function#getToleranceType <em>Tolerance Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Tolerance Type</em>'.
+	 * @see component.Function#getToleranceType()
+	 * @see #getFunction()
+	 * @generated
+	 */
+	EAttribute getFunction_ToleranceType();
+
+	/**
 	 * Returns the meta object for class '{@link component.Reading <em>Reading</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5189,6 +5404,17 @@ public interface Component_Package extends EPackage {
 	EAttribute getFailureMode_Safety_related();
 
 	/**
+	 * Returns the meta object for the attribute '{@link component.FailureMode#getFailureSeverity <em>Failure Severity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Failure Severity</em>'.
+	 * @see component.FailureMode#getFailureSeverity()
+	 * @see #getFailureMode()
+	 * @generated
+	 */
+	EAttribute getFailureMode_FailureSeverity();
+
+	/**
 	 * Returns the meta object for the reference list '{@link component.FailureMode#getHazards <em>Hazards</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5276,6 +5502,49 @@ public interface Component_Package extends EPackage {
 	EAttribute getSafetyMechanism_Coverage();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link component.SafetyMechanism#getCosts <em>Costs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Costs</em>'.
+	 * @see component.SafetyMechanism#getCosts()
+	 * @see #getSafetyMechanism()
+	 * @generated
+	 */
+	EReference getSafetyMechanism_Costs();
+
+	/**
+	 * Returns the meta object for class '{@link component.Cost <em>Cost</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Cost</em>'.
+	 * @see component.Cost
+	 * @generated
+	 */
+	EClass getCost();
+
+	/**
+	 * Returns the meta object for the attribute '{@link component.Cost#getUnit <em>Unit</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Unit</em>'.
+	 * @see component.Cost#getUnit()
+	 * @see #getCost()
+	 * @generated
+	 */
+	EAttribute getCost_Unit();
+
+	/**
+	 * Returns the meta object for the attribute '{@link component.Cost#getCost <em>Cost</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cost</em>'.
+	 * @see component.Cost#getCost()
+	 * @see #getCost()
+	 * @generated
+	 */
+	EAttribute getCost_Cost();
+
+	/**
 	 * Returns the meta object for class '{@link component.FailureEffect <em>Failure Effect</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5286,15 +5555,15 @@ public interface Component_Package extends EPackage {
 	EClass getFailureEffect();
 
 	/**
-	 * Returns the meta object for the attribute '{@link component.FailureEffect#getDesc <em>Desc</em>}'.
+	 * Returns the meta object for the attribute '{@link component.FailureEffect#getEffect <em>Effect</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Desc</em>'.
-	 * @see component.FailureEffect#getDesc()
+	 * @return the meta object for the attribute '<em>Effect</em>'.
+	 * @see component.FailureEffect#getEffect()
 	 * @see #getFailureEffect()
 	 * @generated
 	 */
-	EAttribute getFailureEffect_Desc();
+	EAttribute getFailureEffect_Effect();
 
 	/**
 	 * Returns the meta object for the reference list '{@link component.FailureEffect#getAffected <em>Affected</em>}'.
@@ -5366,6 +5635,16 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 */
 	EEnum getToleranceType();
+
+	/**
+	 * Returns the meta object for enum '{@link component.FailureEffectEnum <em>Failure Effect Enum</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Failure Effect Enum</em>'.
+	 * @see component.FailureEffectEnum
+	 * @generated
+	 */
+	EEnum getFailureEffectEnum();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -5472,12 +5751,12 @@ public interface Component_Package extends EPackage {
 		EClass COMPONENT = eINSTANCE.getComponent();
 
 		/**
-		 * The meta object literal for the '<em><b>Dynamic</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Dyamic</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute COMPONENT__DYNAMIC = eINSTANCE.getComponent_Dynamic();
+		EAttribute COMPONENT__DYAMIC = eINSTANCE.getComponent_Dyamic();
 
 		/**
 		 * The meta object literal for the '<em><b>Identity</b></em>' attribute feature.
@@ -5650,22 +5929,6 @@ public interface Component_Package extends EPackage {
 		EAttribute COMPONENT_RELATIONSHIP__LABEL = eINSTANCE.getComponentRelationship_Label();
 
 		/**
-		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference COMPONENT_RELATIONSHIP__SOURCE = eINSTANCE.getComponentRelationship_Source();
-
-		/**
-		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference COMPONENT_RELATIONSHIP__TARGET = eINSTANCE.getComponentRelationship_Target();
-
-		/**
 		 * The meta object literal for the '{@link component.impl.DirectedRelationshipImpl <em>Directed Relationship</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5676,6 +5939,22 @@ public interface Component_Package extends EPackage {
 		EClass DIRECTED_RELATIONSHIP = eINSTANCE.getDirectedRelationship();
 
 		/**
+		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DIRECTED_RELATIONSHIP__SOURCE = eINSTANCE.getDirectedRelationship_Source();
+
+		/**
+		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DIRECTED_RELATIONSHIP__TARGET = eINSTANCE.getDirectedRelationship_Target();
+
+		/**
 		 * The meta object literal for the '{@link component.impl.UndirectedRelationshipImpl <em>Undirected Relationship</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5684,6 +5963,22 @@ public interface Component_Package extends EPackage {
 		 * @generated
 		 */
 		EClass UNDIRECTED_RELATIONSHIP = eINSTANCE.getUndirectedRelationship();
+
+		/**
+		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UNDIRECTED_RELATIONSHIP__SOURCE = eINSTANCE.getUndirectedRelationship_Source();
+
+		/**
+		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UNDIRECTED_RELATIONSHIP__TARGET = eINSTANCE.getUndirectedRelationship_Target();
 
 		/**
 		 * The meta object literal for the '{@link component.impl.ComponentAssetImpl <em>Component Asset</em>}' class.
@@ -5852,6 +6147,14 @@ public interface Component_Package extends EPackage {
 		EAttribute FUNCTION__FUNC = eINSTANCE.getFunction_Func();
 
 		/**
+		 * The meta object literal for the '<em><b>Tolerance Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION__TOLERANCE_TYPE = eINSTANCE.getFunction_ToleranceType();
+
+		/**
 		 * The meta object literal for the '{@link component.impl.ReadingImpl <em>Reading</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5938,6 +6241,14 @@ public interface Component_Package extends EPackage {
 		EAttribute FAILURE_MODE__SAFETY_RELATED = eINSTANCE.getFailureMode_Safety_related();
 
 		/**
+		 * The meta object literal for the '<em><b>Failure Severity</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FAILURE_MODE__FAILURE_SEVERITY = eINSTANCE.getFailureMode_FailureSeverity();
+
+		/**
 		 * The meta object literal for the '<em><b>Hazards</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -6004,6 +6315,40 @@ public interface Component_Package extends EPackage {
 		EAttribute SAFETY_MECHANISM__COVERAGE = eINSTANCE.getSafetyMechanism_Coverage();
 
 		/**
+		 * The meta object literal for the '<em><b>Costs</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SAFETY_MECHANISM__COSTS = eINSTANCE.getSafetyMechanism_Costs();
+
+		/**
+		 * The meta object literal for the '{@link component.impl.CostImpl <em>Cost</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see component.impl.CostImpl
+		 * @see component.impl.Component_PackageImpl#getCost()
+		 * @generated
+		 */
+		EClass COST = eINSTANCE.getCost();
+
+		/**
+		 * The meta object literal for the '<em><b>Unit</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COST__UNIT = eINSTANCE.getCost_Unit();
+
+		/**
+		 * The meta object literal for the '<em><b>Cost</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COST__COST = eINSTANCE.getCost_Cost();
+
+		/**
 		 * The meta object literal for the '{@link component.impl.FailureEffectImpl <em>Failure Effect</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -6014,12 +6359,12 @@ public interface Component_Package extends EPackage {
 		EClass FAILURE_EFFECT = eINSTANCE.getFailureEffect();
 
 		/**
-		 * The meta object literal for the '<em><b>Desc</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Effect</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute FAILURE_EFFECT__DESC = eINSTANCE.getFailureEffect_Desc();
+		EAttribute FAILURE_EFFECT__EFFECT = eINSTANCE.getFailureEffect_Effect();
 
 		/**
 		 * The meta object literal for the '<em><b>Affected</b></em>' reference list feature.
@@ -6088,6 +6433,16 @@ public interface Component_Package extends EPackage {
 		 * @generated
 		 */
 		EEnum TOLERANCE_TYPE = eINSTANCE.getToleranceType();
+
+		/**
+		 * The meta object literal for the '{@link component.FailureEffectEnum <em>Failure Effect Enum</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see component.FailureEffectEnum
+		 * @see component.impl.Component_PackageImpl#getFailureEffectEnum()
+		 * @generated
+		 */
+		EEnum FAILURE_EFFECT_ENUM = eINSTANCE.getFailureEffectEnum();
 
 	}
 

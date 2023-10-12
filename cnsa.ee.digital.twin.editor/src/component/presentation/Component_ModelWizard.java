@@ -72,10 +72,10 @@ import org.eclipse.ui.part.ISetSelectionTarget;
 import component.Component_Factory;
 import component.Component_Package;
 import digital_twin.provider.Digital_twinEditPlugin;
+import component.provider.ComponentEditPlugin;
 
 
 import digital_twin.presentation.Digital_twinEditorPlugin;
-
 import org.eclipse.core.runtime.Path;
 
 import org.eclipse.jface.viewers.ISelection;
@@ -400,8 +400,7 @@ public class Component_ModelWizard extends Wizard implements INewWizard {
 		 */
 		@Override
 		public void createControl(Composite parent) {
-			Composite composite = new Composite(parent, SWT.NONE);
-			{
+			Composite composite = new Composite(parent, SWT.NONE); {
 				GridLayout layout = new GridLayout();
 				layout.numColumns = 1;
 				layout.verticalSpacing = 12;

@@ -3,8 +3,9 @@
 package base.provider;
 
 
+import artifact.provider.ArtifactEditPlugin;
+import component.provider.ComponentEditPlugin;
 import digital_twin.provider.Digital_twinEditPlugin;
-
 import java.util.Collection;
 import java.util.List;
 
@@ -20,6 +21,7 @@ import org.eclipse.emf.edit.provider.IItemPropertySource;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
+import terminology.provider.TerminologyEditPlugin;
 
 /**
  * This is the item provider adapter for a {@link base.Element} object.
@@ -105,7 +107,7 @@ public class ElementItemProvider
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
-		return Digital_twinEditPlugin.INSTANCE;
+		return TerminologyEditPlugin.INSTANCE;
 	}
 
 }

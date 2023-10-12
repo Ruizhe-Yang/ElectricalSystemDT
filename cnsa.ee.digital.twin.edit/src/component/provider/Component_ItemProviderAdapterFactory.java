@@ -15,6 +15,7 @@ import org.eclipse.emf.edit.provider.ChangeNotifier;
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.ComposedAdapterFactory;
 import org.eclipse.emf.edit.provider.IChangeNotifier;
+import org.eclipse.emf.edit.provider.IDisposable;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertySource;
@@ -436,6 +437,29 @@ public class Component_ItemProviderAdapterFactory extends Component_AdapterFacto
 		}
 
 		return safetyMechanismItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link component.Cost} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected CostItemProvider costItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link component.Cost}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createCostAdapter() {
+		if (costItemProvider == null) {
+			costItemProvider = new CostItemProvider(this);
+		}
+
+		return costItemProvider;
 	}
 
 	/**

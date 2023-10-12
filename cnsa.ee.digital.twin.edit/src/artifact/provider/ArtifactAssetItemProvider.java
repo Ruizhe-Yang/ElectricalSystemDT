@@ -10,7 +10,6 @@ import artifact.Artifact_Package;
 import base.provider.ArtifactElementItemProvider;
 
 import digital_twin.provider.Digital_twinEditPlugin;
-
 import java.util.Collection;
 import java.util.List;
 

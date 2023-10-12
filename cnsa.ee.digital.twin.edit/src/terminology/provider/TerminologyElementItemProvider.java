@@ -99,7 +99,7 @@ public class TerminologyElementItemProvider extends ArtifactElementItemProvider 
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
-		return Digital_twinEditPlugin.INSTANCE;
+		return TerminologyEditPlugin.INSTANCE;
 	}
 
 }

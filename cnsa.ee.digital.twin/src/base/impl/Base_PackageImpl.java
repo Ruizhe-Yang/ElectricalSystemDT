@@ -3,9 +3,7 @@
 package base.impl;
 
 import artifact.Artifact_Package;
-
 import artifact.impl.Artifact_PackageImpl;
-
 import base.ArtifactElement;
 import base.Base_Factory;
 import base.Base_Package;
@@ -25,22 +23,16 @@ import base.TaggedValue;
 import base.UtilityElement;
 
 import component.Component_Package;
-
 import component.impl.Component_PackageImpl;
-
 import digital_twin.Digital_twin_Package;
-
 import digital_twin.impl.Digital_twin_PackageImpl;
-
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
 import terminology.Terminology_Package;
-
 import terminology.impl.Terminology_PackageImpl;
 
 /**
@@ -203,27 +195,15 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 		isInited = true;
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Digital_twin_Package.eNS_URI);
-		Digital_twin_PackageImpl theDigital_twin_Package = (Digital_twin_PackageImpl)(registeredPackage instanceof Digital_twin_PackageImpl ? registeredPackage : Digital_twin_Package.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Component_Package.eNS_URI);
-		Component_PackageImpl theComponent_Package = (Component_PackageImpl)(registeredPackage instanceof Component_PackageImpl ? registeredPackage : Component_Package.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Artifact_Package.eNS_URI);
-		Artifact_PackageImpl theArtifact_Package = (Artifact_PackageImpl)(registeredPackage instanceof Artifact_PackageImpl ? registeredPackage : Artifact_Package.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Terminology_Package.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Terminology_Package.eNS_URI);
 		Terminology_PackageImpl theTerminology_Package = (Terminology_PackageImpl)(registeredPackage instanceof Terminology_PackageImpl ? registeredPackage : Terminology_Package.eINSTANCE);
 
 		// Create package meta-data objects
 		theBase_Package.createPackageContents();
-		theDigital_twin_Package.createPackageContents();
-		theComponent_Package.createPackageContents();
-		theArtifact_Package.createPackageContents();
 		theTerminology_Package.createPackageContents();
 
 		// Initialize created meta-data
 		theBase_Package.initializePackageContents();
-		theDigital_twin_Package.initializePackageContents();
-		theComponent_Package.initializePackageContents();
-		theArtifact_Package.initializePackageContents();
 		theTerminology_Package.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed

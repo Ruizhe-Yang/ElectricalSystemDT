@@ -146,31 +146,5 @@
             contributorClass="component.presentation.Component_ActionBarContributor">
       </editor>
    </extension>
-   <extension point="org.eclipse.ui.newWizards">
-      <!-- @generated base -->
-      <category
-            id="org.eclipse.emf.ecore.Wizard.category.ID"
-            name="%_UI_Wizard_category"/>
-      <wizard
-            id="base.presentation.BaseModelWizardID"
-            name="%_UI_BaseModelWizard_label"
-            class="base.presentation.BaseModelWizard"
-            category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/BaseModelFile.gif">
-         <description>%_UI_BaseModelWizard_description</description>
-         <selection class="org.eclipse.core.resources.IResource"/>
-      </wizard>
-   </extension>
 
-   <extension point="org.eclipse.ui.editors">
-      <!-- @generated base -->
-      <editor
-            id="base.presentation.BaseEditorID"
-            name="%_UI_BaseEditor_label"
-            icon="icons/full/obj16/BaseModelFile.gif"
-            extensions="base"
-            class="base.presentation.BaseEditor"
-            contributorClass="base.presentation.BaseActionBarContributor">
-      </editor>
-   </extension>
 </plugin>

@@ -5,7 +5,7 @@ Bundle-SymbolicName: cnsa.ee.digital.twin.edit;singleton:=true
 Automatic-Module-Name: cnsa.ee.digital.twin.edit
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
-Bundle-Activator: digital_twin.provider.Digital_twinEditPlugin$Implementation
+Bundle-Activator: terminology.provider.TerminologyEditPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6

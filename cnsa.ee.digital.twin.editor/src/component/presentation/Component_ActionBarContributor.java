@@ -3,7 +3,6 @@
 package component.presentation;
 
 import digital_twin.presentation.Digital_twinEditorPlugin;
-
 import java.util.ArrayList;
 import java.util.Collection;
 
