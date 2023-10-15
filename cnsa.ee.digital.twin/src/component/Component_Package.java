@@ -766,13 +766,13 @@ public interface Component_Package extends EPackage {
 	int COMPONENT__EXTERNAL_REFERENCE = COMPONENT_ELEMENT__EXTERNAL_REFERENCE;
 
 	/**
-	 * The feature id for the '<em><b>Dyamic</b></em>' attribute.
+	 * The feature id for the '<em><b>Dynamic</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COMPONENT__DYAMIC = COMPONENT_ELEMENT_FEATURE_COUNT + 0;
+	int COMPONENT__DYNAMIC = COMPONENT_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Identity</b></em>' attribute.
@@ -4794,15 +4794,15 @@ public interface Component_Package extends EPackage {
 	EClass getComponent();
 
 	/**
-	 * Returns the meta object for the attribute '{@link component.Component#isDyamic <em>Dyamic</em>}'.
+	 * Returns the meta object for the attribute '{@link component.Component#isDynamic <em>Dynamic</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Dyamic</em>'.
-	 * @see component.Component#isDyamic()
+	 * @return the meta object for the attribute '<em>Dynamic</em>'.
+	 * @see component.Component#isDynamic()
 	 * @see #getComponent()
 	 * @generated
 	 */
-	EAttribute getComponent_Dyamic();
+	EAttribute getComponent_Dynamic();
 
 	/**
 	 * Returns the meta object for the attribute '{@link component.Component#getIdentity <em>Identity</em>}'.
@@ -5751,12 +5751,12 @@ public interface Component_Package extends EPackage {
 		EClass COMPONENT = eINSTANCE.getComponent();
 
 		/**
-		 * The meta object literal for the '<em><b>Dyamic</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Dynamic</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute COMPONENT__DYAMIC = eINSTANCE.getComponent_Dyamic();
+		EAttribute COMPONENT__DYNAMIC = eINSTANCE.getComponent_Dynamic();
 
 		/**
 		 * The meta object literal for the '<em><b>Identity</b></em>' attribute feature.

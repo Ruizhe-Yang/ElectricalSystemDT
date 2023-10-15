@@ -7,7 +7,6 @@ import base.provider.ArtifactElementItemProvider;
 
 import component.ComponentElement;
 
-import digital_twin.provider.Digital_twinEditPlugin;
 import java.util.Collection;
 import java.util.List;
 
@@ -98,7 +97,7 @@ public class ComponentElementItemProvider extends ArtifactElementItemProvider {
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
-		return Digital_twinEditPlugin.INSTANCE;
+		return ComponentEditPlugin.INSTANCE;
 	}
 
 }

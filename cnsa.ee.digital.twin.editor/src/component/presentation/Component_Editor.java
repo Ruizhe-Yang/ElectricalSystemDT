@@ -157,13 +157,9 @@ import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 
 import component.provider.Component_ItemProviderAdapterFactory;
 
-import artifact.provider.Artifact_ItemProviderAdapterFactory;
 import base.provider.Base_ItemProviderAdapterFactory;
 
-import digital_twin.presentation.Digital_twinEditorPlugin;
-import digital_twin.provider.Digital_twin_ItemProviderAdapterFactory;
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
-import terminology.provider.Terminology_ItemProviderAdapterFactory;
 
 
 /**
@@ -547,7 +543,7 @@ public class Component_Editor
 					}
 				}
 				catch (CoreException exception) {
-					Digital_twinEditorPlugin.INSTANCE.log(exception);
+					ComponentEditorPlugin.INSTANCE.log(exception);
 				}
 			}
 		};
@@ -664,7 +660,7 @@ public class Component_Editor
 					showTabs();
 				}
 				catch (PartInitException exception) {
-					Digital_twinEditorPlugin.INSTANCE.log(exception);
+					ComponentEditorPlugin.INSTANCE.log(exception);
 				}
 			}
 
@@ -673,7 +669,7 @@ public class Component_Editor
 					markerHelper.updateMarkers(diagnostic);
 				}
 				catch (CoreException exception) {
-					Digital_twinEditorPlugin.INSTANCE.log(exception);
+					ComponentEditorPlugin.INSTANCE.log(exception);
 				}
 			}
 		}
@@ -716,11 +712,8 @@ public class Component_Editor
 		adapterFactory = new ComposedAdapterFactory(ComposedAdapterFactory.Descriptor.Registry.INSTANCE);
 
 		adapterFactory.addAdapterFactory(new ResourceItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new Digital_twin_ItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new Base_ItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new Component_ItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new Artifact_ItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new Terminology_ItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new Base_ItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
 		// Create the command stack that will notify this editor as commands are executed.
@@ -1556,7 +1549,7 @@ public class Component_Editor
 		catch (Exception exception) {
 			// Something went wrong that shouldn't.
 			//
-			Digital_twinEditorPlugin.INSTANCE.log(exception);
+			ComponentEditorPlugin.INSTANCE.log(exception);
 		}
 		updateProblemIndication = true;
 		updateProblemIndication();
@@ -1765,7 +1758,7 @@ public class Component_Editor
 	 * @generated
 	 */
 	private static String getString(String key) {
-		return Digital_twinEditorPlugin.INSTANCE.getString(key);
+		return ComponentEditorPlugin.INSTANCE.getString(key);
 	}
 
 	/**
@@ -1775,7 +1768,7 @@ public class Component_Editor
 	 * @generated
 	 */
 	private static String getString(String key, Object s1) {
-		return Digital_twinEditorPlugin.INSTANCE.getString(key, new Object [] { s1 });
+		return ComponentEditorPlugin.INSTANCE.getString(key, new Object [] { s1 });
 	}
 
 	/**

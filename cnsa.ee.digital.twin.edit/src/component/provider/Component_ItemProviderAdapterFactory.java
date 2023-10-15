@@ -32,7 +32,7 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Component_ItemProviderAdapterFactory extends Component_AdapterFactory implements ComposeableAdapterFactory, IChangeNotifier {
+public class Component_ItemProviderAdapterFactory extends Component_AdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
 	/**
 	 * This keeps track of the root adapter factory that delegates to this adapter factory.
 	 * <!-- begin-user-doc -->
@@ -626,6 +626,36 @@ public class Component_ItemProviderAdapterFactory extends Component_AdapterFacto
 		if (parentAdapterFactory != null) {
 			parentAdapterFactory.fireNotifyChanged(notification);
 		}
+	}
+
+	/**
+	 * This disposes all of the item providers created by this factory. 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void dispose() {
+		if (componentPackageItemProvider != null) componentPackageItemProvider.dispose();
+		if (componentPackageInterfaceItemProvider != null) componentPackageInterfaceItemProvider.dispose();
+		if (componentPackageBindingItemProvider != null) componentPackageBindingItemProvider.dispose();
+		if (componentItemProvider != null) componentItemProvider.dispose();
+		if (directedRelationshipItemProvider != null) directedRelationshipItemProvider.dispose();
+		if (undirectedRelationshipItemProvider != null) undirectedRelationshipItemProvider.dispose();
+		if (forkItemProvider != null) forkItemProvider.dispose();
+		if (switchItemProvider != null) switchItemProvider.dispose();
+		if (inputItemProvider != null) inputItemProvider.dispose();
+		if (outputItemProvider != null) outputItemProvider.dispose();
+		if (lPortItemProvider != null) lPortItemProvider.dispose();
+		if (rPortItemProvider != null) rPortItemProvider.dispose();
+		if (functionItemProvider != null) functionItemProvider.dispose();
+		if (readingItemProvider != null) readingItemProvider.dispose();
+		if (failureModeItemProvider != null) failureModeItemProvider.dispose();
+		if (safetyMechanismItemProvider != null) safetyMechanismItemProvider.dispose();
+		if (costItemProvider != null) costItemProvider.dispose();
+		if (regionalEffectItemProvider != null) regionalEffectItemProvider.dispose();
+		if (higherLevelEffectItemProvider != null) higherLevelEffectItemProvider.dispose();
+		if (finalEffectItemProvider != null) finalEffectItemProvider.dispose();
 	}
 
 }

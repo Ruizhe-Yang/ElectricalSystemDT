@@ -19,7 +19,7 @@ class ComponentPackageBinding extends ComponentElement {
 }
 
 class Component extends ComponentElement {
-	attr boolean dyamic;
+	attr boolean dynamic;
 	attr int identity;
 	attr String component_name;
 	attr Boolean reuse;

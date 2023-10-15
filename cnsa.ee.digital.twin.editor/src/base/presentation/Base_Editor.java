@@ -157,15 +157,11 @@ import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 
 import base.provider.Base_ItemProviderAdapterFactory;
 
-import artifact.presentation.ArtifactEditorPlugin;
-import artifact.provider.Artifact_ItemProviderAdapterFactory;
 import component.presentation.ComponentEditorPlugin;
+
 import component.provider.Component_ItemProviderAdapterFactory;
-import digital_twin.presentation.Digital_twinEditorPlugin;
-import digital_twin.provider.Digital_twin_ItemProviderAdapterFactory;
+
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
-import terminology.presentation.TerminologyEditorPlugin;
-import terminology.provider.Terminology_ItemProviderAdapterFactory;
 
 
 /**
@@ -549,7 +545,7 @@ public class Base_Editor
 					}
 				}
 				catch (CoreException exception) {
-					TerminologyEditorPlugin.INSTANCE.log(exception);
+					ComponentEditorPlugin.INSTANCE.log(exception);
 				}
 			}
 		};
@@ -666,7 +662,7 @@ public class Base_Editor
 					showTabs();
 				}
 				catch (PartInitException exception) {
-					TerminologyEditorPlugin.INSTANCE.log(exception);
+					ComponentEditorPlugin.INSTANCE.log(exception);
 				}
 			}
 
@@ -675,7 +671,7 @@ public class Base_Editor
 					markerHelper.updateMarkers(diagnostic);
 				}
 				catch (CoreException exception) {
-					TerminologyEditorPlugin.INSTANCE.log(exception);
+					ComponentEditorPlugin.INSTANCE.log(exception);
 				}
 			}
 		}
@@ -718,7 +714,7 @@ public class Base_Editor
 		adapterFactory = new ComposedAdapterFactory(ComposedAdapterFactory.Descriptor.Registry.INSTANCE);
 
 		adapterFactory.addAdapterFactory(new ResourceItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new Terminology_ItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new Component_ItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new Base_ItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
@@ -1555,7 +1551,7 @@ public class Base_Editor
 		catch (Exception exception) {
 			// Something went wrong that shouldn't.
 			//
-			TerminologyEditorPlugin.INSTANCE.log(exception);
+			ComponentEditorPlugin.INSTANCE.log(exception);
 		}
 		updateProblemIndication = true;
 		updateProblemIndication();
@@ -1764,7 +1760,7 @@ public class Base_Editor
 	 * @generated
 	 */
 	private static String getString(String key) {
-		return TerminologyEditorPlugin.INSTANCE.getString(key);
+		return ComponentEditorPlugin.INSTANCE.getString(key);
 	}
 
 	/**
@@ -1774,7 +1770,7 @@ public class Base_Editor
 	 * @generated
 	 */
 	private static String getString(String key, Object s1) {
-		return TerminologyEditorPlugin.INSTANCE.getString(key, new Object [] { s1 });
+		return ComponentEditorPlugin.INSTANCE.getString(key, new Object [] { s1 });
 	}
 
 	/**

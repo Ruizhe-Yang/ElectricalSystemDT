@@ -48,7 +48,7 @@ public class ComponentItemProvider extends ComponentElementItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addDyamicPropertyDescriptor(object);
+			addDynamicPropertyDescriptor(object);
 			addIdentityPropertyDescriptor(object);
 			addComponent_namePropertyDescriptor(object);
 			addReusePropertyDescriptor(object);
@@ -65,19 +65,19 @@ public class ComponentItemProvider extends ComponentElementItemProvider {
 	}
 
 	/**
-	 * This adds a property descriptor for the Dyamic feature.
+	 * This adds a property descriptor for the Dynamic feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addDyamicPropertyDescriptor(Object object) {
+	protected void addDynamicPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Component_dyamic_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Component_dyamic_feature", "_UI_Component_type"),
-				 Component_Package.Literals.COMPONENT__DYAMIC,
+				 getString("_UI_Component_dynamic_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Component_dynamic_feature", "_UI_Component_type"),
+				 Component_Package.Literals.COMPONENT__DYNAMIC,
 				 true,
 				 false,
 				 false,
@@ -403,7 +403,7 @@ public class ComponentItemProvider extends ComponentElementItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Component.class)) {
-			case Component_Package.COMPONENT__DYAMIC:
+			case Component_Package.COMPONENT__DYNAMIC:
 			case Component_Package.COMPONENT__IDENTITY:
 			case Component_Package.COMPONENT__COMPONENT_NAME:
 			case Component_Package.COMPONENT__REUSE:

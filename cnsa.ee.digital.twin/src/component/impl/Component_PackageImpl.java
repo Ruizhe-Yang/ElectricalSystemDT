@@ -2,8 +2,6 @@
  */
 package component.impl;
 
-import artifact.Artifact_Package;
-import artifact.impl.Artifact_PackageImpl;
 import base.Base_Package;
 
 import base.impl.Base_PackageImpl;
@@ -43,8 +41,6 @@ import component.TransitionNode;
 import component.UndirectedRelationship;
 import component.UtilityNodes;
 
-import digital_twin.Digital_twin_Package;
-import digital_twin.impl.Digital_twin_PackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
@@ -52,8 +48,6 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-import terminology.Terminology_Package;
-import terminology.impl.Terminology_PackageImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -334,28 +328,16 @@ public class Component_PackageImpl extends EPackageImpl implements Component_Pac
 		isInited = true;
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Digital_twin_Package.eNS_URI);
-		Digital_twin_PackageImpl theDigital_twin_Package = (Digital_twin_PackageImpl)(registeredPackage instanceof Digital_twin_PackageImpl ? registeredPackage : Digital_twin_Package.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Base_Package.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Base_Package.eNS_URI);
 		Base_PackageImpl theBase_Package = (Base_PackageImpl)(registeredPackage instanceof Base_PackageImpl ? registeredPackage : Base_Package.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Artifact_Package.eNS_URI);
-		Artifact_PackageImpl theArtifact_Package = (Artifact_PackageImpl)(registeredPackage instanceof Artifact_PackageImpl ? registeredPackage : Artifact_Package.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Terminology_Package.eNS_URI);
-		Terminology_PackageImpl theTerminology_Package = (Terminology_PackageImpl)(registeredPackage instanceof Terminology_PackageImpl ? registeredPackage : Terminology_Package.eINSTANCE);
 
 		// Create package meta-data objects
 		theComponent_Package.createPackageContents();
-		theDigital_twin_Package.createPackageContents();
 		theBase_Package.createPackageContents();
-		theArtifact_Package.createPackageContents();
-		theTerminology_Package.createPackageContents();
 
 		// Initialize created meta-data
 		theComponent_Package.initializePackageContents();
-		theDigital_twin_Package.initializePackageContents();
 		theBase_Package.initializePackageContents();
-		theArtifact_Package.initializePackageContents();
-		theTerminology_Package.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theComponent_Package.freeze();
@@ -461,7 +443,7 @@ public class Component_PackageImpl extends EPackageImpl implements Component_Pac
 	 * @generated
 	 */
 	@Override
-	public EAttribute getComponent_Dyamic() {
+	public EAttribute getComponent_Dynamic() {
 		return (EAttribute)componentEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1297,7 +1279,7 @@ public class Component_PackageImpl extends EPackageImpl implements Component_Pac
 		createEReference(componentPackageBindingEClass, COMPONENT_PACKAGE_BINDING__PARTICIPANT_PACKAGE);
 
 		componentEClass = createEClass(COMPONENT);
-		createEAttribute(componentEClass, COMPONENT__DYAMIC);
+		createEAttribute(componentEClass, COMPONENT__DYNAMIC);
 		createEAttribute(componentEClass, COMPONENT__IDENTITY);
 		createEAttribute(componentEClass, COMPONENT__COMPONENT_NAME);
 		createEAttribute(componentEClass, COMPONENT__REUSE);
@@ -1478,7 +1460,7 @@ public class Component_PackageImpl extends EPackageImpl implements Component_Pac
 		initEReference(getComponentPackageBinding_ParticipantPackage(), this.getComponentPackage(), null, "participantPackage", null, 2, -1, ComponentPackageBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(componentEClass, Component.class, "Component", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getComponent_Dyamic(), ecorePackage.getEBoolean(), "dyamic", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getComponent_Dynamic(), ecorePackage.getEBoolean(), "dynamic", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getComponent_Identity(), ecorePackage.getEInt(), "identity", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getComponent_Component_name(), ecorePackage.getEString(), "component_name", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getComponent_Reuse(), ecorePackage.getEBooleanObject(), "reuse", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

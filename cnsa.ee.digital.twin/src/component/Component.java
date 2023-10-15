@@ -15,7 +15,7 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link component.Component#isDyamic <em>Dyamic</em>}</li>
+ *   <li>{@link component.Component#isDynamic <em>Dynamic</em>}</li>
  *   <li>{@link component.Component#getIdentity <em>Identity</em>}</li>
  *   <li>{@link component.Component#getComponent_name <em>Component name</em>}</li>
  *   <li>{@link component.Component#getReuse <em>Reuse</em>}</li>
@@ -43,26 +43,26 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface Component extends ComponentElement {
 	/**
-	 * Returns the value of the '<em><b>Dyamic</b></em>' attribute.
+	 * Returns the value of the '<em><b>Dynamic</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Dyamic</em>' attribute.
-	 * @see #setDyamic(boolean)
-	 * @see component.Component_Package#getComponent_Dyamic()
+	 * @return the value of the '<em>Dynamic</em>' attribute.
+	 * @see #setDynamic(boolean)
+	 * @see component.Component_Package#getComponent_Dynamic()
 	 * @model
 	 * @generated
 	 */
-	boolean isDyamic();
+	boolean isDynamic();
 
 	/**
-	 * Sets the value of the '{@link component.Component#isDyamic <em>Dyamic</em>}' attribute.
+	 * Sets the value of the '{@link component.Component#isDynamic <em>Dynamic</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Dyamic</em>' attribute.
-	 * @see #isDyamic()
+	 * @param value the new value of the '<em>Dynamic</em>' attribute.
+	 * @see #isDynamic()
 	 * @generated
 	 */
-	void setDyamic(boolean value);
+	void setDynamic(boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Identity</b></em>' attribute.
