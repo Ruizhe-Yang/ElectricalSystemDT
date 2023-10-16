@@ -298,7 +298,7 @@
           </style>
         </nodeMappings>
         <edgeMappings name="DirectedEdge" semanticCandidatesExpression="feature:components" sourceMapping="//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@nodeMappings[name='Fork'] //@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Output']" targetMapping="//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@nodeMappings[name='Fork'] //@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Input']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="component::ComponentRelationship" useDomainElement="true">
-          <style sizeComputationExpression="2">
+          <style sizeComputationExpression="2" routingStyle="manhattan">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <centerLabelStyleDescription labelSize="12">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -552,65 +552,6 @@
                   <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name" variableName="name">
                       <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="F"/>
-                    </subModelOperations>
-                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::Description" referenceName="description" variableName="description">
-                      <subModelOperations xsi:type="tool_1:ChangeContext">
-                        <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::MultiLangString" referenceName="content" variableName="multilang">
-                          <subModelOperations xsi:type="tool_1:ChangeContext">
-                            <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="value" variableName="lang">
-                              <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Input Description"/>
-                            </subModelOperations>
-                          </subModelOperations>
-                        </subModelOperations>
-                      </subModelOperations>
-                    </subModelOperations>
-                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::ExternalReference" referenceName="externalReference" variableName="externalReference">
-                      <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:externalReference">
-                        <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::ImplementationConstraint" referenceName="implementationConstraint" variableName="ic">
-                          <subModelOperations xsi:type="tool_1:ChangeContext">
-                            <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::MultiLangString" referenceName="content" variableName="mls">
-                              <subModelOperations xsi:type="tool_1:ChangeContext">
-                                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="value" variableName="ls">
-                                  <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Query"/>
-                                </subModelOperations>
-                              </subModelOperations>
-                            </subModelOperations>
-                          </subModelOperations>
-                        </subModelOperations>
-                      </subModelOperations>
-                      <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:externalReference">
-                        <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="location" variableName="locationls">
-                          <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="location"/>
-                        </subModelOperations>
-                      </subModelOperations>
-                      <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:externalReference">
-                        <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="type" variableName="typels">
-                          <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="type"/>
-                        </subModelOperations>
-                      </subModelOperations>
-                      <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:externalReference">
-                        <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="metadata" variableName="metadatals">
-                          <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="metadata"/>
-                        </subModelOperations>
-                      </subModelOperations>
-                    </subModelOperations>
-                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="component::Reading" referenceName="reading">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="0.0"/>
-                    </subModelOperations>
-                  </subModelOperations>
-                </subModelOperations>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="Join">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="component::Join" referenceName="components">
-                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
-                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name" variableName="name">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="J"/>
                     </subModelOperations>
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::Description" referenceName="description" variableName="description">
                       <subModelOperations xsi:type="tool_1:ChangeContext">

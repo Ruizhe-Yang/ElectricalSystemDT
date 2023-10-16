@@ -8,11 +8,11 @@
     <semanticResources>model/lab1.model</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_tbLggDRJEe63_YkMaYJGSQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_OerRADdHEe6QWpIjeVSq7A" name="new DigitalTwinDiagram" repPath="#_OedOkDdHEe6QWpIjeVSq7A" changeId="1696878487347">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_OerRADdHEe6QWpIjeVSq7A" name="new DigitalTwinDiagram" repPath="#_OedOkDdHEe6QWpIjeVSq7A" changeId="1697439464009">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='DigitalTwinDiagram']"/>
         <target xmi:type="digital_twin_:DigitalTwinPackage" href="model/My.digital_twin#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_PwAWADdHEe6QWpIjeVSq7A" name="ComponentPackageDiagram" repPath="#_Pv_H4DdHEe6QWpIjeVSq7A" changeId="1692092730169">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_PwAWADdHEe6QWpIjeVSq7A" name="ComponentPackageDiagram" repPath="#_Pv_H4DdHEe6QWpIjeVSq7A" changeId="1697439571204">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']"/>
         <target xmi:type="component_:ComponentPackage" href="model/My.digital_twin#//@componentPackages.0"/>
       </ownedRepresentationDescriptors>
@@ -114,13 +114,17 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']"/>
         <target xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.1/@components.14"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_MxQSYGs7Ee62P5MY-elCvg" name="new ComponentPackageDiagram" repPath="#_MxEFIGs7Ee62P5MY-elCvg" changeId="1697361251195">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_MxQSYGs7Ee62P5MY-elCvg" name="new ComponentPackageDiagram" repPath="#_MxEFIGs7Ee62P5MY-elCvg" changeId="1697439447286">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']"/>
         <target xmi:type="component_:ComponentPackage" href="model/lab3.model#//@componentPackages.0"/>
       </ownedRepresentationDescriptors>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_G_ZRYGtPEe6pZq9EhA_Zcg" name="new ComponentPackageDiagram" repPath="#_G_YDQGtPEe6pZq9EhA_Zcg" changeId="1697369802757">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']"/>
         <target xmi:type="component_:ComponentPackage" href="model/lab2.model#//@componentPackages.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_mFdC0WvxEe6peI5z9Tk5RA" name="ComponentDiagram" repPath="#_mFcbwGvxEe6peI5z9Tk5RA" changeId="1697459133321">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']"/>
+        <target xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.1"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
@@ -136,7 +140,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PBsegjdHEe6QWpIjeVSq7A"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_PBpbMTdHEe6QWpIjeVSq7A" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PBpbMjdHEe6QWpIjeVSq7A" x="265" y="180" width="200" height="100"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PBpbMjdHEe6QWpIjeVSq7A" x="120" y="155" width="200" height="100"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_GaRsUDriEe6gDIh-BrzN3Q" type="2001" element="_GaJwgDriEe6gDIh-BrzN3Q">
           <children xmi:type="notation:Node" xmi:id="_GaS6cDriEe6gDIh-BrzN3Q" type="5002">
@@ -147,7 +151,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GaThgjriEe6gDIh-BrzN3Q"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_GaRsUTriEe6gDIh-BrzN3Q" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GaRsUjriEe6gDIh-BrzN3Q" x="575" y="90" width="200" height="100"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GaRsUjriEe6gDIh-BrzN3Q" x="410" y="155" width="200" height="100"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_zGW94GbOEe6hp4pQimBU0Q" type="2001" element="_zGNz8GbOEe6hp4pQimBU0Q">
           <children xmi:type="notation:Node" xmi:id="_zGaoQGbOEe6hp4pQimBU0Q" type="5002">
@@ -248,7 +252,7 @@
             <styles xmi:type="notation:FilteringStyle" xmi:id="_y4TYgztEEe6-TYNP2QHTvw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_y4Q8QTtEEe6-TYNP2QHTvw" fontName="Microsoft YaHei UI" fontHeight="12" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y4Q8QjtEEe6-TYNP2QHTvw" x="500" y="210" width="150" height="150"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y4Q8QjtEEe6-TYNP2QHTvw" x="445" y="225" width="150" height="150"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_8C6t8DtEEe6-TYNP2QHTvw" type="2003" element="_8C2cgDtEEe6-TYNP2QHTvw">
           <children xmi:type="notation:Node" xmi:id="_8aHtADtEEe6-TYNP2QHTvw" type="3012" element="_8aEpsDtEEe6-TYNP2QHTvw">
@@ -260,7 +264,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8aIUFDtEEe6-TYNP2QHTvw"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_8aHtATtEEe6-TYNP2QHTvw" fontColor="16777215" fontName="Microsoft YaHei UI" fontHeight="12"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8aHtAjtEEe6-TYNP2QHTvw" x="-62" y="25" width="70" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8aHtAjtEEe6-TYNP2QHTvw" x="140" y="10" width="70" height="30"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_9OX0cTtEEe6-TYNP2QHTvw" type="3012" element="_9OUxIDtEEe6-TYNP2QHTvw">
             <children xmi:type="notation:Node" xmi:id="_9OYbgDtEEe6-TYNP2QHTvw" type="5010">
@@ -271,7 +275,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9OYbhDtEEe6-TYNP2QHTvw"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_9OX0cjtEEe6-TYNP2QHTvw" fontColor="16777215" fontName="Microsoft YaHei UI" fontHeight="12"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9OX0cztEEe6-TYNP2QHTvw" x="140" y="75" width="70" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9OX0cztEEe6-TYNP2QHTvw" x="140" y="110" width="70" height="30"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_8C6t8ztEEe6-TYNP2QHTvw" type="5007"/>
           <children xmi:type="notation:Node" xmi:id="_8C6t9DtEEe6-TYNP2QHTvw" type="7004">
@@ -286,16 +290,27 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8C6t8jtEEe6-TYNP2QHTvw" x="830" y="215" width="150" height="150"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_CpBfQDtFEe6-TYNP2QHTvw" type="2003" element="_Co8mwDtFEe6-TYNP2QHTvw">
-          <children xmi:type="notation:Node" xmi:id="_DSXXMDtFEe6-TYNP2QHTvw" type="3012" element="_DSTFwDtFEe6-TYNP2QHTvw">
-            <children xmi:type="notation:Node" xmi:id="_DSXXMztFEe6-TYNP2QHTvw" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_DSXXNDtFEe6-TYNP2QHTvw" y="5"/>
+          <children xmi:type="notation:Node" xmi:id="_T8q4gGvxEe6peI5z9Tk5RA" type="3012" element="_T8n1OmvxEe6peI5z9Tk5RA">
+            <children xmi:type="notation:Node" xmi:id="_T8rfkGvxEe6peI5z9Tk5RA" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_T8rfkWvxEe6peI5z9Tk5RA" y="5"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_DSXXNTtFEe6-TYNP2QHTvw" type="3003" element="_DSTFwTtFEe6-TYNP2QHTvw">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_DSXXNjtFEe6-TYNP2QHTvw" fontName="Microsoft YaHei UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DSXXNztFEe6-TYNP2QHTvw"/>
+            <children xmi:type="notation:Node" xmi:id="_T8ui4GvxEe6peI5z9Tk5RA" type="3003" element="_T8n1O2vxEe6peI5z9Tk5RA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_T8ui4WvxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T8ui4mvxEe6peI5z9Tk5RA"/>
             </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_DSXXMTtFEe6-TYNP2QHTvw" fontColor="16777215" fontName="Microsoft YaHei UI" fontHeight="12"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DSXXMjtFEe6-TYNP2QHTvw" x="-62" y="40" width="70" height="30"/>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_T8q4gWvxEe6peI5z9Tk5RA" fontColor="16777215" fontName="Microsoft YaHei UI" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T8q4gmvxEe6peI5z9Tk5RA" y="-22" width="70" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_T8tUwGvxEe6peI5z9Tk5RA" type="3012" element="_T8n1PWvxEe6peI5z9Tk5RA">
+            <children xmi:type="notation:Node" xmi:id="_T8t70GvxEe6peI5z9Tk5RA" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_T8t70WvxEe6peI5z9Tk5RA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_T8ui42vxEe6peI5z9Tk5RA" type="3003" element="_T8ocQGvxEe6peI5z9Tk5RA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_T8ui5GvxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T8ui5WvxEe6peI5z9Tk5RA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_T8tUwWvxEe6peI5z9Tk5RA" fontColor="16777215" fontName="Microsoft YaHei UI" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T8tUwmvxEe6peI5z9Tk5RA" x="71" y="-22" width="70" height="30"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_CpBfQztFEe6-TYNP2QHTvw" type="5007"/>
           <children xmi:type="notation:Node" xmi:id="_CpBfRDtFEe6-TYNP2QHTvw" type="7004">
@@ -307,107 +322,74 @@
             <styles xmi:type="notation:FilteringStyle" xmi:id="_CpBfRjtFEe6-TYNP2QHTvw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_CpBfQTtFEe6-TYNP2QHTvw" fontName="Microsoft YaHei UI" fontHeight="12" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CpBfQjtFEe6-TYNP2QHTvw" x="1140" y="215" width="150" height="150"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CpBfQjtFEe6-TYNP2QHTvw" x="1290" y="220" width="150" height="150"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_MMmuUDtFEe6-TYNP2QHTvw" type="2003" element="_MMh10DtFEe6-TYNP2QHTvw">
-          <children xmi:type="notation:Node" xmi:id="_Nx5RIDtFEe6-TYNP2QHTvw" type="3012" element="_Nx0YoDtFEe6-TYNP2QHTvw">
-            <children xmi:type="notation:Node" xmi:id="_Nx54MDtFEe6-TYNP2QHTvw" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_Nx54MTtFEe6-TYNP2QHTvw" y="5"/>
+        <children xmi:type="notation:Node" xmi:id="_T8qRcGvxEe6peI5z9Tk5RA" type="2003" element="_T8mABmvxEe6peI5z9Tk5RA">
+          <children xmi:type="notation:Node" xmi:id="_T8ui5mvxEe6peI5z9Tk5RA" type="3012" element="_T8nOIWvxEe6peI5z9Tk5RA">
+            <children xmi:type="notation:Node" xmi:id="_T8ui6WvxEe6peI5z9Tk5RA" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_T8ui6mvxEe6peI5z9Tk5RA" y="5"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_Nx54MjtFEe6-TYNP2QHTvw" type="3003" element="_Nx0YoTtFEe6-TYNP2QHTvw">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_Nx54MztFEe6-TYNP2QHTvw" fontName="Microsoft YaHei UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Nx54NDtFEe6-TYNP2QHTvw"/>
+            <children xmi:type="notation:Node" xmi:id="_T8ui62vxEe6peI5z9Tk5RA" type="3003" element="_T8nOImvxEe6peI5z9Tk5RA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_T8ui7GvxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T8ui7WvxEe6peI5z9Tk5RA"/>
             </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_Nx5RITtFEe6-TYNP2QHTvw" fontColor="16777215" fontName="Microsoft YaHei UI" fontHeight="12"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Nx5RIjtFEe6-TYNP2QHTvw" x="140" y="25" width="70" height="30"/>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_T8ui52vxEe6peI5z9Tk5RA" fontColor="16777215" fontName="Microsoft YaHei UI" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T8ui6GvxEe6peI5z9Tk5RA" y="-22" width="70" height="30"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_OCt7YDtFEe6-TYNP2QHTvw" type="3012" element="_OCob0DtFEe6-TYNP2QHTvw">
-            <children xmi:type="notation:Node" xmi:id="_OCt7YztFEe6-TYNP2QHTvw" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_OCt7ZDtFEe6-TYNP2QHTvw" y="5"/>
+          <children xmi:type="notation:Node" xmi:id="_T8qRc2vxEe6peI5z9Tk5RA" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_T8qRdGvxEe6peI5z9Tk5RA" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_T8ui7mvxEe6peI5z9Tk5RA" type="3010" element="_T8nOJGvxEe6peI5z9Tk5RA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_T8ui72vxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_T8ui8GvxEe6peI5z9Tk5RA"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_OCuicDtFEe6-TYNP2QHTvw" type="3003" element="_OCpp8DtFEe6-TYNP2QHTvw">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_OCuicTtFEe6-TYNP2QHTvw" fontName="Microsoft YaHei UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OCuicjtFEe6-TYNP2QHTvw"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_OCt7YTtFEe6-TYNP2QHTvw" fontColor="16777215" fontName="Microsoft YaHei UI" fontHeight="12"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OCt7YjtFEe6-TYNP2QHTvw" x="140" y="65" width="70" height="30"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_T8qRdWvxEe6peI5z9Tk5RA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_T8qRdmvxEe6peI5z9Tk5RA"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_MMmuUztFEe6-TYNP2QHTvw" type="5007"/>
-          <children xmi:type="notation:Node" xmi:id="_MMmuVDtFEe6-TYNP2QHTvw" type="7004">
-            <children xmi:type="notation:Node" xmi:id="_MMnVYDtFEe6-TYNP2QHTvw" type="3010" element="_MMlgMztFEe6-TYNP2QHTvw">
-              <styles xmi:type="notation:FontStyle" xmi:id="_MMnVYTtFEe6-TYNP2QHTvw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_MMnVYjtFEe6-TYNP2QHTvw"/>
-            </children>
-            <styles xmi:type="notation:SortingStyle" xmi:id="_MMmuVTtFEe6-TYNP2QHTvw"/>
-            <styles xmi:type="notation:FilteringStyle" xmi:id="_MMmuVjtFEe6-TYNP2QHTvw"/>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_T8qRcWvxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI" fontHeight="12" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T8qRcmvxEe6peI5z9Tk5RA" x="170" y="240" width="150" height="150"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_XHLFv2vxEe6peI5z9Tk5RA" type="2001" element="_XHDw4GvxEe6peI5z9Tk5RA">
+          <children xmi:type="notation:Node" xmi:id="_XHLssGvxEe6peI5z9Tk5RA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_XHLssWvxEe6peI5z9Tk5RA" y="5"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_MMmuUTtFEe6-TYNP2QHTvw" fontName="Microsoft YaHei UI" fontHeight="12" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MMmuUjtFEe6-TYNP2QHTvw" x="160" y="200" width="150" height="150"/>
+          <children xmi:type="notation:Node" xmi:id="_XHLssmvxEe6peI5z9Tk5RA" type="3002" element="_XHDw4WvxEe6peI5z9Tk5RA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_XHLss2vxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XHLstGvxEe6peI5z9Tk5RA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_XHLFwGvxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XHLFwWvxEe6peI5z9Tk5RA" x="1115" y="279" width="30" height="30"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_PwA9EjdHEe6QWpIjeVSq7A"/>
-        <edges xmi:type="notation:Edge" xmi:id="_9vjO4DtEEe6-TYNP2QHTvw" type="4001" element="_9vb6IDtEEe6-TYNP2QHTvw" source="_5PpVEztEEe6-TYNP2QHTvw" target="_8aHtADtEEe6-TYNP2QHTvw">
-          <children xmi:type="notation:Node" xmi:id="_9vj18DtEEe6-TYNP2QHTvw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9vj18TtEEe6-TYNP2QHTvw" x="3" y="-10"/>
+        <edges xmi:type="notation:Edge" xmi:id="_envUImvxEe6peI5z9Tk5RA" type="4001" element="_enmxMGvxEe6peI5z9Tk5RA" source="_9OX0cTtEEe6-TYNP2QHTvw" target="_XHLFv2vxEe6peI5z9Tk5RA">
+          <children xmi:type="notation:Node" xmi:id="_env7IGvxEe6peI5z9Tk5RA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_env7IWvxEe6peI5z9Tk5RA" x="-1" y="-10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_9vlrIDtEEe6-TYNP2QHTvw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9vlrITtEEe6-TYNP2QHTvw" x="-3" y="8"/>
+          <children xmi:type="notation:Node" xmi:id="_env7ImvxEe6peI5z9Tk5RA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_env7I2vxEe6peI5z9Tk5RA" y="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_9vlrIjtEEe6-TYNP2QHTvw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9vlrIztEEe6-TYNP2QHTvw" x="-3" y="8"/>
+          <children xmi:type="notation:Node" xmi:id="_env7JGvxEe6peI5z9Tk5RA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_env7JWvxEe6peI5z9Tk5RA" x="-9"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_9vjO4TtEEe6-TYNP2QHTvw"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_9vjO4jtEEe6-TYNP2QHTvw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9vjO4ztEEe6-TYNP2QHTvw" points="[0, 0, -58, 29]$[58, -29, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9vmSMDtEEe6-TYNP2QHTvw" id="(1.0,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9vmSMTtEEe6-TYNP2QHTvw" id="(0.0,0.5)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_envUI2vxEe6peI5z9Tk5RA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_envUJGvxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_envUJWvxEe6peI5z9Tk5RA" points="[3, -1, -90, 46]$[93, -1, 0, 46]$[93, -32, 0, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_env7JmvxEe6peI5z9Tk5RA" id="(0.9571428571428572,0.5333333333333333)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_D3ig0DtFEe6-TYNP2QHTvw" type="4001" element="_D3gElDtFEe6-TYNP2QHTvw" source="_9OX0cTtEEe6-TYNP2QHTvw" target="_DSXXMDtFEe6-TYNP2QHTvw">
-          <children xmi:type="notation:Node" xmi:id="_D3ig1DtFEe6-TYNP2QHTvw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D3ig1TtFEe6-TYNP2QHTvw" x="16" y="-8"/>
+        <edges xmi:type="notation:Edge" xmi:id="_e6vIoWvxEe6peI5z9Tk5RA" type="4001" element="_e6nz1GvxEe6peI5z9Tk5RA" source="_XHLFv2vxEe6peI5z9Tk5RA" target="_8aHtADtEEe6-TYNP2QHTvw">
+          <children xmi:type="notation:Node" xmi:id="_e6vvoGvxEe6peI5z9Tk5RA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e6vvoWvxEe6peI5z9Tk5RA" y="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_D3ig1jtFEe6-TYNP2QHTvw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D3ig1ztFEe6-TYNP2QHTvw" x="-8" y="8"/>
+          <children xmi:type="notation:Node" xmi:id="_e6vvomvxEe6peI5z9Tk5RA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e6vvo2vxEe6peI5z9Tk5RA" x="-9" y="-1"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_D3ig2DtFEe6-TYNP2QHTvw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D3ig2TtFEe6-TYNP2QHTvw" x="-13" y="2"/>
+          <children xmi:type="notation:Node" xmi:id="_e6vvpGvxEe6peI5z9Tk5RA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e6vvpWvxEe6peI5z9Tk5RA" y="-10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_D3ig0TtFEe6-TYNP2QHTvw"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_D3ig0jtFEe6-TYNP2QHTvw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_D3ig0ztFEe6-TYNP2QHTvw" points="[10, -10, -55, 55]$[65, -65, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_D3ig2jtFEe6-TYNP2QHTvw" id="(0.8571428571428571,1.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_D3ig2ztFEe6-TYNP2QHTvw" id="(0.24285714285714285,0.0)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_OjtvoDtFEe6-TYNP2QHTvw" type="4001" element="_OjqsWDtFEe6-TYNP2QHTvw" source="_Nx5RIDtFEe6-TYNP2QHTvw" target="_4sCRsDtEEe6-TYNP2QHTvw">
-          <children xmi:type="notation:Node" xmi:id="_OjtvpDtFEe6-TYNP2QHTvw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OjtvpTtFEe6-TYNP2QHTvw" x="-30" y="-3"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_OjtvpjtFEe6-TYNP2QHTvw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OjtvpztFEe6-TYNP2QHTvw" x="14" y="-4"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_OjtvqDtFEe6-TYNP2QHTvw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OjtvqTtFEe6-TYNP2QHTvw" x="1" y="9"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_OjtvoTtFEe6-TYNP2QHTvw"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_OjtvojtFEe6-TYNP2QHTvw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OjtvoztFEe6-TYNP2QHTvw" points="[25, 12, -75, -38]$[100, 50, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OjtvqjtFEe6-TYNP2QHTvw" id="(0.6428571428571429,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OjtvqztFEe6-TYNP2QHTvw" id="(0.1,1.0)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_O3sbkDtFEe6-TYNP2QHTvw" type="4001" element="_O3pYTDtFEe6-TYNP2QHTvw" source="_OCt7YDtFEe6-TYNP2QHTvw" target="_50S6QDtEEe6-TYNP2QHTvw">
-          <children xmi:type="notation:Node" xmi:id="_O3sblDtFEe6-TYNP2QHTvw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O3sblTtFEe6-TYNP2QHTvw" x="-6" y="-9"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_O3sbljtFEe6-TYNP2QHTvw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O3sblztFEe6-TYNP2QHTvw" x="49" y="-2"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_O3sbmDtFEe6-TYNP2QHTvw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O3sbmTtFEe6-TYNP2QHTvw" x="4" y="8"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_O3sbkTtFEe6-TYNP2QHTvw"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_O3sbkjtFEe6-TYNP2QHTvw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O3sbkztFEe6-TYNP2QHTvw" points="[25, 12, -110, -53]$[135, 65, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O3tCoDtFEe6-TYNP2QHTvw" id="(0.6428571428571429,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O3tCoTtFEe6-TYNP2QHTvw" id="(0.6,1.0)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_e6vIomvxEe6peI5z9Tk5RA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_e6vIo2vxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_e6vIpGvxEe6peI5z9Tk5RA" points="[-2, -6, 90, 44]$[-2, -50, 90, 0]$[-92, -50, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_e6vvpmvxEe6peI5z9Tk5RA" id="(0.5666666666666667,0.2)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_e6vvp2vxEe6peI5z9Tk5RA" id="(1.0,0.3333333333333333)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
@@ -417,7 +399,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_y4KOkDtEEe6-TYNP2QHTvw" name="Component" width="15" height="15">
       <target xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.0"/>
       <semanticElements xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.0"/>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_4r-nUDtEEe6-TYNP2QHTvw" name="I: 0.0" incomingEdges="_OjqsWDtFEe6-TYNP2QHTvw" width="7" height="3" resizeKind="NSEW">
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_4r-nUDtEEe6-TYNP2QHTvw" name="I: 0.0" width="7" height="3" resizeKind="NSEW">
         <target xmi:type="component_:Input" href="model/My.digital_twin#//@componentPackages.0/@components.0/@inputs.0"/>
         <semanticElements xmi:type="component_:Input" href="model/My.digital_twin#//@componentPackages.0/@components.0/@inputs.0"/>
         <ownedStyle xmi:type="diagram:Square" uid="_4r_OYDtEEe6-TYNP2QHTvw" labelSize="12" showIcon="false" labelColor="255,255,255" labelAlignment="LEFT" labelPosition="node" width="7" height="3" color="114,159,207">
@@ -425,7 +407,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Input']"/>
       </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_5PlqsDtEEe6-TYNP2QHTvw" name="O: 0.0" outgoingEdges="_9vb6IDtEEe6-TYNP2QHTvw" width="7" height="3" resizeKind="NSEW">
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_5PlqsDtEEe6-TYNP2QHTvw" name="O: 0.0" width="7" height="3" resizeKind="NSEW">
         <target xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.0/@outputs.0"/>
         <semanticElements xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.0/@outputs.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -436,7 +418,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Output']"/>
       </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_50P28DtEEe6-TYNP2QHTvw" name="I: 0.0" incomingEdges="_O3pYTDtFEe6-TYNP2QHTvw" width="7" height="3" resizeKind="NSEW">
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_50P28DtEEe6-TYNP2QHTvw" name="I: 0.0" width="7" height="3" resizeKind="NSEW">
         <target xmi:type="component_:Input" href="model/My.digital_twin#//@componentPackages.0/@components.0/@inputs.1"/>
         <semanticElements xmi:type="component_:Input" href="model/My.digital_twin#//@componentPackages.0/@components.0/@inputs.1"/>
         <ownedStyle xmi:type="diagram:Square" uid="_50P28TtEEe6-TYNP2QHTvw" labelSize="12" showIcon="false" labelColor="255,255,255" labelAlignment="LEFT" labelPosition="node" width="7" height="3" color="114,159,207">
@@ -464,7 +446,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_8C2cgDtEEe6-TYNP2QHTvw" name="Component" width="15" height="15">
       <target xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.1"/>
       <semanticElements xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.1"/>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_8aEpsDtEEe6-TYNP2QHTvw" name="I: 0.0" incomingEdges="_9vb6IDtEEe6-TYNP2QHTvw" width="7" height="3" resizeKind="NSEW">
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_8aEpsDtEEe6-TYNP2QHTvw" name="I: 0.0" incomingEdges="_e6nz1GvxEe6peI5z9Tk5RA" width="7" height="3" resizeKind="NSEW">
         <target xmi:type="component_:Input" href="model/My.digital_twin#//@componentPackages.0/@components.1/@inputs.0"/>
         <semanticElements xmi:type="component_:Input" href="model/My.digital_twin#//@componentPackages.0/@components.1/@inputs.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -475,9 +457,12 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Input']"/>
       </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_9OUxIDtEEe6-TYNP2QHTvw" name="O: 0.0" outgoingEdges="_D3gElDtFEe6-TYNP2QHTvw" width="7" height="3" resizeKind="NSEW">
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_9OUxIDtEEe6-TYNP2QHTvw" name="O: 0.0" outgoingEdges="_enmxMGvxEe6peI5z9Tk5RA" width="7" height="3" resizeKind="NSEW">
         <target xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.1/@outputs.0"/>
         <semanticElements xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.1/@outputs.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:Square" uid="_9OUxITtEEe6-TYNP2QHTvw" labelSize="12" showIcon="false" labelColor="255,255,255" labelAlignment="LEFT" labelPosition="node" width="7" height="3" color="138,226,52">
           <description xmi:type="style:SquareDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Output']/@style"/>
         </ownedStyle>
@@ -500,25 +485,24 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@subNodeMappings[name='Description']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_9vb6IDtEEe6-TYNP2QHTvw" sourceNode="_5PlqsDtEEe6-TYNP2QHTvw" targetNode="_8aEpsDtEEe6-TYNP2QHTvw">
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_9vchMDtEEe6-TYNP2QHTvw" size="2" strokeColor="0,0,0">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_9vchMTtEEe6-TYNP2QHTvw" labelSize="12"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
-      <target xmi:type="component_:ComponentRelationship" href="model/My.digital_twin#//@componentPackages.0/@components.2"/>
-      <semanticElements xmi:type="component_:ComponentRelationship" href="model/My.digital_twin#//@componentPackages.0/@components.2"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Co8mwDtFEe6-TYNP2QHTvw" name="Scope" width="15" height="15">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Co8mwDtFEe6-TYNP2QHTvw" name="Signal Generator" width="15" height="15">
       <target xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.3"/>
       <semanticElements xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.3"/>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_DSTFwDtFEe6-TYNP2QHTvw" name="I: 0.0" incomingEdges="_D3gElDtFEe6-TYNP2QHTvw" width="7" height="3" resizeKind="NSEW">
-        <target xmi:type="component_:Input" href="model/My.digital_twin#//@componentPackages.0/@components.3/@inputs.0"/>
-        <semanticElements xmi:type="component_:Input" href="model/My.digital_twin#//@componentPackages.0/@components.3/@inputs.0"/>
-        <ownedStyle xmi:type="diagram:Square" uid="_DSTFwTtFEe6-TYNP2QHTvw" labelSize="12" showIcon="false" labelColor="255,255,255" labelAlignment="LEFT" labelPosition="node" width="7" height="3" color="114,159,207">
-          <description xmi:type="style:SquareDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Input']/@style"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_T8n1OmvxEe6peI5z9Tk5RA" name="O: 0.0" width="7" height="3" resizeKind="NSEW">
+        <target xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.3/@outputs.0"/>
+        <semanticElements xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.3/@outputs.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_T8n1O2vxEe6peI5z9Tk5RA" labelSize="12" showIcon="false" labelColor="255,255,255" labelAlignment="LEFT" labelPosition="node" width="7" height="3" color="138,226,52">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Output']/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Input']"/>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Output']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_T8n1PWvxEe6peI5z9Tk5RA" name="O: 0.0" width="7" height="3" resizeKind="NSEW">
+        <target xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.3/@outputs.1"/>
+        <semanticElements xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.3/@outputs.1"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_T8ocQGvxEe6peI5z9Tk5RA" labelSize="12" showIcon="false" labelColor="255,255,255" labelAlignment="LEFT" labelPosition="node" width="7" height="3" color="138,226,52">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Output']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Output']"/>
       </ownedBorderedNodes>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
@@ -537,68 +521,62 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@subNodeMappings[name='Description']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_D3gElDtFEe6-TYNP2QHTvw" sourceNode="_9OUxIDtEEe6-TYNP2QHTvw" targetNode="_DSTFwDtFEe6-TYNP2QHTvw">
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_D3gElTtFEe6-TYNP2QHTvw" size="2" strokeColor="0,0,0">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_D3gEljtFEe6-TYNP2QHTvw" labelSize="12"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
-      <target xmi:type="component_:ComponentRelationship" href="model/My.digital_twin#//@componentPackages.0/@components.4"/>
-      <semanticElements xmi:type="component_:ComponentRelationship" href="model/My.digital_twin#//@componentPackages.0/@components.4"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_MMh10DtFEe6-TYNP2QHTvw" name="Signal Generator" width="15" height="15">
-      <target xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.5"/>
-      <semanticElements xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.5"/>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_Nx0YoDtFEe6-TYNP2QHTvw" name="O: 0.0" outgoingEdges="_OjqsWDtFEe6-TYNP2QHTvw" width="7" height="3" resizeKind="NSEW">
-        <target xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.5/@outputs.0"/>
-        <semanticElements xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.5/@outputs.0"/>
-        <ownedStyle xmi:type="diagram:Square" uid="_Nx0YoTtFEe6-TYNP2QHTvw" labelSize="12" showIcon="false" labelColor="255,255,255" labelAlignment="LEFT" labelPosition="node" width="7" height="3" color="138,226,52">
-          <description xmi:type="style:SquareDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Output']/@style"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_T8mABmvxEe6peI5z9Tk5RA" name="Scope" width="15" height="15">
+      <target xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.2"/>
+      <semanticElements xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.2"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_T8nOIWvxEe6peI5z9Tk5RA" name="I: 0.0" width="7" height="3" resizeKind="NSEW">
+        <target xmi:type="component_:Input" href="model/My.digital_twin#//@componentPackages.0/@components.2/@inputs.0"/>
+        <semanticElements xmi:type="component_:Input" href="model/My.digital_twin#//@componentPackages.0/@components.2/@inputs.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_T8nOImvxEe6peI5z9Tk5RA" labelSize="12" showIcon="false" labelColor="255,255,255" labelAlignment="LEFT" labelPosition="node" width="7" height="3" color="114,159,207">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Input']/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Output']"/>
-      </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_OCob0DtFEe6-TYNP2QHTvw" name="O: 0.0" outgoingEdges="_O3pYTDtFEe6-TYNP2QHTvw" width="7" height="3" resizeKind="NSEW">
-        <target xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.5/@outputs.1"/>
-        <semanticElements xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.5/@outputs.1"/>
-        <ownedStyle xmi:type="diagram:Square" uid="_OCpp8DtFEe6-TYNP2QHTvw" labelSize="12" showIcon="false" labelColor="255,255,255" labelAlignment="LEFT" labelPosition="node" width="7" height="3" color="138,226,52">
-          <description xmi:type="style:SquareDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Output']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Output']"/>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Input']"/>
       </ownedBorderedNodes>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_MMh10TtFEe6-TYNP2QHTvw" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_T8mAB2vxEe6peI5z9Tk5RA" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
         <labelFormat>bold</labelFormat>
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MMlgMztFEe6-TYNP2QHTvw" name="Component Description">
-        <target xmi:type="base_:Description" href="model/My.digital_twin#//@componentPackages.0/@components.5/@description"/>
-        <semanticElements xmi:type="base_:Description" href="model/My.digital_twin#//@componentPackages.0/@components.5/@description"/>
-        <ownedStyle xmi:type="diagram:Square" uid="_MMlgNDtFEe6-TYNP2QHTvw" labelSize="12" showIcon="false" labelPosition="node" color="255,255,255">
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_T8nOJGvxEe6peI5z9Tk5RA" name="Component Description">
+        <target xmi:type="base_:Description" href="model/My.digital_twin#//@componentPackages.0/@components.2/@description"/>
+        <semanticElements xmi:type="base_:Description" href="model/My.digital_twin#//@componentPackages.0/@components.2/@description"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_T8nOJWvxEe6peI5z9Tk5RA" labelSize="12" showIcon="false" labelPosition="node" color="255,255,255">
           <description xmi:type="style:SquareDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@subNodeMappings[name='Description']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@subNodeMappings[name='Description']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_OjqsWDtFEe6-TYNP2QHTvw" sourceNode="_Nx0YoDtFEe6-TYNP2QHTvw" targetNode="_4r-nUDtEEe6-TYNP2QHTvw">
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_OjrTYDtFEe6-TYNP2QHTvw" size="2" strokeColor="0,0,0">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_OjrTYTtFEe6-TYNP2QHTvw" labelSize="12"/>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_XHDw4GvxEe6peI5z9Tk5RA" name="F" outgoingEdges="_e6nz1GvxEe6peI5z9Tk5RA" incomingEdges="_enmxMGvxEe6peI5z9Tk5RA" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="component_:Fork" href="model/My.digital_twin#//@componentPackages.0/@components.4"/>
+      <semanticElements xmi:type="component_:Fork" href="model/My.digital_twin#//@componentPackages.0/@components.4"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Dot" uid="_XHDw4WvxEe6peI5z9Tk5RA" labelSize="12" showIcon="false" labelPosition="node" backgroundColor="255,255,255">
+        <description xmi:type="style:DotDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@nodeMappings[name='Fork']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
-      <target xmi:type="component_:ComponentRelationship" href="model/My.digital_twin#//@componentPackages.0/@components.6"/>
-      <semanticElements xmi:type="component_:ComponentRelationship" href="model/My.digital_twin#//@componentPackages.0/@components.6"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@nodeMappings[name='Fork']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_O3pYTDtFEe6-TYNP2QHTvw" sourceNode="_OCob0DtFEe6-TYNP2QHTvw" targetNode="_50P28DtEEe6-TYNP2QHTvw">
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_O3pYTTtFEe6-TYNP2QHTvw" size="2" strokeColor="0,0,0">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_O3pYTjtFEe6-TYNP2QHTvw" labelSize="12"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_enmxMGvxEe6peI5z9Tk5RA" sourceNode="_9OUxIDtEEe6-TYNP2QHTvw" targetNode="_XHDw4GvxEe6peI5z9Tk5RA">
+      <target xmi:type="component_:DirectedRelationship" href="model/My.digital_twin#//@componentPackages.0/@components.5"/>
+      <semanticElements xmi:type="component_:DirectedRelationship" href="model/My.digital_twin#//@componentPackages.0/@components.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ennYQGvxEe6peI5z9Tk5RA" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@edgeMappings[name='DirectedEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ennYQWvxEe6peI5z9Tk5RA" labelSize="12"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
-      <target xmi:type="component_:ComponentRelationship" href="model/My.digital_twin#//@componentPackages.0/@components.7"/>
-      <semanticElements xmi:type="component_:ComponentRelationship" href="model/My.digital_twin#//@componentPackages.0/@components.7"/>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@edgeMappings[name='DirectedEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_e6nz1GvxEe6peI5z9Tk5RA" sourceNode="_XHDw4GvxEe6peI5z9Tk5RA" targetNode="_8aEpsDtEEe6-TYNP2QHTvw">
+      <target xmi:type="component_:DirectedRelationship" href="model/My.digital_twin#//@componentPackages.0/@components.6"/>
+      <semanticElements xmi:type="component_:DirectedRelationship" href="model/My.digital_twin#//@componentPackages.0/@components.6"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_e6nz1WvxEe6peI5z9Tk5RA" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@edgeMappings[name='DirectedEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_e6nz1mvxEe6peI5z9Tk5RA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@edgeMappings[name='DirectedEdge']"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_Pv_H4TdHEe6QWpIjeVSq7A"/>
@@ -34393,7 +34371,7 @@
             <styles xmi:type="notation:FilteringStyle" xmi:id="_Mx39cms7Ee62P5MY-elCvg"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_MxzsAWs7Ee62P5MY-elCvg" fontName="Microsoft YaHei UI" fontHeight="12" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MxzsAms7Ee62P5MY-elCvg"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MxzsAms7Ee62P5MY-elCvg" x="155" y="150"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_MxdtwWs7Ee62P5MY-elCvg"/>
       </data>
@@ -34404,6 +34382,9 @@
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_MxkbcGs7Ee62P5MY-elCvg" name="lab3" width="15" height="15">
       <target xmi:type="component_:Component" href="model/lab3.model#//@componentPackages.0/@components.0"/>
       <semanticElements xmi:type="component_:Component" href="model/lab3.model#//@componentPackages.0/@components.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_MxlpkGs7Ee62P5MY-elCvg" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
         <labelFormat>bold</labelFormat>
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@style"/>
@@ -34469,5 +34450,187 @@
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_G_YDQWtPEe6pZq9EhA_Zcg"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer"/>
     <target xmi:type="component_:ComponentPackage" href="model/lab2.model#//@componentPackages.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_mFcbwGvxEe6peI5z9Tk5RA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_mFkXkGvxEe6peI5z9Tk5RA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_mFkXkWvxEe6peI5z9Tk5RA" type="Sirius" element="_mFcbwGvxEe6peI5z9Tk5RA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_mFllsmvxEe6peI5z9Tk5RA" type="2001" element="_mFk-oGvxEe6peI5z9Tk5RA">
+          <children xmi:type="notation:Node" xmi:id="_mFlltWvxEe6peI5z9Tk5RA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_mFlltmvxEe6peI5z9Tk5RA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mFmMwmvxEe6peI5z9Tk5RA" type="3016" element="_mFk-oWvxEe6peI5z9Tk5RA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_mFmMw2vxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mFmMxGvxEe6peI5z9Tk5RA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mFlls2vxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mFlltGvxEe6peI5z9Tk5RA" x="30" y="170" width="80" height="80"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mFllt2vxEe6peI5z9Tk5RA" type="2001" element="_mFk-o2vxEe6peI5z9Tk5RA">
+          <children xmi:type="notation:Node" xmi:id="_mFmMwGvxEe6peI5z9Tk5RA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_mFmMwWvxEe6peI5z9Tk5RA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mFmMxWvxEe6peI5z9Tk5RA" type="3016" element="_mFk-pGvxEe6peI5z9Tk5RA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_mFmMxmvxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mFmMx2vxEe6peI5z9Tk5RA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mFlluGvxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mFlluWvxEe6peI5z9Tk5RA" x="495" y="155" width="80" height="80"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_nPChEGvxEe6peI5z9Tk5RA" type="2003" element="_nO7MUGvxEe6peI5z9Tk5RA">
+          <children xmi:type="notation:Node" xmi:id="_oNOnoGvxEe6peI5z9Tk5RA" type="3012" element="_oNGr0GvxEe6peI5z9Tk5RA">
+            <children xmi:type="notation:Node" xmi:id="_oNOno2vxEe6peI5z9Tk5RA" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_oNOnpGvxEe6peI5z9Tk5RA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_oNOnpWvxEe6peI5z9Tk5RA" type="3003" element="_oNGr0WvxEe6peI5z9Tk5RA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_oNOnpmvxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oNOnp2vxEe6peI5z9Tk5RA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_oNOnoWvxEe6peI5z9Tk5RA" fontColor="16777215" fontName="Microsoft YaHei UI" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oNOnomvxEe6peI5z9Tk5RA" x="-62" y="40" width="70" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_omajtGvxEe6peI5z9Tk5RA" type="3012" element="_omSn4GvxEe6peI5z9Tk5RA">
+            <children xmi:type="notation:Node" xmi:id="_omajt2vxEe6peI5z9Tk5RA" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_omajuGvxEe6peI5z9Tk5RA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_omajuWvxEe6peI5z9Tk5RA" type="3003" element="_omSn4WvxEe6peI5z9Tk5RA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_omajumvxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_omaju2vxEe6peI5z9Tk5RA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_omajtWvxEe6peI5z9Tk5RA" fontColor="16777215" fontName="Microsoft YaHei UI" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_omajtmvxEe6peI5z9Tk5RA" x="140" y="40" width="70" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_nPDIIGvxEe6peI5z9Tk5RA" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_nPDIIWvxEe6peI5z9Tk5RA" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_nPDIJGvxEe6peI5z9Tk5RA" type="3010" element="_nPB6DmvxEe6peI5z9Tk5RA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_nPDIJWvxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_nPDIJmvxEe6peI5z9Tk5RA"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_nPDIImvxEe6peI5z9Tk5RA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_nPDII2vxEe6peI5z9Tk5RA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_nPChEWvxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI" fontHeight="12" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nPChEmvxEe6peI5z9Tk5RA" x="235" y="150" width="150" height="150"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_mFkXkmvxEe6peI5z9Tk5RA"/>
+        <edges xmi:type="notation:Edge" xmi:id="_pJVqkGvxEe6peI5z9Tk5RA" type="4001" element="_pJOV0GvxEe6peI5z9Tk5RA" source="_mFllsmvxEe6peI5z9Tk5RA" target="_oNOnoGvxEe6peI5z9Tk5RA">
+          <children xmi:type="notation:Node" xmi:id="_pJVqlGvxEe6peI5z9Tk5RA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pJVqlWvxEe6peI5z9Tk5RA" x="-22" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pJVqlmvxEe6peI5z9Tk5RA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pJVql2vxEe6peI5z9Tk5RA" x="23" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pJVqmGvxEe6peI5z9Tk5RA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pJVqmWvxEe6peI5z9Tk5RA" x="-7" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_pJVqkWvxEe6peI5z9Tk5RA" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_pJVqkmvxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pJVqk2vxEe6peI5z9Tk5RA" points="[50, -45, -85, 15]$[113, -45, -22, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pJVqmmvxEe6peI5z9Tk5RA" id="(0.375,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pJVqm2vxEe6peI5z9Tk5RA" id="(0.3142857142857143,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_pgsasWvxEe6peI5z9Tk5RA" type="4001" element="_pgj3xGvxEe6peI5z9Tk5RA" source="_omajtGvxEe6peI5z9Tk5RA" target="_mFllt2vxEe6peI5z9Tk5RA">
+          <children xmi:type="notation:Node" xmi:id="_pgsatWvxEe6peI5z9Tk5RA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pgsatmvxEe6peI5z9Tk5RA" x="7" y="-6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pgsat2vxEe6peI5z9Tk5RA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pgsauGvxEe6peI5z9Tk5RA" x="14" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pgsauWvxEe6peI5z9Tk5RA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pgsaumvxEe6peI5z9Tk5RA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_pgsasmvxEe6peI5z9Tk5RA" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_pgsas2vxEe6peI5z9Tk5RA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pgsatGvxEe6peI5z9Tk5RA" points="[10, 4, -85, -41]$[60, 4, -35, -41]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pgsau2vxEe6peI5z9Tk5RA" id="(0.8571428571428571,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pgsavGvxEe6peI5z9Tk5RA" id="(0.4375,1.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_mFllsGvxEe6peI5z9Tk5RA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_mFllsWvxEe6peI5z9Tk5RA"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_mFk-oGvxEe6peI5z9Tk5RA" name="I: 0.0" outgoingEdges="_pJOV0GvxEe6peI5z9Tk5RA" width="8" height="8" resizeKind="NSEW">
+      <target xmi:type="component_:Input" href="model/My.digital_twin#//@componentPackages.0/@components.1/@inputs.0"/>
+      <semanticElements xmi:type="component_:Input" href="model/My.digital_twin#//@componentPackages.0/@components.1/@inputs.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_mFk-oWvxEe6peI5z9Tk5RA" labelSize="12" showIcon="false" labelPosition="node" color="114,159,207">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@nodeMappings[name='InputConn']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@nodeMappings[name='InputConn']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_mFk-o2vxEe6peI5z9Tk5RA" name="O: 0.0" incomingEdges="_pgj3xGvxEe6peI5z9Tk5RA" width="8" height="8" resizeKind="NSEW">
+      <target xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.1/@outputs.0"/>
+      <semanticElements xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.1/@outputs.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_mFk-pGvxEe6peI5z9Tk5RA" labelSize="12" showIcon="false" labelPosition="node" color="138,226,52">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@nodeMappings[name='OutputConn']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@nodeMappings[name='OutputConn']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_nO7MUGvxEe6peI5z9Tk5RA" name="Component" width="15" height="15">
+      <target xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.0"/>
+      <semanticElements xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.0"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oNGr0GvxEe6peI5z9Tk5RA" name="I: 0.14714541185545948" incomingEdges="_pJOV0GvxEe6peI5z9Tk5RA" width="7" height="3" resizeKind="NSEW">
+        <target xmi:type="component_:Input" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.0/@inputs.0"/>
+        <semanticElements xmi:type="component_:Input" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.0/@inputs.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_oNGr0WvxEe6peI5z9Tk5RA" labelSize="12" showIcon="false" labelColor="255,255,255" labelAlignment="LEFT" labelPosition="node" width="7" height="3" color="114,159,207">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Input']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Input']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_omSn4GvxEe6peI5z9Tk5RA" name="O: 0.10307557446538629" outgoingEdges="_pgj3xGvxEe6peI5z9Tk5RA" width="7" height="3" resizeKind="NSEW">
+        <target xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.0/@outputs.0"/>
+        <semanticElements xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.0/@outputs.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_omSn4WvxEe6peI5z9Tk5RA" labelSize="12" showIcon="false" labelColor="255,255,255" labelAlignment="LEFT" labelPosition="node" width="7" height="3" color="138,226,52">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Output']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Output']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_nO7MUWvxEe6peI5z9Tk5RA" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@containerMappings[name='Component']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@containerMappings[name='Component']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_nPB6DmvxEe6peI5z9Tk5RA" name="Component Description">
+        <target xmi:type="base_:Description" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.0/@description"/>
+        <semanticElements xmi:type="base_:Description" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.0/@description"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_nPB6D2vxEe6peI5z9Tk5RA" labelSize="12" showIcon="false" labelPosition="node" color="255,255,255">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@containerMappings[name='Component']/@subNodeMappings[name='Description']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@containerMappings[name='Component']/@subNodeMappings[name='Description']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_pJOV0GvxEe6peI5z9Tk5RA" sourceNode="_mFk-oGvxEe6peI5z9Tk5RA" targetNode="_oNGr0GvxEe6peI5z9Tk5RA">
+      <target xmi:type="component_:DirectedRelationship" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.1"/>
+      <semanticElements xmi:type="component_:DirectedRelationship" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_pJOV0WvxEe6peI5z9Tk5RA" targetArrow="InputFillClosedArrow" size="2" routingStyle="manhattan" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@edgeMappings[name='DirectedEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_pJOV0mvxEe6peI5z9Tk5RA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@edgeMappings[name='DirectedEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_pgj3xGvxEe6peI5z9Tk5RA" sourceNode="_omSn4GvxEe6peI5z9Tk5RA" targetNode="_mFk-o2vxEe6peI5z9Tk5RA">
+      <target xmi:type="component_:DirectedRelationship" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.2"/>
+      <semanticElements xmi:type="component_:DirectedRelationship" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_pgj3xWvxEe6peI5z9Tk5RA" targetArrow="InputFillClosedArrow" size="2" routingStyle="manhattan" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@edgeMappings[name='DirectedEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_pgj3xmvxEe6peI5z9Tk5RA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@edgeMappings[name='DirectedEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_mFdC0GvxEe6peI5z9Tk5RA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer"/>
+    <target xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.1"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>
