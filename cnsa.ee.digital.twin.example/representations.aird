@@ -54,7 +54,7 @@
         <description xmi:type="description_2:EditionTableDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='Terminology']"/>
         <target xmi:type="terminology_:TerminologyPackage" href="model/lab3.model#//@terminologyPackages.0"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_3e9xsEKDEe63FbnPIY6S7A" name="new ComponentDiagram" repPath="#_3evIMEKDEe63FbnPIY6S7A" changeId="1697362956748">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_3e9xsEKDEe63FbnPIY6S7A" name="new ComponentDiagram" repPath="#_3evIMEKDEe63FbnPIY6S7A" changeId="1697436479216">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']"/>
         <target xmi:type="component_:Component" href="model/lab3.model#//@componentPackages.0/@components.0"/>
       </ownedRepresentationDescriptors>
@@ -117,6 +117,10 @@
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_MxQSYGs7Ee62P5MY-elCvg" name="new ComponentPackageDiagram" repPath="#_MxEFIGs7Ee62P5MY-elCvg" changeId="1697361251195">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']"/>
         <target xmi:type="component_:ComponentPackage" href="model/lab3.model#//@componentPackages.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_G_ZRYGtPEe6pZq9EhA_Zcg" name="new ComponentPackageDiagram" repPath="#_G_YDQGtPEe6pZq9EhA_Zcg" changeId="1697369802757">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']"/>
+        <target xmi:type="component_:ComponentPackage" href="model/lab2.model#//@componentPackages.0"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
@@ -34418,5 +34422,52 @@
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_MxJksGs7Ee62P5MY-elCvg"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer"/>
     <target xmi:type="component_:ComponentPackage" href="model/lab3.model#//@componentPackages.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_G_YDQGtPEe6pZq9EhA_Zcg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_G_eJ4GtPEe6pZq9EhA_Zcg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_G_eJ4WtPEe6pZq9EhA_Zcg" type="Sirius" element="_G_YDQGtPEe6pZq9EhA_Zcg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_G_hNMGtPEe6pZq9EhA_Zcg" type="2003" element="_G_fYAGtPEe6pZq9EhA_Zcg">
+          <children xmi:type="notation:Node" xmi:id="_G_ibUGtPEe6pZq9EhA_Zcg" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_G_ibUWtPEe6pZq9EhA_Zcg" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_G_jCYGtPEe6pZq9EhA_Zcg" type="3010" element="_G_f_EWtPEe6pZq9EhA_Zcg">
+              <styles xmi:type="notation:FontStyle" xmi:id="_G_jCYWtPEe6pZq9EhA_Zcg" fontName="Microsoft YaHei UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_G_jCYmtPEe6pZq9EhA_Zcg"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_G_ibUmtPEe6pZq9EhA_Zcg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_G_ibU2tPEe6pZq9EhA_Zcg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_G_hNMWtPEe6pZq9EhA_Zcg" fontName="Microsoft YaHei UI" fontHeight="12" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G_hNMmtPEe6pZq9EhA_Zcg" x="665" y="250"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_G_eJ4mtPEe6pZq9EhA_Zcg"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_G_gmIGtPEe6pZq9EhA_Zcg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_G_gmIWtPEe6pZq9EhA_Zcg"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_G_fYAGtPEe6pZq9EhA_Zcg" name="lab2" width="15" height="15">
+      <target xmi:type="component_:Component" href="model/lab2.model#//@componentPackages.0/@components.0"/>
+      <semanticElements xmi:type="component_:Component" href="model/lab2.model#//@componentPackages.0/@components.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_G_fYAWtPEe6pZq9EhA_Zcg" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_G_f_EWtPEe6pZq9EhA_Zcg">
+        <target xmi:type="base_:Description" href="model/lab2.model#//@componentPackages.0/@components.0/@description"/>
+        <semanticElements xmi:type="base_:Description" href="model/lab2.model#//@componentPackages.0/@components.0/@description"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_G_f_EmtPEe6pZq9EhA_Zcg" labelSize="12" showIcon="false" labelPosition="node" color="255,255,255">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@subNodeMappings[name='Description']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer/@containerMappings[name='Component']/@subNodeMappings[name='Description']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_G_YDQWtPEe6pZq9EhA_Zcg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']/@defaultLayer"/>
+    <target xmi:type="component_:ComponentPackage" href="model/lab2.model#//@componentPackages.0"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

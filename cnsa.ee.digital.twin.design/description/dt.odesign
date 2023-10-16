@@ -1112,7 +1112,7 @@
           </style>
         </nodeMappings>
         <nodeMappings name="Junction" semanticCandidatesExpression="aql:self.sub_components->select(s|s.oclIsTypeOf(component::Switch))" domainClass="component::Switch">
-          <style xsi:type="style:DotDescription" labelSize="12" showIcon="false" labelExpression="F" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:DotDescription" labelSize="12" showIcon="false" labelExpression="J" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -1419,10 +1419,10 @@
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="component::RPort" referenceName="lports">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="component::LPort" referenceName="lports">
                   <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name" variableName="name">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="LP"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="manual LP"/>
                     </subModelOperations>
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::Description" referenceName="description" variableName="description">
                       <subModelOperations xsi:type="tool_1:ChangeContext">
@@ -1481,7 +1481,7 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="component::RPort" referenceName="rports">
                   <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name" variableName="name">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="RP"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="manual RP"/>
                     </subModelOperations>
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::Description" referenceName="description" variableName="description">
                       <subModelOperations xsi:type="tool_1:ChangeContext">
@@ -1540,7 +1540,7 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="component::Fork" referenceName="sub_components">
                   <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name" variableName="name">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="F"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="manual F"/>
                     </subModelOperations>
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::Description" referenceName="description" variableName="description">
                       <subModelOperations xsi:type="tool_1:ChangeContext">
@@ -1599,7 +1599,7 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="component::Switch" referenceName="sub_components">
                   <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name" variableName="name">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="J"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="manual J"/>
                     </subModelOperations>
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::Description" referenceName="description" variableName="description">
                       <subModelOperations xsi:type="tool_1:ChangeContext">
@@ -1619,7 +1619,9 @@
                             <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::MultiLangString" referenceName="content" variableName="mls">
                               <subModelOperations xsi:type="tool_1:ChangeContext">
                                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="value" variableName="ls">
-                                  <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Query"/>
+                                  <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Query">
+                                    <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Query"/>
+                                  </subModelOperations>
                                 </subModelOperations>
                               </subModelOperations>
                             </subModelOperations>
