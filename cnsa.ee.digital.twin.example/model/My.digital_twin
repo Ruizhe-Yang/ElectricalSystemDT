@@ -226,7 +226,7 @@
               </content>
             </implementationConstraint>
           </externalReference>
-          <reading value="0.14714541185545948"/>
+          <reading value="0.5226695677985186"/>
         </inputs>
         <outputs>
           <name content="O"/>
@@ -245,7 +245,7 @@
               </content>
             </implementationConstraint>
           </externalReference>
-          <reading value="0.10307557446538629"/>
+          <reading value="0.5762762195791115"/>
         </outputs>
       </sub_components>
       <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.1/@inputs.0" target="//@componentPackages.0/@components.1/@sub_components.0/@inputs.0"/>

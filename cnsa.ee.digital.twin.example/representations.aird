@@ -122,7 +122,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentPackageDiagram']"/>
         <target xmi:type="component_:ComponentPackage" href="model/lab2.model#//@componentPackages.0"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_mFdC0WvxEe6peI5z9Tk5RA" name="ComponentDiagram" repPath="#_mFcbwGvxEe6peI5z9Tk5RA" changeId="1697459133321">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_mFdC0WvxEe6peI5z9Tk5RA" name="ComponentDiagram" repPath="#_mFcbwGvxEe6peI5z9Tk5RA" changeId="1697531108637">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']"/>
         <target xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.1"/>
       </ownedRepresentationDescriptors>
@@ -34574,7 +34574,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_nO7MUGvxEe6peI5z9Tk5RA" name="Component" width="15" height="15">
       <target xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.0"/>
       <semanticElements xmi:type="component_:Component" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.0"/>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oNGr0GvxEe6peI5z9Tk5RA" name="I: 0.14714541185545948" incomingEdges="_pJOV0GvxEe6peI5z9Tk5RA" width="7" height="3" resizeKind="NSEW">
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oNGr0GvxEe6peI5z9Tk5RA" name="I: 0.5226695677985186" incomingEdges="_pJOV0GvxEe6peI5z9Tk5RA" width="7" height="3" resizeKind="NSEW">
         <target xmi:type="component_:Input" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.0/@inputs.0"/>
         <semanticElements xmi:type="component_:Input" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.0/@inputs.0"/>
         <ownedStyle xmi:type="diagram:Square" uid="_oNGr0WvxEe6peI5z9Tk5RA" labelSize="12" showIcon="false" labelColor="255,255,255" labelAlignment="LEFT" labelPosition="node" width="7" height="3" color="114,159,207">
@@ -34582,7 +34582,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Input']"/>
       </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_omSn4GvxEe6peI5z9Tk5RA" name="O: 0.10307557446538629" outgoingEdges="_pgj3xGvxEe6peI5z9Tk5RA" width="7" height="3" resizeKind="NSEW">
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_omSn4GvxEe6peI5z9Tk5RA" name="O: 0.5762762195791115" outgoingEdges="_pgj3xGvxEe6peI5z9Tk5RA" width="7" height="3" resizeKind="NSEW">
         <target xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.0/@outputs.0"/>
         <semanticElements xmi:type="component_:Output" href="model/My.digital_twin#//@componentPackages.0/@components.1/@sub_components.0/@outputs.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

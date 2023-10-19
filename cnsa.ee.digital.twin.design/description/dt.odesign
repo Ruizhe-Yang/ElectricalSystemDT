@@ -1697,13 +1697,15 @@
                       <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="Browse...">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
-                            <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="browse_action" id="cnsa.ee.digital.twin.design.browse.type.action"/>
+                            <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="browse_type_action" id="cnsa.ee.digital.twin.design.browse.type.action"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
                       <controls xsi:type="properties:ButtonDescription" name="goto" buttonLabelExpression="Go to">
                         <initialOperation>
-                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
+                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                            <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="test_action" id="cnsa.ee.digital.twin.design.test.action"/>
+                          </firstModelOperations>
                         </initialOperation>
                       </controls>
                       <layout xsi:type="properties:GridLayoutDescription" numberOfColumns="3"/>

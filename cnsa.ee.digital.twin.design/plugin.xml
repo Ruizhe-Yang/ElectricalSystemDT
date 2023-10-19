@@ -45,5 +45,9 @@
            actionClass="cnsa.ee.digital.twin.design.utils.SimulateAction"
            id="cnsa.ee.digital.twin.design.simulate.action">
      </javaActions>
+     <javaActions
+           actionClass="cnsa.ee.digital.twin.design.utils.TestAction"
+           id="cnsa.ee.digital.twin.design.test.action">
+     </javaActions>
   </extension>
 </plugin>
