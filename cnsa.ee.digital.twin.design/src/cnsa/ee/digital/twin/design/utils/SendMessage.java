@@ -1,9 +1,10 @@
 package cnsa.ee.digital.twin.design.utils;
 
+
+//引用各种库
 import java.io.File;
 import java.util.Collection;
 import java.util.Map;
-import java.util.Random;
 
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
@@ -19,15 +20,15 @@ import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.PlatformUI;
 
 import base.ModelElement;
+import cnsa.ee.digital.twin.design.com.net.Client;
 import component.Component;
-import component.Input;
-import component.Output;
 
-public class SimulateAction implements IExternalJavaAction {
 
-	public SimulateAction() {
+public class SendMessage implements IExternalJavaAction {
+	//声明函数
+	public SendMessage() {
 	}
-
+	//执行步骤
 	@Override
 	public void execute(Collection<? extends EObject> selections, Map<String, Object> parameters) {
 
@@ -36,24 +37,18 @@ public class SimulateAction implements IExternalJavaAction {
 			focus = eobj;
 		}
 		ModelElement cp = (ModelElement) focus;
-
-		Random r = new Random();
-		
 		if(cp instanceof Component) {
 			Component comp = (Component) cp;
-			
-			for(Input i : comp.getInputs()) {
-				double d1 = r.nextDouble();
-				i.getReading().setValue(d1);
-			}
-			for(Output i : comp.getOutputs()) {
-				double d2 = r.nextDouble();
-				i.getReading().setValue(d2);
+			if (comp.isDynamic()) {
+				String gid = comp.getGid();
+				System.out.println("comp.getName:" + comp.getName());
+				Client client = new Client();
+				client.connect();
+				client.send(gid);
+				client.disconnect();
 			}
 		}
-
 	}
-	
 
 	@Override
 	public boolean canExecute(Collection<? extends EObject> selections) {

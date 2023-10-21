@@ -46,8 +46,8 @@
            id="cnsa.ee.digital.twin.design.simulate.action">
      </javaActions>
      <javaActions
-           actionClass="cnsa.ee.digital.twin.design.utils.TestAction"
-           id="cnsa.ee.digital.twin.design.test.action">
+           actionClass="cnsa.ee.digital.twin.design.utils.SendMessage"
+           id="cnsa.ee.digital.twin.design.utils.send.message">
      </javaActions>
   </extension>
 </plugin>

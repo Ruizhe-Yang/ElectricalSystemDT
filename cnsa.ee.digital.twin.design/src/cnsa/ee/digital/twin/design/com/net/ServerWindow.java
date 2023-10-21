@@ -5,11 +5,10 @@ import java.net.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class CommServer {
+public class ServerWindow {
 	static DataInputStream dis = null;
-	@SuppressWarnings("resource")
 	public static void main(String[] args){
-		CommServer server = new CommServer();
+		ServerWindow server = new ServerWindow();
 		server.run();
 	}
 	
@@ -26,7 +25,7 @@ public class CommServer {
 			e.printStackTrace();
 		}
 		ta.append("从客户端接受的数据:"+"\n");
-		Frame server = new Frame("服务器端");
+		Frame server = new Frame("接收端");
 		server.setLocation(400, 300);
 		server.setSize(300, 300);
 		server.add(ta,BorderLayout.NORTH);
@@ -67,7 +66,7 @@ public class CommServer {
 						dis.close();
 					if(s != null)
 						s.close();
-//					System.exit(0);
+					System.exit(0);
 				}catch(Exception e){
 					e.printStackTrace();
 				}

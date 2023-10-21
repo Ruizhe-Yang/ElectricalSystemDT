@@ -156,7 +156,7 @@
             </content>
           </implementationConstraint>
         </externalReference>
-        <reading/>
+        <reading value="0.7119926346703552"/>
       </inputs>
       <outputs>
         <name content="O"/>
@@ -175,7 +175,7 @@
             </content>
           </implementationConstraint>
         </externalReference>
-        <reading/>
+        <reading value="0.3166430417866545"/>
       </outputs>
       <sub_components xsi:type="component_:Component">
         <name content="Component"/>
@@ -226,7 +226,7 @@
               </content>
             </implementationConstraint>
           </externalReference>
-          <reading value="0.5226695677985186"/>
+          <reading value="0.7263913191744396"/>
         </inputs>
         <outputs>
           <name content="O"/>
@@ -245,11 +245,82 @@
               </content>
             </implementationConstraint>
           </externalReference>
-          <reading value="0.5762762195791115"/>
+          <reading value="0.2670603932659419"/>
         </outputs>
       </sub_components>
       <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.1/@inputs.0" target="//@componentPackages.0/@components.1/@sub_components.0/@inputs.0"/>
       <sub_components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.1/@sub_components.0/@outputs.0" target="//@componentPackages.0/@components.1/@outputs.0"/>
+      <sub_components xsi:type="component_:Component">
+        <name content="Component"/>
+        <description>
+          <content>
+            <value content="Component Description"/>
+          </content>
+        </description>
+        <externalReference>
+          <location content="location"/>
+          <type content="type"/>
+          <metadata content="metadata"/>
+          <implementationConstraint>
+            <content>
+              <value content="Query"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+          <implementationConstraint>
+            <content>
+              <value content="Query Result"/>
+            </content>
+          </implementationConstraint>
+        </externalReference>
+        <inputs>
+          <name content="I"/>
+          <description>
+            <content>
+              <value content="Input Description"/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading value="0.8761118118321702"/>
+        </inputs>
+        <outputs>
+          <name content="O"/>
+          <description>
+            <content>
+              <value content="Output Description"/>
+            </content>
+          </description>
+          <externalReference>
+            <location content="location"/>
+            <type content="type"/>
+            <metadata content="metadata"/>
+            <implementationConstraint>
+              <content>
+                <value content="Query"/>
+              </content>
+            </implementationConstraint>
+          </externalReference>
+          <reading value="0.5406624890431933"/>
+        </outputs>
+      </sub_components>
     </components>
     <components xsi:type="component_:Component">
       <name content="Scope"/>

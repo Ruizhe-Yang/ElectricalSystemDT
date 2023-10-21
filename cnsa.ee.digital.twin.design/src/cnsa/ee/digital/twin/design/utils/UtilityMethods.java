@@ -8,14 +8,27 @@
  ******************************************************************************/
 package cnsa.ee.digital.twin.design.utils;
 
+
+//import java.io.*;
+//import java.net.*;
+//import java.awt.BorderLayout;
+//import java.awt.Frame;
+//import java.awt.TextField;
+//import java.awt.event.ActionEvent;
+//import java.awt.event.ActionListener;
+//import java.awt.event.WindowAdapter;
+//import java.awt.event.WindowEvent;
+//import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+//import java.net.Socket;
 import java.net.URISyntaxException;
 import java.net.URL;
+//import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -68,6 +81,8 @@ import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.PlatformUI;
 
 import cnsa.ee.digital.twin.design.Activator;
+//import cnsa.ee.digital.twin.design.com.net.CommClient;
+//import cnsa.ee.digital.twin.design.com.net.CommClient.MyListener;
 
 public class UtilityMethods {
 
@@ -570,4 +585,81 @@ public class UtilityMethods {
 		String path = url.getPath();
 		return path;
 	}
+	
+	
+//	public class CommClient extends Frame{
+//		
+//		private static final long serialVersionUID = 2979302049596512894L;
+//		Socket socket = null;
+//		DataOutputStream dos = null;
+//		TextField tf = new TextField(40);
+//		java.awt.List list = new java.awt.List(10);
+//		
+//		public void createClientWindow() {
+//			this.connect();
+//			this.setLocation(400, 300);
+//			this.setSize(300, 300);
+//			this.list.add("向服务器端发送的数据:");
+//			this.setTitle("客户端");
+//			this.add(list, BorderLayout.NORTH);
+//			this.add(tf, BorderLayout.SOUTH);
+//			this.pack();
+//			this.addWindowListener(
+//				new WindowAdapter(){
+//					public void windowClosing(WindowEvent e){
+//						disconnect();
+//						System.exit(0);
+//						}
+//					}
+//				);
+//			this.setVisible(true);
+//		}
+//		
+//		public void connect(){
+//			String port = "8888";
+//			try{
+//				socket = new Socket("127.0.0.1", Integer.parseInt(port));
+//				dos = new DataOutputStream(socket.getOutputStream());
+//				System.out.println("连接成功");
+//			} catch (UnknownHostException e){
+//				e.printStackTrace();
+//			} catch (IOException e){
+//				e.printStackTrace();
+//			}
+//		}
+//
+//		public void disconnect(){
+//			try{
+//				dos.close();
+//				socket.close();
+//				System.exit(0);
+//			} catch (IOException e){
+//				e.printStackTrace();
+//			}
+//		}
+//		
+//		public void listen() {
+//			tf.addActionListener(new MyListener());
+//		}
+//		
+//		private class MyListener implements ActionListener{
+//		    public void actionPerformed(ActionEvent e){
+//			    String str = tf.getText().trim();
+//			    list.add(str);
+//			    tf.setText("");
+//			    try{
+//			    	dos.writeUTF(str);
+//			    	dos.flush();
+//			    } catch (IOException e1){
+//			       e1.printStackTrace();  
+//			    }
+//			    if (str.equals("0") | str.equals("q")) {
+//			    	System.out.println("程序结束");
+//
+//			    	disconnect();
+//			    }
+//		    }
+//		}
+//	}
+
 }

@@ -1,24 +1,47 @@
 package cnsa.ee.digital.twin.design.com.net;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.net.Socket;
+import java.io.*;
+import java.net.*;
 
-public class Client {
-    public static void main(String[] args) {
-        try {
-            Socket clientSocket = new Socket("localhost", 8888);
-            PrintWriter writer = new PrintWriter(clientSocket.getOutputStream(), true);
+public class Client{
+	Socket socket = null;
+	DataOutputStream dos = null;
 
-            // 向服务器发送消息
-            writer.println("Hello, Server!");
-            System.out.println("消息已发送");
-
-            writer.close();
-            clientSocket.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+	public static void main(String[] args) {		
+		Client client = new Client();
+		client.connect();
+		client.send("ok");
+		client.disconnect();
+	}
+	
+	public void connect(){
+		String port = "8888";
+		try{
+			socket = new Socket("127.0.0.1", Integer.parseInt(port));
+			dos = new DataOutputStream(socket.getOutputStream());
+		} catch (UnknownHostException e){
+			e.printStackTrace();
+		} catch (IOException e){
+			e.printStackTrace();
+		}
+	}
+	
+	public void send(String str){
+		try{
+			this.dos.writeUTF(str);
+			this.dos.flush();
+	    } catch (IOException e){
+	        e.printStackTrace();
+	    }
+	}
+	
+	public void disconnect(){
+		try{
+			this.dos.close();
+			this.socket.close();
+		} catch (IOException e){
+			e.printStackTrace();
+		}
+	}
 }
 

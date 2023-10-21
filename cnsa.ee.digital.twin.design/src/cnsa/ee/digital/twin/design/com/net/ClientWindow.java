@@ -5,27 +5,27 @@ import java.net.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class CommClient extends Frame{
-	private static final long serialVersionUID = 2979302049596512894L;
+public class ClientWindow extends Frame{
+	private static final long serialVersionUID = 5785073717134119223L;
 	Socket socket = null;
 	DataOutputStream dos = null;
 	TextField tf = new TextField(40);
 	List list = new List(10);
-	
+
 	public static void main(String[] args){		
-		CommClient client = new CommClient();
+		ClientWindow client = new ClientWindow();
+		client.connect();
 		client.createClientWindow();
-		client.addListener();
+		client.listen();
 	}
 	
 	public void createClientWindow() {
-		this.connect();
 		this.setLocation(400, 300);
 		this.setSize(300, 300);
 		this.list.add("向服务器端发送的数据:");
 		this.setTitle("客户端");
-		this.add(list, BorderLayout.NORTH);
-		this.add(tf, BorderLayout.SOUTH);
+		this.add(this.list, BorderLayout.NORTH);
+		this.add(this.tf, BorderLayout.SOUTH);
 		this.pack();
 		this.addWindowListener(
 			new WindowAdapter(){
@@ -55,13 +55,12 @@ public class CommClient extends Frame{
 		try{
 			dos.close();
 			socket.close();
-			System.exit(0);
 		} catch (IOException e){
 			e.printStackTrace();
 		}
 	}
 	
-	public void addListener() {
+	public void listen() {
 		tf.addActionListener(new MyListener());
 	}
 	
@@ -76,16 +75,19 @@ public class CommClient extends Frame{
 		    } catch (IOException e1){
 		       e1.printStackTrace();  
 		    }
+//	    	sendRegularly();
 		    if (str.equals("0") | str.equals("q")) {
 		    	System.out.println("程序结束");
-//		    	sendRegularly();
 		    	disconnect();
+		    	System.exit(0);
 		    }
 	    }
 	}
+
+
 	
 //	private void sendRegularly() {
-//		for (int i = 0; i < 5; i++) {
+//		for (int i = 1; i <= 5; i++) {
 //	        try {
 //	            Thread.sleep(100);
 //	        } catch (InterruptedException e) {
