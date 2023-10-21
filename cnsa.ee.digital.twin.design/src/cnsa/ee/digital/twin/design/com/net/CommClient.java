@@ -6,9 +6,6 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class CommClient extends Frame{
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 2979302049596512894L;
 	Socket socket = null;
 	DataOutputStream dos = null;
@@ -17,29 +14,34 @@ public class CommClient extends Frame{
 	
 	public static void main(String[] args){		
 		CommClient client = new CommClient();
-		client.setLocation(400, 300);
-		client.setSize(300, 300);
-		client.list.add("向服务器端发送的数据:");
-		client.setTitle("客户端");
-		client.add(client.list, BorderLayout.NORTH);
-		client.add(client.tf, BorderLayout.SOUTH);
-		client.pack();
-		client.addWindowListener(
+		client.createClientWindow();
+		client.addListener();
+	}
+	
+	public void createClientWindow() {
+		this.connect();
+		this.setLocation(400, 300);
+		this.setSize(300, 300);
+		this.list.add("向服务器端发送的数据:");
+		this.setTitle("客户端");
+		this.add(list, BorderLayout.NORTH);
+		this.add(tf, BorderLayout.SOUTH);
+		this.pack();
+		this.addWindowListener(
 			new WindowAdapter(){
 				public void windowClosing(WindowEvent e){
-					client.disconnect();
+					disconnect();
 					System.exit(0);
 					}
 				}
 			);
-		client.addListener();
-		client.setVisible(true);
-		client.connect();
+		this.setVisible(true);
 	}
 	
 	public void connect(){
+		String port = "8888";
 		try{
-			socket = new Socket("127.0.0.1", 8888);
+			socket = new Socket("127.0.0.1", Integer.parseInt(port));
 			dos = new DataOutputStream(socket.getOutputStream());
 			System.out.println("连接成功");
 		} catch (UnknownHostException e){
@@ -53,6 +55,7 @@ public class CommClient extends Frame{
 		try{
 			dos.close();
 			socket.close();
+			System.exit(0);
 		} catch (IOException e){
 			e.printStackTrace();
 		}
@@ -65,10 +68,6 @@ public class CommClient extends Frame{
 	private class MyListener implements ActionListener{
 	    public void actionPerformed(ActionEvent e){
 		    String str = tf.getText().trim();
-		    if (str.equals("1")) {
-		    	System.out.println("认证正确");
-		    	sendRegularly();
-		    }
 		    list.add(str);
 		    tf.setText("");
 		    try{
@@ -77,27 +76,32 @@ public class CommClient extends Frame{
 		    } catch (IOException e1){
 		       e1.printStackTrace();  
 		    }
+		    if (str.equals("0") | str.equals("q")) {
+		    	System.out.println("程序结束");
+//		    	sendRegularly();
+		    	disconnect();
+		    }
 	    }
 	}
 	
-	private void sendRegularly() {
-		for (int i = 0; i < 5; i++) {
-	        try {
-	            Thread.sleep(100);
-	        } catch (InterruptedException e) {
-	            e.printStackTrace();
-	        }
-		    try{
-		    	String str = String.valueOf(i);
-		    	list.add(str);
-			    tf.setText("");
-		    	dos.writeUTF(str);
-		    	dos.flush();
-		    } catch (IOException e1){
-		       e1.printStackTrace();  
-		    }
-		}
-	}
+//	private void sendRegularly() {
+//		for (int i = 0; i < 5; i++) {
+//	        try {
+//	            Thread.sleep(100);
+//	        } catch (InterruptedException e) {
+//	            e.printStackTrace();
+//	        }
+//		    try{
+//		    	String str = String.valueOf(i);
+//		    	list.add(str);
+//			    tf.setText("");
+//		    	dos.writeUTF(str);
+//		    	dos.flush();
+//		    } catch (IOException e1){
+//		       e1.printStackTrace();  
+//		    }
+//		}
+//	}
 }
 
 
