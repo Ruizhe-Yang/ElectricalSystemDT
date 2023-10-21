@@ -5,7 +5,7 @@ import java.net.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class TCPServer {
+public class CommServer {
 	static DataInputStream dis = null;
 	public static void main(String[] args){
 		System.out.println("OK");
@@ -15,7 +15,7 @@ public class TCPServer {
 		ta.append("从客户端接受的数据:"+"\n");
 		ServerSocket ss = null;
 		try{
-			ss = new ServerSocket(8889);//端口号
+			ss = new ServerSocket(8888);//端口号
 		} catch (BindException e){
 			System.exit(0);
 		} catch (IOException e){
@@ -34,7 +34,7 @@ public class TCPServer {
 				}
 			);
 		f.setVisible(true);
-		try{			 //try-catch块捕捉异常
+		try{
 			started = true;
 			while(started){
 				boolean bConnected = false;
