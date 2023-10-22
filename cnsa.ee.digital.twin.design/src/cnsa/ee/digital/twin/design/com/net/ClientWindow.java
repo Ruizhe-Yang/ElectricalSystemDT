@@ -39,7 +39,7 @@ public class ClientWindow extends Frame{
 	}
 	
 	public void connect(){
-		String port = "8888";
+		String port = "3650";
 		try{
 			socket = new Socket("127.0.0.1", Integer.parseInt(port));
 			dos = new DataOutputStream(socket.getOutputStream());
@@ -84,8 +84,6 @@ public class ClientWindow extends Frame{
 	    }
 	}
 
-
-	
 //	private void sendRegularly() {
 //		for (int i = 1; i <= 5; i++) {
 //	        try {

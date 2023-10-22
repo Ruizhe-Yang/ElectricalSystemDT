@@ -49,5 +49,9 @@
            actionClass="cnsa.ee.digital.twin.design.utils.SendMessage"
            id="cnsa.ee.digital.twin.design.utils.send.message">
      </javaActions>
+          <javaActions
+           actionClass="cnsa.ee.digital.twin.design.utils.ReceiveMessage"
+           id="cnsa.ee.digital.twin.design.utils.receive.message">
+     </javaActions>
   </extension>
 </plugin>

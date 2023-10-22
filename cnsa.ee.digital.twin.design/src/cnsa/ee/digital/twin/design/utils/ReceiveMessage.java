@@ -6,13 +6,13 @@ import java.util.Map;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.sirius.tools.api.ui.IExternalJavaAction;
 import base.ModelElement;
-import cnsa.ee.digital.twin.design.com.net.Client;
+import cnsa.ee.digital.twin.design.com.net.Server;
 import component.Component;
 
 
-public class SendMessage implements IExternalJavaAction {
+public class ReceiveMessage implements IExternalJavaAction {
 	
-	public SendMessage() {
+	public ReceiveMessage() {
 	}
 	
 	@Override
@@ -29,15 +29,30 @@ public class SendMessage implements IExternalJavaAction {
 			Component comp = (Component) cp;
 			if (comp.isDynamic()) {
 				String gid = comp.getGid();
+				String port = findFirstFourNumbers(gid);
 				System.out.println("comp.getName:" + comp.getName().getContent());
-				Client client = new Client();
-				client.connect();
-				client.send(gid);
-				client.disconnect();
+				Server server = new Server();
+				server.run(port);
+				System.out.println("¼àÌý½áÊø¡£");
 			}
 		}
 	}
-
+	
+	private static String findFirstFourNumbers(String input) {
+        StringBuilder numbers = new StringBuilder();
+        int count = 0;
+        for (char c : input.toCharArray()) {
+            if (Character.isDigit(c)) {
+                numbers.append(c);
+                count++;
+            }
+            if (count == 4) {
+                break;
+            }
+        }
+        return numbers.toString();
+    }
+	
 	@Override
 	public boolean canExecute(Collection<? extends EObject> selections) {
 		return true;
