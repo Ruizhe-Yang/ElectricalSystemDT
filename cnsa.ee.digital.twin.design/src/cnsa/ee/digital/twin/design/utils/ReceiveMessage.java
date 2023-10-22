@@ -6,7 +6,8 @@ import java.util.Map;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.sirius.tools.api.ui.IExternalJavaAction;
 import base.ModelElement;
-import cnsa.ee.digital.twin.design.com.net.Server;
+//import cnsa.ee.digital.twin.design.com.net.Server;
+import cnsa.ee.digital.twin.design.com.net.MultiServer;
 import component.Component;
 
 
@@ -31,13 +32,12 @@ public class ReceiveMessage implements IExternalJavaAction {
 				String gid = comp.getGid();
 				String port = findFirstFourNumbers(gid);
 				System.out.println("comp.getName:" + comp.getName().getContent());
-				Server server = new Server();
-				server.run(port);
-				System.out.println("监听结束。");
+				MultiServer multiServer= new MultiServer();//创建多个类了，有问题，导致还是单线程计算的。
+				multiServer.createServerThread(Integer.parseInt(port));
 			}
 		}
 	}
-	
+
 	private static String findFirstFourNumbers(String input) {
         StringBuilder numbers = new StringBuilder();
         int count = 0;

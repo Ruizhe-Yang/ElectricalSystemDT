@@ -11,7 +11,7 @@ public class Server {
 	static DataInputStream dis = null;
 	public static void main(String[] args){
 		Server server = new Server();
-		server.run("8888");
+		server.run("8889");
 	}
 	
 	public void run (String port) {
@@ -37,11 +37,12 @@ public class Server {
 							listening = false;
 					    }
 					}
-				}catch(EOFException e){
+				} catch (EOFException e) {
 					System.out.println("检测到客户端关闭。");
-				}catch(IOException e){
+				} catch (IOException e) {
 					e.printStackTrace();
-				}finally{
+					listening = false;
+				} finally {
 					try{
 						if(dis != null)
 							dis.close();
@@ -53,7 +54,7 @@ public class Server {
 				}
 			}
 		} catch (BindException e){
-			System.out.println(port+"端口不存在。");
+			System.out.println(port + "端口不存在。");
 		} catch (IOException e){
 			e.printStackTrace();
 		}
