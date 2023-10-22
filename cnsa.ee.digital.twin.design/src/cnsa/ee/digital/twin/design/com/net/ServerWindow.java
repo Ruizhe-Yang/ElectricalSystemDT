@@ -66,7 +66,6 @@ public class ServerWindow {
 						dis.close();
 					if(s != null)
 						s.close();
-					System.exit(0);
 				}catch(Exception e){
 					e.printStackTrace();
 				}

@@ -49,7 +49,7 @@
           </content>
         </implementationConstraint>
       </externalReference>
-      <sub_components xsi:type="component_:Component" gid="3629.0001220703125" component_name="SubSystem">
+      <sub_components xsi:type="component_:Component" gid="3629.0001220703125" dynamic="true" component_name="SubSystem">
         <name content="CurrentPI&#xA;ACR"/>
         <description>
           <content>
