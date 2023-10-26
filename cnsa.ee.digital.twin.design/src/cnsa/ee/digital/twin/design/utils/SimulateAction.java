@@ -35,6 +35,7 @@ public class SimulateAction implements IExternalJavaAction {
 		for(EObject eobj: selections) {
 			focus = eobj;
 		}
+		
 		ModelElement cp = (ModelElement) focus;
 
 		Random r = new Random();
@@ -51,7 +52,6 @@ public class SimulateAction implements IExternalJavaAction {
 				i.getReading().setValue(d2);
 			}
 		}
-
 	}
 	
 

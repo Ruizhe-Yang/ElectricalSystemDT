@@ -3,22 +3,21 @@ package cnsa.ee.digital.twin.design.com.net;
 import java.io.*;
 import java.net.*;
 
-public class Client{
+public class Client2UE{
 	Socket socket = null;
-	DataOutputStream dos = null;
+	OutputStream out = null;
 
 	public static void main(String[] args) {		
-		Client client = new Client();
+		Client2UE client = new Client2UE();
 		client.connect();
 		client.send("ok");
 		client.disconnect();
 	}
 	
 	public void connect(){
-		String port = "8400";
 		try{
-			socket = new Socket("127.0.0.1", Integer.parseInt(port));
-			dos = new DataOutputStream(socket.getOutputStream());
+			socket = new Socket("10.5.188.132", 8400);
+			out = socket.getOutputStream();
 		} catch (UnknownHostException e){
 			e.printStackTrace();
 		} catch (IOException e){
@@ -28,8 +27,8 @@ public class Client{
 	
 	public void send(String str){
 		try{
-			this.dos.writeUTF(str);
-			this.dos.flush();
+			out.write(str.getBytes());
+			out.flush();
 	    } catch (IOException e){
 	        e.printStackTrace();
 	    }
@@ -37,8 +36,8 @@ public class Client{
 	
 	public void disconnect(){
 		try{
-			this.dos.close();
-			this.socket.close();
+			out.close();
+			socket.close();
 		} catch (IOException e){
 			e.printStackTrace();
 		}

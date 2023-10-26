@@ -11,7 +11,7 @@ public class Server {
 	static DataInputStream dis = null;
 	public static void main(String[] args){
 		Server server = new Server();
-		server.run("8889");
+		server.run("8888");
 	}
 	
 	public void run (String port) {
