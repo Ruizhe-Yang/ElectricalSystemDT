@@ -39,9 +39,9 @@ public class ClientWindow1 extends Frame{
 	}
 	
 	public void connect(){
-		String port = "8888";
+		String port = "3629";
 		try{
-			socket = new Socket("127.0.0.2", Integer.parseInt(port));
+			socket = new Socket("127.0.0.1", Integer.parseInt(port));
 			dos = new DataOutputStream(socket.getOutputStream());
 			System.out.println("连接成功");
 		} catch (UnknownHostException e){

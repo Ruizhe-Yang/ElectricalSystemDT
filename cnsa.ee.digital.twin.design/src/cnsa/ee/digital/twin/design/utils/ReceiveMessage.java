@@ -6,13 +6,12 @@ import java.util.Map;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.sirius.tools.api.ui.IExternalJavaAction;
 import base.ModelElement;
-//import cnsa.ee.digital.twin.design.com.net.Server;
 import cnsa.ee.digital.twin.design.com.net.MultiServer;
 import component.Component;
+import component.Output;
 
 
 public class ReceiveMessage implements IExternalJavaAction {
-	
 	public ReceiveMessage() {
 	}
 	
@@ -27,17 +26,18 @@ public class ReceiveMessage implements IExternalJavaAction {
 		ModelElement cp = (ModelElement) focus;
 		
 		if(cp instanceof Component) {
-			Component comp = (Component) cp;
-			if (comp.isDynamic()) {
-				String gid = comp.getGid();
+			Component component = (Component) cp;
+			if (component.isDynamic()) {
+				String gid = component.getGid();
 				String port = findFirstFourNumbers(gid);
-				System.out.println("comp.getName:" + comp.getName().getContent());
-				MultiServer multiServer= new MultiServer();//创建多个类了，有问题，导致还是单线程计算的。
-				multiServer.createServerThread(Integer.parseInt(port));
+				System.out.println("comp.getName:" + component.getName().getContent());
+				MultiServer multiServers= MultiServer.getInstance();
+				MultiServer.component = component;
+				multiServers.createServerThread(Integer.parseInt(port));
 			}
 		}
 	}
-
+	
 	private static String findFirstFourNumbers(String input) {
         StringBuilder numbers = new StringBuilder();
         int count = 0;
@@ -57,5 +57,5 @@ public class ReceiveMessage implements IExternalJavaAction {
 	public boolean canExecute(Collection<? extends EObject> selections) {
 		return true;
 	}
-
 }
+

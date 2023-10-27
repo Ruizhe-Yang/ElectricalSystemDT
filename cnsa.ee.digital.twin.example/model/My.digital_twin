@@ -177,7 +177,7 @@
         </externalReference>
         <reading value="0.3166430417866545"/>
       </outputs>
-      <sub_components xsi:type="component_:Component">
+      <sub_components xsi:type="component_:Component" dynamic="true">
         <name content="Component"/>
         <description>
           <content>
