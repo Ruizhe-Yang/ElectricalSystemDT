@@ -22,7 +22,8 @@ Require-Bundle: org.eclipse.ui,
  cnsa.ee.digital.twin.edit;bundle-version="1.0.0",
  cnsa.ee.digital.twin.editor;bundle-version="1.0.0",
  org.eclipse.ui.navigator,
- org.eclipse.ui.navigator.resources
+ org.eclipse.ui.navigator.resources,
+ org.eclipse.emf.transaction;bundle-version="1.9.1"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-Vendor: %providerName

@@ -2137,6 +2137,14 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="Stop Receiving">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="stop_receiving" id="cnsa.ee.digital.twin.design.utils.stop.receiving.message"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
         </toolSections>
       </defaultLayer>
     </ownedRepresentations>

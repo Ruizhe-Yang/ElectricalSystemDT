@@ -1153,7 +1153,7 @@
           <reading/>
         </outputs>
       </sub_components>
-      <sub_components xsi:type="component_:Component" gid="3650.0001220703125" component_name="Gain">
+      <sub_components xsi:type="component_:Component" gid="3650.0001220703125" dynamic="true" component_name="Gain">
         <name content="Gain3"/>
         <description>
           <content>

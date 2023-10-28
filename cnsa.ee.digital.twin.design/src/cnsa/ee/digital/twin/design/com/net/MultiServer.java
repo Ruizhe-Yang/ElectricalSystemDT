@@ -12,19 +12,22 @@ import java.util.Map;
 import component.Component;
 import component.Output;
 
+import org.eclipse.emf.common.command.AbstractCommand;
+import org.eclipse.emf.transaction.TransactionalEditingDomain;
+import org.eclipse.emf.transaction.util.TransactionUtil;
 
 public class MultiServer {
 	private static MultiServer single_instance = null;
 	public static Map<String, Thread> port_map = new HashMap<>();
 	public static Map<String, Double> reading_map = new HashMap<>();
-	public static Component component = null;
 	protected MultiServer() { }
 	
     public static void main(String[] args) {
+    	Component component = null;
     	MultiServer multiServer = MultiServer.getInstance();
         int[] ports = {8888, 8889, 8899};
         for (int port : ports) {
-        	multiServer.createServerThread(port);
+        	multiServer.createServerThread(port, component);
         }
     }
     
@@ -34,7 +37,7 @@ public class MultiServer {
 		return single_instance; 
 	}
         
-    public void createServerThread(int port) {
+    public void createServerThread(int port,Component component) {
     	Thread listenerThread = new Thread(() -> {
         	Socket socket = null;
         	ServerSocket server = null;
@@ -98,7 +101,7 @@ public class MultiServer {
         reading_map.put(String.valueOf(port), 0.0);
     }
     
-    private void closeThread(int port) {
+    public void closeThread(int port) {
     	Thread listenerThread = port_map.get(String.valueOf(port));
     	listenerThread.interrupt();
     	port_map.remove(String.valueOf(port));
@@ -115,13 +118,43 @@ public class MultiServer {
     }
     
     private void updateReading(int port, String message, Component cp) {
-    	reading_map.put(String.valueOf(port), Double.parseDouble(message));
+    	Double reading_number = Double.parseDouble(message);
+    	reading_map.put(String.valueOf(port), reading_number);
     	if (cp != null) {
-			for(Output i : cp.getOutputs()) {
-				double num = MultiServer.reading_map.get(String.valueOf(port));
-				i.getReading().setValue(num);
-				System.out.println(num);
-			}
+    		for(Output i : cp.getOutputs()) {
+    			TransactionalEditingDomain editingDomain = TransactionUtil.getEditingDomain(i);
+    			try {
+    			    editingDomain.getCommandStack().execute(new AbstractCommand() {
+    			        @Override
+    			        protected boolean prepare() {
+    			            return true;
+    			        }
+    			        @Override
+    			        public void execute() {
+    			        	i.getReading().setValue(reading_number);
+    			        }
+    			        @Override
+    			        public void redo() {
+    			        }
+    			    });
+    			} catch (Exception e) {
+    			    editingDomain.getCommandStack().undo();
+    			}
+    		}
     	}
     }
+    
+//  private void updateReading(int port, String message, Component cp) {
+//	reading_map.put(String.valueOf(port), Double.parseDouble(message));
+//	if (cp != null) {
+//		Double num = MultiServer.reading_map.get(String.valueOf(port));
+//		System.out.println("number="+num);
+//		Map<String, Object> map = new HashMap<>();
+//		map.put(String.valueOf(num), cp);
+//		Collection<? extends EObject> myCollection = new BasicEList<EObject>();
+//		UpdateReading updateReading = new UpdateReading();
+//		updateReading.execute(myCollection, map);
+//		System.out.println(num);
+//	}
+//}
 }

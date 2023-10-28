@@ -11,8 +11,8 @@ import component.Component;
 import component.Output;
 
 
-public class ReceiveMessage implements IExternalJavaAction {
-	public ReceiveMessage() {
+public class StopReceivingMessage implements IExternalJavaAction {
+	public StopReceivingMessage() {
 	}
 	
 	@Override
@@ -27,12 +27,15 @@ public class ReceiveMessage implements IExternalJavaAction {
 		
 		if(cp instanceof Component) {
 			Component component = (Component) cp;
-			if (component.isDynamic()) {
-				String gid = component.getGid();
-				String port = findFirstFourNumbers(gid);
-				System.out.println("comp.getName:" + component.getName().getContent());
-				MultiServer multiServers= MultiServer.getInstance();
-				multiServers.createServerThread(Integer.parseInt(port), component);
+			MultiServer multiServers= MultiServer.getInstance();
+			String gid = component.getGid();
+			String port = findFirstFourNumbers(gid);
+			if (MultiServer.port_map.containsKey(port)) {
+				System.out.println("端口 " + port + " 关闭成功");
+				multiServers.closeThread(Integer.parseInt(port));
+			}
+			else {
+				System.out.println("端口 " + port + " 未开启，无法关闭");
 			}
 		}
 	}
