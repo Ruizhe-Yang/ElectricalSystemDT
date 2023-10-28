@@ -8,7 +8,6 @@ import org.eclipse.sirius.tools.api.ui.IExternalJavaAction;
 import base.ModelElement;
 import cnsa.ee.digital.twin.design.com.net.MultiServer;
 import component.Component;
-import component.Output;
 
 
 public class ReceiveMessage implements IExternalJavaAction {
@@ -31,7 +30,7 @@ public class ReceiveMessage implements IExternalJavaAction {
 				String gid = component.getGid();
 				String port = findFirstFourNumbers(gid);
 				System.out.println("comp.getName:" + component.getName().getContent());
-				MultiServer multiServers= MultiServer.getInstance();
+				MultiServer multiServers = MultiServer.getInstance();
 				multiServers.createServerThread(Integer.parseInt(port), component);
 			}
 		}

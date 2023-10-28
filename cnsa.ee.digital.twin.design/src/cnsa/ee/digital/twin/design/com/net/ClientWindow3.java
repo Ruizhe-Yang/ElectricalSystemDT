@@ -5,7 +5,7 @@ import java.net.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class ClientWindow1 extends Frame{
+public class ClientWindow3 extends Frame{
 	private static final long serialVersionUID = 5785073717134119223L;
 	Socket socket = null;
 	DataOutputStream dos = null;
@@ -13,7 +13,7 @@ public class ClientWindow1 extends Frame{
 	List list = new List(10);
 
 	public static void main(String[] args){		
-		ClientWindow1 client = new ClientWindow1();
+		ClientWindow3 client = new ClientWindow3();
 		client.connect();
 		client.createClientWindow();
 		client.listen();
@@ -23,7 +23,7 @@ public class ClientWindow1 extends Frame{
 		this.setLocation(400, 300);
 		this.setSize(300, 300);
 		this.list.add("向服务器端发送的数据:");
-		this.setTitle("客户端1");
+		this.setTitle("客户端3");
 		this.add(this.list, BorderLayout.NORTH);
 		this.add(this.tf, BorderLayout.SOUTH);
 		this.pack();
@@ -39,7 +39,7 @@ public class ClientWindow1 extends Frame{
 	}
 	
 	public void connect(){
-		String port = "3629";
+		String port = "3687";
 		try{
 			socket = new Socket("127.0.0.1", Integer.parseInt(port));
 			dos = new DataOutputStream(socket.getOutputStream());
@@ -87,9 +87,9 @@ public class ClientWindow1 extends Frame{
 	}
 
 	private void sendRegularly() {
-		for (int i = 1; i <= 20; i++) {
+		for (int i = 1; i <= 5; i++) {
 	        try {
-	            Thread.sleep(1000);
+	            Thread.sleep(5000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }

@@ -117,7 +117,7 @@
               </content>
             </implementationConstraint>
           </externalReference>
-          <reading/>
+          <reading value="20.0"/>
         </outputs>
         <sub_components xsi:type="component_:Component" gid="3630.0001220703125" component_name="Inport">
           <name content="In1"/>
@@ -1221,7 +1221,7 @@
               </content>
             </implementationConstraint>
           </externalReference>
-          <reading/>
+          <reading value="10.0"/>
         </outputs>
       </sub_components>
       <sub_components xsi:type="component_:Component" gid="3651.0001220703125" component_name="Step">
@@ -2768,7 +2768,7 @@
           <reading/>
         </outputs>
       </sub_components>
-      <sub_components xsi:type="component_:Component" gid="3687.0001220703125" component_name="Sum">
+      <sub_components xsi:type="component_:Component" gid="3687.0001220703125" dynamic="true" component_name="Sum">
         <name content="Sum1"/>
         <description>
           <content>
@@ -2855,7 +2855,7 @@
               </content>
             </implementationConstraint>
           </externalReference>
-          <reading/>
+          <reading value="5.0"/>
         </outputs>
       </sub_components>
       <sub_components xsi:type="component_:Component" gid="3688.0001220703125" component_name="Terminator">

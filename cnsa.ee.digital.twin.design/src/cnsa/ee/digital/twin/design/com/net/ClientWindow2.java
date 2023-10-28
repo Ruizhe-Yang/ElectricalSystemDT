@@ -75,33 +75,35 @@ public class ClientWindow2 extends Frame{
 		    } catch (IOException e1){
 		       e1.printStackTrace();  
 		    }
-//	    	sendRegularly();
 		    if (str.equals("0") | str.equals("q")) {
 		    	System.out.println("³ÌÐò½áÊø");
 		    	disconnect();
 		    	System.exit(0);
 		    }
+		    else if (str.equals("s")) {
+		    	sendRegularly();
+		    }
 	    }
 	}
 
-//	private void sendRegularly() {
-//		for (int i = 1; i <= 5; i++) {
-//	        try {
-//	            Thread.sleep(100);
-//	        } catch (InterruptedException e) {
-//	            e.printStackTrace();
-//	        }
-//		    try{
-//		    	String str = String.valueOf(i);
-//		    	list.add(str);
-//			    tf.setText("");
-//		    	dos.writeUTF(str);
-//		    	dos.flush();
-//		    } catch (IOException e1){
-//		       e1.printStackTrace();  
-//		    }
-//		}
-//	}
+	private void sendRegularly() {
+		for (int i = 1; i <= 10; i++) {
+	        try {
+	            Thread.sleep(3000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+		    try{
+		    	String str = String.valueOf(i);
+		    	list.add(str);
+			    tf.setText("");
+		    	dos.writeUTF(str);
+		    	dos.flush();
+		    } catch (IOException e1){
+		       e1.printStackTrace();  
+		    }
+		}
+	}
 }
 
 

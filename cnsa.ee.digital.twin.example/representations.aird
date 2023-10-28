@@ -54,7 +54,7 @@
         <description xmi:type="description_2:EditionTableDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='Terminology']"/>
         <target xmi:type="terminology_:TerminologyPackage" href="model/lab3.model#//@terminologyPackages.0"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_3e9xsEKDEe63FbnPIY6S7A" name="new ComponentDiagram" repPath="#_3evIMEKDEe63FbnPIY6S7A" changeId="1697436479216">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_3e9xsEKDEe63FbnPIY6S7A" name="new ComponentDiagram" repPath="#_3evIMEKDEe63FbnPIY6S7A" changeId="1698487575479">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']"/>
         <target xmi:type="component_:Component" href="model/lab3.model#//@componentPackages.0/@components.0"/>
       </ownedRepresentationDescriptors>
@@ -14158,7 +14158,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Input']"/>
       </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_3fevEEKDEe63FbnPIY6S7A" name="0.0: 0.0" outgoingEdges="_3f1UYEKDEe63FbnPIY6S7A" width="7" height="3" resizeKind="NSEW">
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_3fevEEKDEe63FbnPIY6S7A" name="0.0: 20.0" outgoingEdges="_3f1UYEKDEe63FbnPIY6S7A" width="7" height="3" resizeKind="NSEW">
         <target xmi:type="component_:Output" href="model/lab3.model#//@componentPackages.0/@components.0/@sub_components.0/@outputs.0"/>
         <semanticElements xmi:type="component_:Output" href="model/lab3.model#//@componentPackages.0/@components.0/@sub_components.0/@outputs.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -14487,7 +14487,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Input']"/>
       </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_3fmq4EKDEe63FbnPIY6S7A" name="0.0: 0.0" outgoingEdges="_3f2iqkKDEe63FbnPIY6S7A" width="7" height="3" resizeKind="NSEW">
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_3fmq4EKDEe63FbnPIY6S7A" name="0.0: 10.0" outgoingEdges="_3f2iqkKDEe63FbnPIY6S7A" width="7" height="3" resizeKind="NSEW">
         <target xmi:type="component_:Output" href="model/lab3.model#//@componentPackages.0/@components.0/@sub_components.6/@outputs.0"/>
         <semanticElements xmi:type="component_:Output" href="model/lab3.model#//@componentPackages.0/@components.0/@sub_components.6/@outputs.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -14845,7 +14845,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/cnsa.ee.digital.twin.design/description/dt.odesign#//@ownedViewpoints[name='DigitalTwinViewPoint']/@ownedRepresentations[name='ComponentDiagram']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Input']"/>
       </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_3fsxgUKDEe63FbnPIY6S7A" name="0.0: 0.0" outgoingEdges="_3f3JnEKDEe63FbnPIY6S7A" width="7" height="3" resizeKind="NSEW">
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_3fsxgUKDEe63FbnPIY6S7A" name="0.0: 5.0" outgoingEdges="_3f3JnEKDEe63FbnPIY6S7A" width="7" height="3" resizeKind="NSEW">
         <target xmi:type="component_:Output" href="model/lab3.model#//@componentPackages.0/@components.0/@sub_components.14/@outputs.0"/>
         <semanticElements xmi:type="component_:Output" href="model/lab3.model#//@componentPackages.0/@components.0/@sub_components.14/@outputs.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

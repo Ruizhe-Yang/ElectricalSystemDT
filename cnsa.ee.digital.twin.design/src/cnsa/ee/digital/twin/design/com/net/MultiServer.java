@@ -67,7 +67,7 @@ public class MultiServer {
                             else if (message.equals("a")) {
                             	printAllThread();
                             }
-                            else {
+                            else if (stringIsLegal(message)){
                             	outputMessage(port, message);
                             	updateReading(port, message, component);
                             }
@@ -101,7 +101,17 @@ public class MultiServer {
         reading_map.put(String.valueOf(port), 0.0);
     }
     
-    public void closeThread(int port) {
+    private boolean stringIsLegal(String message) {
+        try {
+            Double.parseDouble(message);
+            return true;
+        } catch (NumberFormatException e) {
+        	System.out.println("信息不可识别。");
+            return false;
+        }
+	}
+
+	public void closeThread(int port) {
     	Thread listenerThread = port_map.get(String.valueOf(port));
     	listenerThread.interrupt();
     	port_map.remove(String.valueOf(port));
@@ -143,18 +153,4 @@ public class MultiServer {
     		}
     	}
     }
-    
-//  private void updateReading(int port, String message, Component cp) {
-//	reading_map.put(String.valueOf(port), Double.parseDouble(message));
-//	if (cp != null) {
-//		Double num = MultiServer.reading_map.get(String.valueOf(port));
-//		System.out.println("number="+num);
-//		Map<String, Object> map = new HashMap<>();
-//		map.put(String.valueOf(num), cp);
-//		Collection<? extends EObject> myCollection = new BasicEList<EObject>();
-//		UpdateReading updateReading = new UpdateReading();
-//		updateReading.execute(myCollection, map);
-//		System.out.println(num);
-//	}
-//}
 }
