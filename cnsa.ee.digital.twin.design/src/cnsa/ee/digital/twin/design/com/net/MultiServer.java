@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import component.Component;
+import component.Input;
 import component.Output;
 
 import org.eclipse.emf.common.command.AbstractCommand;
@@ -45,11 +46,11 @@ public class MultiServer {
         	try {
 				server = new ServerSocket(port);
             	boolean listening = true;
-                System.out.println("开始监听，端口号：" + port);
+                System.out.println("Start listening, port number：" + port);
             	while(listening) {
             		try {
             			socket = server.accept();
-            			System.out.println("成功与端口 " + port + " 连接");
+            			System.out.println("Successfully connected to port " + port);
                         dis = new DataInputStream(socket.getInputStream());
                         while (listening) {
                             String message = dis.readUTF();
@@ -60,7 +61,7 @@ public class MultiServer {
                             	if (server != null) {
                             		server.close();
                             	}
-                            	System.out.println("端口" + port + "终止监听。");
+                            	System.out.println("port" + port + "terminates listening.");
         						listening = false;
         						closeThread(port);
                             }
@@ -73,7 +74,7 @@ public class MultiServer {
                             }
                         }
                     } catch (EOFException e) {
-    					System.out.println("检测到端口 "+port+" 客户端关闭。");
+    					System.out.println("Detected that the sending end of port " + port + " is closed.");
                     } catch (IOException e) {
                         e.printStackTrace();
                         listening = false;
@@ -91,7 +92,7 @@ public class MultiServer {
                     }
             	}
     		} catch (BindException e){
-    			System.out.println(port + "端口不存在。");
+    			System.out.println(port + "The port does not exist.");
     		} catch (IOException e){
     			e.printStackTrace();
     		}
@@ -106,7 +107,7 @@ public class MultiServer {
             Double.parseDouble(message);
             return true;
         } catch (NumberFormatException e) {
-        	System.out.println("信息不可识别。");
+        	System.out.println("The information is not recognizable.");
             return false;
         }
 	}
@@ -119,12 +120,12 @@ public class MultiServer {
     
     private void printAllThread() {
     	for (String key : port_map.keySet()) {
-            System.out.println("正在运行的端口号: " + key);
+            System.out.println("Running port number:" + key);
         }
     }
     
     private void outputMessage(int port, String message) {
-    	System.out.println("来自端口 " + port + " 的消息：" + message);
+    	System.out.println("Message from port " + port + " : " + message);
     }
     
     private void updateReading(int port, String message, Component cp) {
@@ -141,7 +142,27 @@ public class MultiServer {
     			        }
     			        @Override
     			        public void execute() {
-    			        	i.getReading().setValue(reading_number);
+    			        	i.getReading().setValue(reading_number+0.5);
+    			        }
+    			        @Override
+    			        public void redo() {
+    			        }
+    			    });
+    			} catch (Exception e) {
+    			    editingDomain.getCommandStack().undo();
+    			}
+    		}
+    		for(Input i : cp.getInputs()) {
+    			TransactionalEditingDomain editingDomain = TransactionUtil.getEditingDomain(i);
+    			try {
+    			    editingDomain.getCommandStack().execute(new AbstractCommand() {
+    			        @Override
+    			        protected boolean prepare() {
+    			            return true;
+    			        }
+    			        @Override
+    			        public void execute() {
+    			        	i.getReading().setValue(reading_number-0.5);
     			        }
     			        @Override
     			        public void redo() {

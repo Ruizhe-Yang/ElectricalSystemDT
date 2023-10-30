@@ -31,11 +31,11 @@ public class StopReceivingMessage implements IExternalJavaAction {
 			String gid = component.getGid();
 			String port = findFirstFourNumbers(gid);
 			if (MultiServer.port_map.containsKey(port)) {
-				System.out.println("端口 " + port + " 关闭成功。");
+				System.out.println("Port " + port + " is successfully closed.");
 				multiServers.closeThread(Integer.parseInt(port));
 			}
 			else {
-				System.out.println("端口 " + port + " 未开启。");
+				System.out.println("Port " + port + " is unopened.");
 			}
 		}
 	}

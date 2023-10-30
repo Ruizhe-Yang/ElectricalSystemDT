@@ -1437,7 +1437,7 @@
           <reading value="0.4392365190153973"/>
         </outputs>
       </sub_components>
-      <sub_components xsi:type="component_:Component" gid="3654.0001220703125" component_name="SubSystem">
+      <sub_components xsi:type="component_:Component" gid="3654.0001220703125" dynamic="true" component_name="SubSystem">
         <name content="Pwm0"/>
         <description>
           <content>
