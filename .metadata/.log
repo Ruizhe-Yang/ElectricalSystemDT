@@ -406,3 +406,177 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.epsilon.common.dt 1 0 2023-10-30 16:37:34.547
 !MESSAGE Metamodel \cnsa.ee.digital.twin\metamodel\terminology.ecore registered successfully
+!SESSION 2023-10-30 21:39:01.888 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.7
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2023-10-30 21:39:04.743
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-10-30 21:39:04.743
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-10-30 21:39:09.522
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\yangr'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-10-30 21:59:04.475 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.7
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2023-10-30 21:59:07.300
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-10-30 21:59:07.300
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-10-30 21:59:12.446
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\yangr'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epsilon.common.dt 1 0 2023-10-30 22:01:23.292
+!MESSAGE Metamodel \cnsa.ee.digital.twin\metamodel\artifact.ecore registered successfully
+
+!ENTRY org.eclipse.epsilon.common.dt 1 0 2023-10-30 22:01:23.292
+!MESSAGE Metamodel \cnsa.ee.digital.twin\metamodel\base.ecore registered successfully
+
+!ENTRY org.eclipse.epsilon.common.dt 1 0 2023-10-30 22:01:23.293
+!MESSAGE Metamodel \cnsa.ee.digital.twin\metamodel\component.ecore registered successfully
+
+!ENTRY org.eclipse.epsilon.common.dt 1 0 2023-10-30 22:01:23.293
+!MESSAGE Metamodel \cnsa.ee.digital.twin\metamodel\digital_twin.ecore registered successfully
+
+!ENTRY org.eclipse.epsilon.common.dt 1 0 2023-10-30 22:01:23.293
+!MESSAGE Metamodel \cnsa.ee.digital.twin\metamodel\terminology.ecore registered successfully
+!SESSION 2023-10-31 15:26:45.803 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.7
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2023-10-31 15:26:48.878
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-10-31 15:26:48.878
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-10-31 15:26:54.716
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\yangr'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-11-04 16:21:57.775 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.7
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2023-11-04 16:22:02.058
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-11-04 16:22:02.058
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-11-04 16:22:09.139
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\yangr'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epsilon.common.dt 1 0 2023-11-04 16:22:39.355
+!MESSAGE Metamodel \cnsa.ee.digital.twin\metamodel\artifact.ecore registered successfully
+
+!ENTRY org.eclipse.epsilon.common.dt 1 0 2023-11-04 16:22:39.356
+!MESSAGE Metamodel \cnsa.ee.digital.twin\metamodel\base.ecore registered successfully
+
+!ENTRY org.eclipse.epsilon.common.dt 1 0 2023-11-04 16:22:39.356
+!MESSAGE Metamodel \cnsa.ee.digital.twin\metamodel\component.ecore registered successfully
+
+!ENTRY org.eclipse.epsilon.common.dt 1 0 2023-11-04 16:22:39.356
+!MESSAGE Metamodel \cnsa.ee.digital.twin\metamodel\digital_twin.ecore registered successfully
+
+!ENTRY org.eclipse.epsilon.common.dt 1 0 2023-11-04 16:22:39.356
+!MESSAGE Metamodel \cnsa.ee.digital.twin\metamodel\terminology.ecore registered successfully
+!SESSION 2023-11-04 18:15:48.726 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.7
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2023-11-04 18:15:52.471
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-11-04 18:15:52.471
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-11-04 18:15:55.160
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\yangr'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-11-04 18:23:02.707 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.7
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2023-11-04 18:23:14.268
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-11-04 18:23:14.268
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-11-04 18:23:16.964
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\yangr'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-11-04 18:25:59.709 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.7
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2023-11-04 18:26:02.357
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-11-04 18:26:02.357
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-11-04 18:26:04.984
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\yangr'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-11-05 10:35:55.108 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.7
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2023-11-05 10:36:00.875
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-11-05 10:36:00.875
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-11-05 10:36:04.223
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\yangr'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

@@ -39,7 +39,7 @@ public class ClientWindow3 extends Frame{
 	}
 	
 	public void connect(){
-		String port = "3687";
+		String port = "3650";
 		try{
 			socket = new Socket("127.0.0.1", Integer.parseInt(port));
 			dos = new DataOutputStream(socket.getOutputStream());
