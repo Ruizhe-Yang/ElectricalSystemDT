@@ -11,6 +11,7 @@ public class ClientWindow2 extends Frame{
 	DataOutputStream dos = null;
 	TextField tf = new TextField(40);
 	List list = new List(10);
+	String port = "8888";
 
 	public static void main(String[] args){		
 		ClientWindow2 client = new ClientWindow2();
@@ -39,7 +40,6 @@ public class ClientWindow2 extends Frame{
 	}
 	
 	public void connect(){
-		String port = "8888";
 		try{
 			socket = new Socket("127.0.0.1", Integer.parseInt(port));
 			dos = new DataOutputStream(socket.getOutputStream());

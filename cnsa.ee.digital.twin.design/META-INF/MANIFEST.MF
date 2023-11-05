@@ -28,3 +28,5 @@ Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-Vendor: %providerName
 Automatic-Module-Name: cnsa.ee.digital.twin.design
+Bundle-ClassPath: json-simple-1.1.1.jar,
+ .

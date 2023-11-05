@@ -6,7 +6,7 @@ import java.util.Map;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.sirius.tools.api.ui.IExternalJavaAction;
 import base.ModelElement;
-import cnsa.ee.digital.twin.design.com.net.Client;
+import cnsa.ee.digital.twin.design.com.net.ClientTest;
 import component.Component;
 
 
@@ -30,7 +30,7 @@ public class SendMessage implements IExternalJavaAction {
 			if (comp.isDynamic()) {
 				String gid = comp.getGid();
 				System.out.println("comp.getName:" + comp.getName().getContent());
-				Client client = new Client();
+				ClientTest client = new ClientTest();
 				client.connect();
 				client.send(gid);
 				client.disconnect();

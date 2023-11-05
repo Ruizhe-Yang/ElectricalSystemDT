@@ -26,7 +26,7 @@ public class MultiServer {
     public static void main(String[] args) {
     	Component component = null;
     	MultiServer multiServer = MultiServer.getInstance();
-        int[] ports = {8888, 8889, 8899};
+        int[] ports = {8888, 8888, 8899};
         for (int port : ports) {
         	multiServer.createServerThread(port, component);
         }
@@ -92,7 +92,7 @@ public class MultiServer {
                     }
             	}
     		} catch (BindException e){
-    			System.out.println(port + "The port does not exist.");
+    			System.out.println("The port " + port + " does not exist.");
     		} catch (IOException e){
     			e.printStackTrace();
     		}

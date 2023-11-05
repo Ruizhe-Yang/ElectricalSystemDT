@@ -1,63 +1,79 @@
 package cnsa.ee.digital.twin.design.com.net;
 
-import java.io.DataInputStream;
-import java.io.EOFException;
-import java.io.IOException;
-import java.net.BindException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Scanner;
+import org.json.simple.JSONObject;
 
 public class Server {
-	static DataInputStream dis = null;
-	public static void main(String[] args){
-		Server server = new Server();
-		server.run("8888");
-	}
-	
-	public void run (String port) {
-		Socket socket = null;
-		ServerSocket server = null;
-		try{
-			server = new ServerSocket(Integer.parseInt(port));
-			boolean listening = true;
-			while(listening){
-				try{
-					System.out.println("¿ªÊ¼¼àÌı£¬¶Ë¿ÚºÅ£º"+port);
-					socket = server.accept();
-					dis = new DataInputStream(socket.getInputStream());
-					while(listening){
-					    String str = dis.readUTF();
-					    System.out.println("ÊÕµ½Êı¾İ£º"+str);
-					    if (str.equals("q")) {
-					    	if(dis != null)
-								dis.close();
-							if(socket != null)
-								socket.close();
-							System.out.println("¼ì²âµ½¿Í»§¶Ë¹Ø±Õ¡£");
-							listening = false;
-					    }
-					}
-				} catch (EOFException e) {
-					System.out.println("¼ì²âµ½¿Í»§¶Ë¹Ø±Õ¡£");
-				} catch (IOException e) {
-					e.printStackTrace();
-					listening = false;
-				} finally {
-					try{
-						if(dis != null)
-							dis.close();
-						if(socket != null)
-							socket.close();
-					}catch(Exception e){
-						e.printStackTrace();
-					}
-				}
-			}
-		} catch (BindException e){
-			System.out.println(port + "¶Ë¿Ú²»´æÔÚ¡£");
-		} catch (IOException e){
-			e.printStackTrace();
-		}
-	}
+    public static void main(String[] args){
+        try {
+            System.out.println("SocketæœåŠ¡å™¨å¼€å§‹è¿è¡Œ...");
+            ServerSocket serverSocket = new ServerSocket(9999);
+            while (true){
+                Socket socket = serverSocket.accept();
+                new Thread(new Server_listen(socket)).start();
+                new Thread(new Server_send(socket)).start();
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
 }
 
+class Server_listen implements Runnable{
+    private Socket socket;
+
+    Server_listen(Socket socket){
+        this.socket = socket;
+    }
+
+    @Override
+    public void run() {
+        try {
+            ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
+            while (true)
+                System.out.println(ois.readObject());
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            try{
+                socket.close();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class Server_send implements Runnable{
+    private Socket socket;
+
+    Server_send(Socket socket){
+        this.socket = socket;
+    }
+
+    @SuppressWarnings("unchecked")
+	@Override
+    public void run() {
+        try {
+            ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
+            @SuppressWarnings("resource")
+			Scanner scanner = new Scanner(System.in);
+            while (true){
+                System.out.print("è¯·è¾“å…¥è¦å‘é€çš„å†…å®¹ï¼š");
+                String string = scanner.nextLine();
+                JSONObject object = new JSONObject();
+                object.put("type","chat");
+                object.put("msg",string);
+                oos.writeObject(object);
+                oos.flush();
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}

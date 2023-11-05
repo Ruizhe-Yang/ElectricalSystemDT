@@ -11,6 +11,7 @@ public class ClientWindow1 extends Frame{
 	DataOutputStream dos = null;
 	TextField tf = new TextField(40);
 	List list = new List(10);
+	String port = "9999";
 
 	public static void main(String[] args){		
 		ClientWindow1 client = new ClientWindow1();
@@ -39,7 +40,6 @@ public class ClientWindow1 extends Frame{
 	}
 	
 	public void connect(){
-		String port = "3687";
 		try{
 			socket = new Socket("127.0.0.1", Integer.parseInt(port));
 			dos = new DataOutputStream(socket.getOutputStream());
@@ -72,6 +72,11 @@ public class ClientWindow1 extends Frame{
 		    try{
 		    	dos.writeUTF(str);
 		    	dos.flush();
+//		    	ServerSocket server = new ServerSocket(Integer.parseInt(port));
+//				socket = server.accept();
+//				DataInputStream dis = new DataInputStream(socket.getInputStream());
+//				String str2 = dis.readUTF();
+//			    System.out.println("收到数据："+str2);
 		    } catch (IOException e1){
 		       e1.printStackTrace();  
 		    }
