@@ -21,9 +21,7 @@ import base.TaggedValue;
 import base.UtilityElement;
 
 import component.Component_Package;
-
 import component.impl.Component_PackageImpl;
-
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;

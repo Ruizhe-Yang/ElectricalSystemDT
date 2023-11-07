@@ -3,6 +3,7 @@
 package component.provider;
 
 
+import component.Component_Package;
 import component.TransitionNode;
 
 import java.util.Collection;
@@ -83,6 +84,30 @@ public class TransitionNodeItemProvider extends UtilityNodesItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+	}
+
+	/**
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+		Object childFeature = feature;
+		Object childObject = child;
+
+		boolean qualify =
+			childFeature == Component_Package.Literals.UTILITY_NODES__READING ||
+			childFeature == Component_Package.Literals.UTILITY_NODES__SIMULATED_READING ||
+			childFeature == Component_Package.Literals.UTILITY_NODES__ACTUAL_READING;
+
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 }

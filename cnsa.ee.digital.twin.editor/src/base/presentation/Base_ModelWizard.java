@@ -72,10 +72,10 @@ import org.eclipse.ui.part.ISetSelectionTarget;
 import base.Base_Factory;
 import base.Base_Package;
 import component.provider.ComponentEditPlugin;
+import base.provider.BaseEditPlugin;
 
 
 import component.presentation.ComponentEditorPlugin;
-
 import org.eclipse.core.runtime.Path;
 
 import org.eclipse.jface.viewers.ISelection;
@@ -400,8 +400,7 @@ public class Base_ModelWizard extends Wizard implements INewWizard {
 		 */
 		@Override
 		public void createControl(Composite parent) {
-			Composite composite = new Composite(parent, SWT.NONE);
-			{
+			Composite composite = new Composite(parent, SWT.NONE); {
 				GridLayout layout = new GridLayout();
 				layout.numColumns = 1;
 				layout.verticalSpacing = 12;

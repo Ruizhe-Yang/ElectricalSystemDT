@@ -63,6 +63,8 @@ public class UtilityNodesItemProvider extends ComponentAssetItemProvider {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(Component_Package.Literals.UTILITY_NODES__READING);
+			childrenFeatures.add(Component_Package.Literals.UTILITY_NODES__SIMULATED_READING);
+			childrenFeatures.add(Component_Package.Literals.UTILITY_NODES__ACTUAL_READING);
 		}
 		return childrenFeatures;
 	}
@@ -108,6 +110,8 @@ public class UtilityNodesItemProvider extends ComponentAssetItemProvider {
 
 		switch (notification.getFeatureID(UtilityNodes.class)) {
 			case Component_Package.UTILITY_NODES__READING:
+			case Component_Package.UTILITY_NODES__SIMULATED_READING:
+			case Component_Package.UTILITY_NODES__ACTUAL_READING:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -129,6 +133,40 @@ public class UtilityNodesItemProvider extends ComponentAssetItemProvider {
 			(createChildParameter
 				(Component_Package.Literals.UTILITY_NODES__READING,
 				 Component_Factory.eINSTANCE.createReading()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Component_Package.Literals.UTILITY_NODES__SIMULATED_READING,
+				 Component_Factory.eINSTANCE.createReading()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Component_Package.Literals.UTILITY_NODES__ACTUAL_READING,
+				 Component_Factory.eINSTANCE.createReading()));
+	}
+
+	/**
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+		Object childFeature = feature;
+		Object childObject = child;
+
+		boolean qualify =
+			childFeature == Component_Package.Literals.UTILITY_NODES__READING ||
+			childFeature == Component_Package.Literals.UTILITY_NODES__SIMULATED_READING ||
+			childFeature == Component_Package.Literals.UTILITY_NODES__ACTUAL_READING;
+
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 }

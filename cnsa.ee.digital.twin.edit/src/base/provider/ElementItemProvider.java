@@ -4,7 +4,6 @@ package base.provider;
 
 
 import component.provider.ComponentEditPlugin;
-
 import java.util.Collection;
 import java.util.List;
 

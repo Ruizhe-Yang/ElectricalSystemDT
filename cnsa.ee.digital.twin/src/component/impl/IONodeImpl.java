@@ -5,11 +5,17 @@ package component.impl;
 import component.Component_Package;
 import component.IONode;
 
+import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,52 +25,42 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link component.impl.IONodeImpl#getUpper <em>Upper</em>}</li>
- *   <li>{@link component.impl.IONodeImpl#getLower <em>Lower</em>}</li>
+ *   <li>{@link component.impl.IONodeImpl#getParameters <em>Parameters</em>}</li>
+ *   <li>{@link component.impl.IONodeImpl#getFunc <em>Func</em>}</li>
  * </ul>
  *
  * @generated
  */
 public abstract class IONodeImpl extends UtilityNodesImpl implements IONode {
 	/**
-	 * The default value of the '{@link #getUpper() <em>Upper</em>}' attribute.
+	 * The cached value of the '{@link #getParameters() <em>Parameters</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getUpper()
+	 * @see #getParameters()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final float UPPER_EDEFAULT = 0.0F;
+	protected EList<Float> parameters;
 
 	/**
-	 * The cached value of the '{@link #getUpper() <em>Upper</em>}' attribute.
+	 * The default value of the '{@link #getFunc() <em>Func</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getUpper()
+	 * @see #getFunc()
 	 * @generated
 	 * @ordered
 	 */
-	protected float upper = UPPER_EDEFAULT;
+	protected static final String FUNC_EDEFAULT = null;
 
 	/**
-	 * The default value of the '{@link #getLower() <em>Lower</em>}' attribute.
+	 * The cached value of the '{@link #getFunc() <em>Func</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getLower()
+	 * @see #getFunc()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final float LOWER_EDEFAULT = 0.0F;
-
-	/**
-	 * The cached value of the '{@link #getLower() <em>Lower</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getLower()
-	 * @generated
-	 * @ordered
-	 */
-	protected float lower = LOWER_EDEFAULT;
+	protected String func = FUNC_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,8 +87,11 @@ public abstract class IONodeImpl extends UtilityNodesImpl implements IONode {
 	 * @generated
 	 */
 	@Override
-	public float getUpper() {
-		return upper;
+	public EList<Float> getParameters() {
+		if (parameters == null) {
+			parameters = new EDataTypeUniqueEList<Float>(Float.class, this, Component_Package.IO_NODE__PARAMETERS);
+		}
+		return parameters;
 	}
 
 	/**
@@ -101,34 +100,21 @@ public abstract class IONodeImpl extends UtilityNodesImpl implements IONode {
 	 * @generated
 	 */
 	@Override
-	public void setUpper(float newUpper) {
-		float oldUpper = upper;
-		upper = newUpper;
+	public String getFunc() {
+		return func;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFunc(String newFunc) {
+		String oldFunc = func;
+		func = newFunc;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Component_Package.IO_NODE__UPPER, oldUpper, upper));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public float getLower() {
-		return lower;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setLower(float newLower) {
-		float oldLower = lower;
-		lower = newLower;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Component_Package.IO_NODE__LOWER, oldLower, lower));
+			eNotify(new ENotificationImpl(this, Notification.SET, Component_Package.IO_NODE__FUNC, oldFunc, func));
 	}
 
 	/**
@@ -139,10 +125,10 @@ public abstract class IONodeImpl extends UtilityNodesImpl implements IONode {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case Component_Package.IO_NODE__UPPER:
-				return getUpper();
-			case Component_Package.IO_NODE__LOWER:
-				return getLower();
+			case Component_Package.IO_NODE__PARAMETERS:
+				return getParameters();
+			case Component_Package.IO_NODE__FUNC:
+				return getFunc();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -152,14 +138,16 @@ public abstract class IONodeImpl extends UtilityNodesImpl implements IONode {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case Component_Package.IO_NODE__UPPER:
-				setUpper((Float)newValue);
+			case Component_Package.IO_NODE__PARAMETERS:
+				getParameters().clear();
+				getParameters().addAll((Collection<? extends Float>)newValue);
 				return;
-			case Component_Package.IO_NODE__LOWER:
-				setLower((Float)newValue);
+			case Component_Package.IO_NODE__FUNC:
+				setFunc((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -173,11 +161,11 @@ public abstract class IONodeImpl extends UtilityNodesImpl implements IONode {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case Component_Package.IO_NODE__UPPER:
-				setUpper(UPPER_EDEFAULT);
+			case Component_Package.IO_NODE__PARAMETERS:
+				getParameters().clear();
 				return;
-			case Component_Package.IO_NODE__LOWER:
-				setLower(LOWER_EDEFAULT);
+			case Component_Package.IO_NODE__FUNC:
+				setFunc(FUNC_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -191,10 +179,10 @@ public abstract class IONodeImpl extends UtilityNodesImpl implements IONode {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case Component_Package.IO_NODE__UPPER:
-				return upper != UPPER_EDEFAULT;
-			case Component_Package.IO_NODE__LOWER:
-				return lower != LOWER_EDEFAULT;
+			case Component_Package.IO_NODE__PARAMETERS:
+				return parameters != null && !parameters.isEmpty();
+			case Component_Package.IO_NODE__FUNC:
+				return FUNC_EDEFAULT == null ? func != null : !FUNC_EDEFAULT.equals(func);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -209,10 +197,10 @@ public abstract class IONodeImpl extends UtilityNodesImpl implements IONode {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (upper: ");
-		result.append(upper);
-		result.append(", lower: ");
-		result.append(lower);
+		result.append(" (parameters: ");
+		result.append(parameters);
+		result.append(", func: ");
+		result.append(func);
 		result.append(')');
 		return result.toString();
 	}

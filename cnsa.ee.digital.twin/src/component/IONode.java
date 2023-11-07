@@ -2,6 +2,7 @@
  */
 package component;
 
+import org.eclipse.emf.common.util.EList;
 
 /**
  * <!-- begin-user-doc -->
@@ -12,8 +13,8 @@ package component;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link component.IONode#getUpper <em>Upper</em>}</li>
- *   <li>{@link component.IONode#getLower <em>Lower</em>}</li>
+ *   <li>{@link component.IONode#getParameters <em>Parameters</em>}</li>
+ *   <li>{@link component.IONode#getFunc <em>Func</em>}</li>
  * </ul>
  *
  * @see component.Component_Package#getIONode()
@@ -22,47 +23,37 @@ package component;
  */
 public interface IONode extends UtilityNodes {
 	/**
-	 * Returns the value of the '<em><b>Upper</b></em>' attribute.
+	 * Returns the value of the '<em><b>Parameters</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.Float}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Upper</em>' attribute.
-	 * @see #setUpper(float)
-	 * @see component.Component_Package#getIONode_Upper()
+	 * @return the value of the '<em>Parameters</em>' attribute list.
+	 * @see component.Component_Package#getIONode_Parameters()
 	 * @model
 	 * @generated
 	 */
-	float getUpper();
+	EList<Float> getParameters();
 
 	/**
-	 * Sets the value of the '{@link component.IONode#getUpper <em>Upper</em>}' attribute.
+	 * Returns the value of the '<em><b>Func</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Upper</em>' attribute.
-	 * @see #getUpper()
-	 * @generated
-	 */
-	void setUpper(float value);
-
-	/**
-	 * Returns the value of the '<em><b>Lower</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Lower</em>' attribute.
-	 * @see #setLower(float)
-	 * @see component.Component_Package#getIONode_Lower()
+	 * @return the value of the '<em>Func</em>' attribute.
+	 * @see #setFunc(String)
+	 * @see component.Component_Package#getIONode_Func()
 	 * @model
 	 * @generated
 	 */
-	float getLower();
+	String getFunc();
 
 	/**
-	 * Sets the value of the '{@link component.IONode#getLower <em>Lower</em>}' attribute.
+	 * Sets the value of the '{@link component.IONode#getFunc <em>Func</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Lower</em>' attribute.
-	 * @see #getLower()
+	 * @param value the new value of the '<em>Func</em>' attribute.
+	 * @see #getFunc()
 	 * @generated
 	 */
-	void setLower(float value);
+	void setFunc(String value);
 
 } // IONode

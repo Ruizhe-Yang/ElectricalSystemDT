@@ -66,18 +66,16 @@
     </genClasses>
     <genClasses image="false" ecoreClass="component.ecore#//ComponentRelationship">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute component.ecore#//ComponentRelationship/label"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference component.ecore#//ComponentRelationship/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference component.ecore#//ComponentRelationship/target"/>
     </genClasses>
-    <genClasses ecoreClass="component.ecore#//DirectedRelationship">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference component.ecore#//DirectedRelationship/source"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference component.ecore#//DirectedRelationship/target"/>
-    </genClasses>
-    <genClasses ecoreClass="component.ecore#//UndirectedRelationship">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference component.ecore#//UndirectedRelationship/source"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference component.ecore#//UndirectedRelationship/target"/>
-    </genClasses>
+    <genClasses ecoreClass="component.ecore#//DirectedRelationship"/>
+    <genClasses ecoreClass="component.ecore#//UndirectedRelationship"/>
     <genClasses image="false" ecoreClass="component.ecore#//ComponentAsset"/>
     <genClasses image="false" ecoreClass="component.ecore#//UtilityNodes">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference component.ecore#//UtilityNodes/reading"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference component.ecore#//UtilityNodes/simulated_reading"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference component.ecore#//UtilityNodes/actual_reading"/>
     </genClasses>
     <genClasses image="false" ecoreClass="component.ecore#//TransitionNode"/>
     <genClasses ecoreClass="component.ecore#//Fork">
@@ -88,8 +86,8 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference component.ecore#//Switch/ports"/>
     </genClasses>
     <genClasses image="false" ecoreClass="component.ecore#//IONode">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute component.ecore#//IONode/upper"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute component.ecore#//IONode/lower"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute component.ecore#//IONode/parameters"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute component.ecore#//IONode/func"/>
     </genClasses>
     <genClasses ecoreClass="component.ecore#//Input"/>
     <genClasses ecoreClass="component.ecore#//Output"/>

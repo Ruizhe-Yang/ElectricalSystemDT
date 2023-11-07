@@ -1091,13 +1091,31 @@ public interface Component_Package extends EPackage {
 	int COMPONENT_RELATIONSHIP__LABEL = COMPONENT_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Source</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_RELATIONSHIP__SOURCE = COMPONENT_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_RELATIONSHIP__TARGET = COMPONENT_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Component Relationship</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COMPONENT_RELATIONSHIP_FEATURE_COUNT = COMPONENT_ELEMENT_FEATURE_COUNT + 1;
+	int COMPONENT_RELATIONSHIP_FEATURE_COUNT = COMPONENT_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link component.impl.DirectedRelationshipImpl <em>Directed Relationship</em>}' class.
@@ -1242,7 +1260,7 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIRECTED_RELATIONSHIP__SOURCE = COMPONENT_RELATIONSHIP_FEATURE_COUNT + 0;
+	int DIRECTED_RELATIONSHIP__SOURCE = COMPONENT_RELATIONSHIP__SOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Target</b></em>' reference.
@@ -1251,7 +1269,7 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIRECTED_RELATIONSHIP__TARGET = COMPONENT_RELATIONSHIP_FEATURE_COUNT + 1;
+	int DIRECTED_RELATIONSHIP__TARGET = COMPONENT_RELATIONSHIP__TARGET;
 
 	/**
 	 * The number of structural features of the '<em>Directed Relationship</em>' class.
@@ -1260,7 +1278,7 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIRECTED_RELATIONSHIP_FEATURE_COUNT = COMPONENT_RELATIONSHIP_FEATURE_COUNT + 2;
+	int DIRECTED_RELATIONSHIP_FEATURE_COUNT = COMPONENT_RELATIONSHIP_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link component.impl.UndirectedRelationshipImpl <em>Undirected Relationship</em>}' class.
@@ -1405,7 +1423,7 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDIRECTED_RELATIONSHIP__SOURCE = COMPONENT_RELATIONSHIP_FEATURE_COUNT + 0;
+	int UNDIRECTED_RELATIONSHIP__SOURCE = COMPONENT_RELATIONSHIP__SOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Target</b></em>' reference.
@@ -1414,7 +1432,7 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDIRECTED_RELATIONSHIP__TARGET = COMPONENT_RELATIONSHIP_FEATURE_COUNT + 1;
+	int UNDIRECTED_RELATIONSHIP__TARGET = COMPONENT_RELATIONSHIP__TARGET;
 
 	/**
 	 * The number of structural features of the '<em>Undirected Relationship</em>' class.
@@ -1423,7 +1441,7 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDIRECTED_RELATIONSHIP_FEATURE_COUNT = COMPONENT_RELATIONSHIP_FEATURE_COUNT + 2;
+	int UNDIRECTED_RELATIONSHIP_FEATURE_COUNT = COMPONENT_RELATIONSHIP_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link component.impl.ComponentAssetImpl <em>Component Asset</em>}' class.
@@ -1698,13 +1716,31 @@ public interface Component_Package extends EPackage {
 	int UTILITY_NODES__READING = COMPONENT_ASSET_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Simulated reading</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UTILITY_NODES__SIMULATED_READING = COMPONENT_ASSET_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Actual reading</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UTILITY_NODES__ACTUAL_READING = COMPONENT_ASSET_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Utility Nodes</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UTILITY_NODES_FEATURE_COUNT = COMPONENT_ASSET_FEATURE_COUNT + 1;
+	int UTILITY_NODES_FEATURE_COUNT = COMPONENT_ASSET_FEATURE_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link component.impl.TransitionNodeImpl <em>Transition Node</em>}' class.
@@ -1841,6 +1877,24 @@ public interface Component_Package extends EPackage {
 	 * @ordered
 	 */
 	int TRANSITION_NODE__READING = UTILITY_NODES__READING;
+
+	/**
+	 * The feature id for the '<em><b>Simulated reading</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_NODE__SIMULATED_READING = UTILITY_NODES__SIMULATED_READING;
+
+	/**
+	 * The feature id for the '<em><b>Actual reading</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_NODE__ACTUAL_READING = UTILITY_NODES__ACTUAL_READING;
 
 	/**
 	 * The number of structural features of the '<em>Transition Node</em>' class.
@@ -1986,6 +2040,24 @@ public interface Component_Package extends EPackage {
 	 * @ordered
 	 */
 	int FORK__READING = TRANSITION_NODE__READING;
+
+	/**
+	 * The feature id for the '<em><b>Simulated reading</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__SIMULATED_READING = TRANSITION_NODE__SIMULATED_READING;
+
+	/**
+	 * The feature id for the '<em><b>Actual reading</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__ACTUAL_READING = TRANSITION_NODE__ACTUAL_READING;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' reference.
@@ -2151,6 +2223,24 @@ public interface Component_Package extends EPackage {
 	int SWITCH__READING = TRANSITION_NODE__READING;
 
 	/**
+	 * The feature id for the '<em><b>Simulated reading</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SWITCH__SIMULATED_READING = TRANSITION_NODE__SIMULATED_READING;
+
+	/**
+	 * The feature id for the '<em><b>Actual reading</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SWITCH__ACTUAL_READING = TRANSITION_NODE__ACTUAL_READING;
+
+	/**
 	 * The feature id for the '<em><b>Ports</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2305,22 +2395,40 @@ public interface Component_Package extends EPackage {
 	int IO_NODE__READING = UTILITY_NODES__READING;
 
 	/**
-	 * The feature id for the '<em><b>Upper</b></em>' attribute.
+	 * The feature id for the '<em><b>Simulated reading</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IO_NODE__UPPER = UTILITY_NODES_FEATURE_COUNT + 0;
+	int IO_NODE__SIMULATED_READING = UTILITY_NODES__SIMULATED_READING;
 
 	/**
-	 * The feature id for the '<em><b>Lower</b></em>' attribute.
+	 * The feature id for the '<em><b>Actual reading</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IO_NODE__LOWER = UTILITY_NODES_FEATURE_COUNT + 1;
+	int IO_NODE__ACTUAL_READING = UTILITY_NODES__ACTUAL_READING;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IO_NODE__PARAMETERS = UTILITY_NODES_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Func</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IO_NODE__FUNC = UTILITY_NODES_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>IO Node</em>' class.
@@ -2468,22 +2576,40 @@ public interface Component_Package extends EPackage {
 	int INPUT__READING = IO_NODE__READING;
 
 	/**
-	 * The feature id for the '<em><b>Upper</b></em>' attribute.
+	 * The feature id for the '<em><b>Simulated reading</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INPUT__UPPER = IO_NODE__UPPER;
+	int INPUT__SIMULATED_READING = IO_NODE__SIMULATED_READING;
 
 	/**
-	 * The feature id for the '<em><b>Lower</b></em>' attribute.
+	 * The feature id for the '<em><b>Actual reading</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INPUT__LOWER = IO_NODE__LOWER;
+	int INPUT__ACTUAL_READING = IO_NODE__ACTUAL_READING;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INPUT__PARAMETERS = IO_NODE__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Func</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INPUT__FUNC = IO_NODE__FUNC;
 
 	/**
 	 * The number of structural features of the '<em>Input</em>' class.
@@ -2631,22 +2757,40 @@ public interface Component_Package extends EPackage {
 	int OUTPUT__READING = IO_NODE__READING;
 
 	/**
-	 * The feature id for the '<em><b>Upper</b></em>' attribute.
+	 * The feature id for the '<em><b>Simulated reading</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int OUTPUT__UPPER = IO_NODE__UPPER;
+	int OUTPUT__SIMULATED_READING = IO_NODE__SIMULATED_READING;
 
 	/**
-	 * The feature id for the '<em><b>Lower</b></em>' attribute.
+	 * The feature id for the '<em><b>Actual reading</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int OUTPUT__LOWER = IO_NODE__LOWER;
+	int OUTPUT__ACTUAL_READING = IO_NODE__ACTUAL_READING;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OUTPUT__PARAMETERS = IO_NODE__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Func</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OUTPUT__FUNC = IO_NODE__FUNC;
 
 	/**
 	 * The number of structural features of the '<em>Output</em>' class.
@@ -2794,22 +2938,40 @@ public interface Component_Package extends EPackage {
 	int LPORT__READING = IO_NODE__READING;
 
 	/**
-	 * The feature id for the '<em><b>Upper</b></em>' attribute.
+	 * The feature id for the '<em><b>Simulated reading</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LPORT__UPPER = IO_NODE__UPPER;
+	int LPORT__SIMULATED_READING = IO_NODE__SIMULATED_READING;
 
 	/**
-	 * The feature id for the '<em><b>Lower</b></em>' attribute.
+	 * The feature id for the '<em><b>Actual reading</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LPORT__LOWER = IO_NODE__LOWER;
+	int LPORT__ACTUAL_READING = IO_NODE__ACTUAL_READING;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LPORT__PARAMETERS = IO_NODE__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Func</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LPORT__FUNC = IO_NODE__FUNC;
 
 	/**
 	 * The number of structural features of the '<em>LPort</em>' class.
@@ -2957,22 +3119,40 @@ public interface Component_Package extends EPackage {
 	int RPORT__READING = IO_NODE__READING;
 
 	/**
-	 * The feature id for the '<em><b>Upper</b></em>' attribute.
+	 * The feature id for the '<em><b>Simulated reading</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RPORT__UPPER = IO_NODE__UPPER;
+	int RPORT__SIMULATED_READING = IO_NODE__SIMULATED_READING;
 
 	/**
-	 * The feature id for the '<em><b>Lower</b></em>' attribute.
+	 * The feature id for the '<em><b>Actual reading</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RPORT__LOWER = IO_NODE__LOWER;
+	int RPORT__ACTUAL_READING = IO_NODE__ACTUAL_READING;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RPORT__PARAMETERS = IO_NODE__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Func</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RPORT__FUNC = IO_NODE__FUNC;
 
 	/**
 	 * The number of structural features of the '<em>RPort</em>' class.
@@ -5035,6 +5215,28 @@ public interface Component_Package extends EPackage {
 	EAttribute getComponentRelationship_Label();
 
 	/**
+	 * Returns the meta object for the reference '{@link component.ComponentRelationship#getSource <em>Source</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source</em>'.
+	 * @see component.ComponentRelationship#getSource()
+	 * @see #getComponentRelationship()
+	 * @generated
+	 */
+	EReference getComponentRelationship_Source();
+
+	/**
+	 * Returns the meta object for the reference '{@link component.ComponentRelationship#getTarget <em>Target</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target</em>'.
+	 * @see component.ComponentRelationship#getTarget()
+	 * @see #getComponentRelationship()
+	 * @generated
+	 */
+	EReference getComponentRelationship_Target();
+
+	/**
 	 * Returns the meta object for class '{@link component.DirectedRelationship <em>Directed Relationship</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5045,28 +5247,6 @@ public interface Component_Package extends EPackage {
 	EClass getDirectedRelationship();
 
 	/**
-	 * Returns the meta object for the reference '{@link component.DirectedRelationship#getSource <em>Source</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source</em>'.
-	 * @see component.DirectedRelationship#getSource()
-	 * @see #getDirectedRelationship()
-	 * @generated
-	 */
-	EReference getDirectedRelationship_Source();
-
-	/**
-	 * Returns the meta object for the reference '{@link component.DirectedRelationship#getTarget <em>Target</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target</em>'.
-	 * @see component.DirectedRelationship#getTarget()
-	 * @see #getDirectedRelationship()
-	 * @generated
-	 */
-	EReference getDirectedRelationship_Target();
-
-	/**
 	 * Returns the meta object for class '{@link component.UndirectedRelationship <em>Undirected Relationship</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5075,28 +5255,6 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 */
 	EClass getUndirectedRelationship();
-
-	/**
-	 * Returns the meta object for the reference '{@link component.UndirectedRelationship#getSource <em>Source</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source</em>'.
-	 * @see component.UndirectedRelationship#getSource()
-	 * @see #getUndirectedRelationship()
-	 * @generated
-	 */
-	EReference getUndirectedRelationship_Source();
-
-	/**
-	 * Returns the meta object for the reference '{@link component.UndirectedRelationship#getTarget <em>Target</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target</em>'.
-	 * @see component.UndirectedRelationship#getTarget()
-	 * @see #getUndirectedRelationship()
-	 * @generated
-	 */
-	EReference getUndirectedRelationship_Target();
 
 	/**
 	 * Returns the meta object for class '{@link component.ComponentAsset <em>Component Asset</em>}'.
@@ -5128,6 +5286,28 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 */
 	EReference getUtilityNodes_Reading();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link component.UtilityNodes#getSimulated_reading <em>Simulated reading</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Simulated reading</em>'.
+	 * @see component.UtilityNodes#getSimulated_reading()
+	 * @see #getUtilityNodes()
+	 * @generated
+	 */
+	EReference getUtilityNodes_Simulated_reading();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link component.UtilityNodes#getActual_reading <em>Actual reading</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Actual reading</em>'.
+	 * @see component.UtilityNodes#getActual_reading()
+	 * @see #getUtilityNodes()
+	 * @generated
+	 */
+	EReference getUtilityNodes_Actual_reading();
 
 	/**
 	 * Returns the meta object for class '{@link component.TransitionNode <em>Transition Node</em>}'.
@@ -5203,26 +5383,26 @@ public interface Component_Package extends EPackage {
 	EClass getIONode();
 
 	/**
-	 * Returns the meta object for the attribute '{@link component.IONode#getUpper <em>Upper</em>}'.
+	 * Returns the meta object for the attribute list '{@link component.IONode#getParameters <em>Parameters</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Upper</em>'.
-	 * @see component.IONode#getUpper()
+	 * @return the meta object for the attribute list '<em>Parameters</em>'.
+	 * @see component.IONode#getParameters()
 	 * @see #getIONode()
 	 * @generated
 	 */
-	EAttribute getIONode_Upper();
+	EAttribute getIONode_Parameters();
 
 	/**
-	 * Returns the meta object for the attribute '{@link component.IONode#getLower <em>Lower</em>}'.
+	 * Returns the meta object for the attribute '{@link component.IONode#getFunc <em>Func</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Lower</em>'.
-	 * @see component.IONode#getLower()
+	 * @return the meta object for the attribute '<em>Func</em>'.
+	 * @see component.IONode#getFunc()
 	 * @see #getIONode()
 	 * @generated
 	 */
-	EAttribute getIONode_Lower();
+	EAttribute getIONode_Func();
 
 	/**
 	 * Returns the meta object for class '{@link component.Input <em>Input</em>}'.
@@ -5929,6 +6109,22 @@ public interface Component_Package extends EPackage {
 		EAttribute COMPONENT_RELATIONSHIP__LABEL = eINSTANCE.getComponentRelationship_Label();
 
 		/**
+		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference COMPONENT_RELATIONSHIP__SOURCE = eINSTANCE.getComponentRelationship_Source();
+
+		/**
+		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference COMPONENT_RELATIONSHIP__TARGET = eINSTANCE.getComponentRelationship_Target();
+
+		/**
 		 * The meta object literal for the '{@link component.impl.DirectedRelationshipImpl <em>Directed Relationship</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5939,22 +6135,6 @@ public interface Component_Package extends EPackage {
 		EClass DIRECTED_RELATIONSHIP = eINSTANCE.getDirectedRelationship();
 
 		/**
-		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DIRECTED_RELATIONSHIP__SOURCE = eINSTANCE.getDirectedRelationship_Source();
-
-		/**
-		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DIRECTED_RELATIONSHIP__TARGET = eINSTANCE.getDirectedRelationship_Target();
-
-		/**
 		 * The meta object literal for the '{@link component.impl.UndirectedRelationshipImpl <em>Undirected Relationship</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5963,22 +6143,6 @@ public interface Component_Package extends EPackage {
 		 * @generated
 		 */
 		EClass UNDIRECTED_RELATIONSHIP = eINSTANCE.getUndirectedRelationship();
-
-		/**
-		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference UNDIRECTED_RELATIONSHIP__SOURCE = eINSTANCE.getUndirectedRelationship_Source();
-
-		/**
-		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference UNDIRECTED_RELATIONSHIP__TARGET = eINSTANCE.getUndirectedRelationship_Target();
 
 		/**
 		 * The meta object literal for the '{@link component.impl.ComponentAssetImpl <em>Component Asset</em>}' class.
@@ -6007,6 +6171,22 @@ public interface Component_Package extends EPackage {
 		 * @generated
 		 */
 		EReference UTILITY_NODES__READING = eINSTANCE.getUtilityNodes_Reading();
+
+		/**
+		 * The meta object literal for the '<em><b>Simulated reading</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UTILITY_NODES__SIMULATED_READING = eINSTANCE.getUtilityNodes_Simulated_reading();
+
+		/**
+		 * The meta object literal for the '<em><b>Actual reading</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UTILITY_NODES__ACTUAL_READING = eINSTANCE.getUtilityNodes_Actual_reading();
 
 		/**
 		 * The meta object literal for the '{@link component.impl.TransitionNodeImpl <em>Transition Node</em>}' class.
@@ -6073,20 +6253,20 @@ public interface Component_Package extends EPackage {
 		EClass IO_NODE = eINSTANCE.getIONode();
 
 		/**
-		 * The meta object literal for the '<em><b>Upper</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Parameters</b></em>' attribute list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute IO_NODE__UPPER = eINSTANCE.getIONode_Upper();
+		EAttribute IO_NODE__PARAMETERS = eINSTANCE.getIONode_Parameters();
 
 		/**
-		 * The meta object literal for the '<em><b>Lower</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Func</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute IO_NODE__LOWER = eINSTANCE.getIONode_Lower();
+		EAttribute IO_NODE__FUNC = eINSTANCE.getIONode_Func();
 
 		/**
 		 * The meta object literal for the '{@link component.impl.InputImpl <em>Input</em>}' class.

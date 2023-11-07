@@ -43,16 +43,14 @@ class Component extends ComponentElement {
 
 abstract class ComponentRelationship extends ComponentElement {
 	attr String label;
+	ref ComponentElement source;
+	ref ComponentElement target;
 }
 
 class DirectedRelationship extends ComponentRelationship {
-	ref ComponentElement source;
-	ref ComponentElement target;
 }
 
 class UndirectedRelationship extends ComponentRelationship {
-	ref ComponentElement source;
-	ref ComponentElement target;
 }
 
 abstract class ComponentAsset extends ComponentElement {
@@ -60,6 +58,8 @@ abstract class ComponentAsset extends ComponentElement {
 
 abstract class UtilityNodes extends ComponentAsset {
 	val Reading reading;
+	val Reading simulated_reading;
+	val Reading actual_reading;
 }
 
 abstract class TransitionNode extends UtilityNodes {
@@ -75,8 +75,8 @@ class Switch extends TransitionNode {
 }
 
 abstract class IONode extends UtilityNodes {
-	attr float upper;
-	attr float lower;
+	attr float[*] parameters;
+	attr String func;
 }
 
 class Input extends IONode {

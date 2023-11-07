@@ -3,7 +3,6 @@
 package base.presentation;
 
 import component.presentation.ComponentEditorPlugin;
-
 import java.util.ArrayList;
 import java.util.Collection;
 

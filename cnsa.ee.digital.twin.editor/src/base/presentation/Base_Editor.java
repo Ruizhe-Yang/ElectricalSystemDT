@@ -158,9 +158,7 @@ import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 import base.provider.Base_ItemProviderAdapterFactory;
 
 import component.presentation.ComponentEditorPlugin;
-
 import component.provider.Component_ItemProviderAdapterFactory;
-
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
 
 

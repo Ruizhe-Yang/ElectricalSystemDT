@@ -45,26 +45,26 @@ public class IONodeItemProvider extends UtilityNodesItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addUpperPropertyDescriptor(object);
-			addLowerPropertyDescriptor(object);
+			addParametersPropertyDescriptor(object);
+			addFuncPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Upper feature.
+	 * This adds a property descriptor for the Parameters feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addUpperPropertyDescriptor(Object object) {
+	protected void addParametersPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_IONode_upper_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_IONode_upper_feature", "_UI_IONode_type"),
-				 Component_Package.Literals.IO_NODE__UPPER,
+				 getString("_UI_IONode_parameters_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_IONode_parameters_feature", "_UI_IONode_type"),
+				 Component_Package.Literals.IO_NODE__PARAMETERS,
 				 true,
 				 false,
 				 false,
@@ -74,23 +74,23 @@ public class IONodeItemProvider extends UtilityNodesItemProvider {
 	}
 
 	/**
-	 * This adds a property descriptor for the Lower feature.
+	 * This adds a property descriptor for the Func feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addLowerPropertyDescriptor(Object object) {
+	protected void addFuncPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_IONode_lower_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_IONode_lower_feature", "_UI_IONode_type"),
-				 Component_Package.Literals.IO_NODE__LOWER,
+				 getString("_UI_IONode_func_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_IONode_func_feature", "_UI_IONode_type"),
+				 Component_Package.Literals.IO_NODE__FUNC,
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -122,8 +122,8 @@ public class IONodeItemProvider extends UtilityNodesItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(IONode.class)) {
-			case Component_Package.IO_NODE__UPPER:
-			case Component_Package.IO_NODE__LOWER:
+			case Component_Package.IO_NODE__PARAMETERS:
+			case Component_Package.IO_NODE__FUNC:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}
@@ -140,6 +140,30 @@ public class IONodeItemProvider extends UtilityNodesItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+	}
+
+	/**
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+		Object childFeature = feature;
+		Object childObject = child;
+
+		boolean qualify =
+			childFeature == Component_Package.Literals.UTILITY_NODES__READING ||
+			childFeature == Component_Package.Literals.UTILITY_NODES__SIMULATED_READING ||
+			childFeature == Component_Package.Literals.UTILITY_NODES__ACTUAL_READING;
+
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 }
