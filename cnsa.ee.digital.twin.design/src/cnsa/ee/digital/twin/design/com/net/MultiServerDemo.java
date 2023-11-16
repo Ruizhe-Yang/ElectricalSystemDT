@@ -17,24 +17,24 @@ import org.eclipse.emf.common.command.AbstractCommand;
 import org.eclipse.emf.transaction.TransactionalEditingDomain;
 import org.eclipse.emf.transaction.util.TransactionUtil;
 
-public class MultiServer {
-	private static MultiServer single_instance = null;
+public class MultiServerDemo {
+	private static MultiServerDemo single_instance = null;
 	public static Map<String, Thread> port_map = new HashMap<>();
 	public static Map<String, Double> reading_map = new HashMap<>();
-	protected MultiServer() { }
+	protected MultiServerDemo() { }
 	
     public static void main(String[] args) {
     	Component component = null;
-    	MultiServer multiServer = MultiServer.getInstance();
+    	MultiServerDemo multiServer = MultiServerDemo.getInstance();
         int[] ports = {8888, 8888, 8899};
         for (int port : ports) {
         	multiServer.createServerThread(port, component);
         }
     }
     
-	public static synchronized MultiServer getInstance() {
+	public static synchronized MultiServerDemo getInstance() {
 		if (single_instance == null) 
-			single_instance = new MultiServer(); 
+			single_instance = new MultiServerDemo(); 
 		return single_instance; 
 	}
         
@@ -143,6 +143,12 @@ public class MultiServer {
     			        @Override
     			        public void execute() {
     			        	i.getReading().setValue(reading_number);
+    			        	if (port == 8001) {
+    			        		send2DTSystem(1, reading_number);
+    			        	}
+    			        	else if (port == 8005) {
+    			        		send2DTSystem(2, reading_number);
+    			        	}
     			        }
     			        @Override
     			        public void redo() {
@@ -173,5 +179,16 @@ public class MultiServer {
     			}
     		}
     	}
+    }
+    
+    private void send2DTSystem(int state, Double value) {
+    	ClientUDP clientUDP = ClientUDP.getInstance();
+    	if (state == 1) {
+    		ClientUDP.state1 = value.toString();
+    	}
+    	else if (state == 2) {
+    		ClientUDP.state2 = value.toString();
+    	}
+    	clientUDP.sendStateInfo();
     }
 }

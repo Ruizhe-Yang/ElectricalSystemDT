@@ -57,5 +57,9 @@
            actionClass="cnsa.ee.digital.twin.design.utils.StopReceivingMessage"
            id="cnsa.ee.digital.twin.design.utils.stop.receiving.message">
      </javaActions>
+     <javaActions
+           actionClass="cnsa.ee.digital.twin.design.utils.DTSystemDemo"
+           id="cnsa.ee.digital.twin.design.utils.dt.system.demo">
+     </javaActions>
   </extension>
 </plugin>

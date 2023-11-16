@@ -11,7 +11,9 @@ public class ClientWindow3 extends Frame{
 	DataOutputStream dos = null;
 	TextField tf = new TextField(40);
 	List list = new List(10);
-
+//	String port = "8005";
+	String port = "3654";
+	
 	public static void main(String[] args){		
 		ClientWindow3 client = new ClientWindow3();
 		client.connect();
@@ -22,8 +24,8 @@ public class ClientWindow3 extends Frame{
 	public void createClientWindow() {
 		this.setLocation(400, 300);
 		this.setSize(300, 300);
-		this.list.add("向服务器端发送的数据:");
-		this.setTitle("客户端3");
+		this.list.add("向DT系统端发送的数据:");
+		this.setTitle("模拟传感器3");
 		this.add(this.list, BorderLayout.NORTH);
 		this.add(this.tf, BorderLayout.SOUTH);
 		this.pack();
@@ -39,7 +41,6 @@ public class ClientWindow3 extends Frame{
 	}
 	
 	public void connect(){
-		String port = "3650";
 		try{
 			socket = new Socket("127.0.0.1", Integer.parseInt(port));
 			dos = new DataOutputStream(socket.getOutputStream());
@@ -87,14 +88,14 @@ public class ClientWindow3 extends Frame{
 	}
 
 	private void sendRegularly() {
-		for (int i = 1; i <= 5; i++) {
+		for (int i = 1; i <= 20; i++) {
 	        try {
-	            Thread.sleep(5000);
+	            Thread.sleep(2500);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
 		    try{
-		    	String str = String.valueOf(i);
+		    	String str = String.valueOf(i*2.71828);
 		    	list.add(str);
 			    tf.setText("");
 		    	dos.writeUTF(str);
