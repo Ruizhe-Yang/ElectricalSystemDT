@@ -3014,7 +3014,7 @@
           <reading/>
         </inputs>
       </sub_components>
-      <sub_components xsi:type="component_:Component" gid="3691.0001220703125" component_name="TransferFcn">
+      <sub_components xsi:type="component_:Component" gid="3691.0001220703125" dynamic="true" component_name="TransferFcn">
         <name content="Transfer Fcn"/>
         <description>
           <content>

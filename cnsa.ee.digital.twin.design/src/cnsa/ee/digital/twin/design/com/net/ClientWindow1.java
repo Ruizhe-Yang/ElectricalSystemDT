@@ -11,8 +11,8 @@ public class ClientWindow1 extends Frame{
 	DataOutputStream dos = null;
 	TextField tf = new TextField(40);
 	List list = new List(10);
-//	String port = "8001";
-	String port = "3629";
+	String port = "8001";
+//	String port = "5555";
 
 	public static void main(String[] args){		
 		ClientWindow1 client = new ClientWindow1();
@@ -93,9 +93,9 @@ public class ClientWindow1 extends Frame{
 	}
 
 	private void sendRegularly() {
-		for (int i = 1; i <= 40; i++) {
+		for (int i = 1; i <= 10; i++) {
 	        try {
-	            Thread.sleep(1000);
+	            Thread.sleep(2200);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }

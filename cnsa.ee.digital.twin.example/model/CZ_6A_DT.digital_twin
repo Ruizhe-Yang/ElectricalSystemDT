@@ -156,7 +156,7 @@
               </content>
             </implementationConstraint>
           </externalReference>
-          <reading value="19.5"/>
+          <reading value="10.0"/>
         </inputs>
         <outputs>
           <name content="O"/>
@@ -175,7 +175,7 @@
               </content>
             </implementationConstraint>
           </externalReference>
-          <reading value="20.5"/>
+          <reading value="10.0"/>
         </outputs>
       </sub_components>
       <sub_components xsi:type="component_:Component">
@@ -390,7 +390,7 @@
               </content>
             </implementationConstraint>
           </externalReference>
-          <reading value="19.5"/>
+          <reading value="31.4159"/>
         </inputs>
         <outputs>
           <name content="O"/>
@@ -409,7 +409,7 @@
               </content>
             </implementationConstraint>
           </externalReference>
-          <reading value="20.5"/>
+          <reading value="31.4159"/>
         </outputs>
       </sub_components>
     </components>
