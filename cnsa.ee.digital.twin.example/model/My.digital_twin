@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <digital_twin_:DigitalTwinPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:component_="http://cnsa.ee.digital.twin/component" xmlns:digital_twin_="http://cnsa.ee.digital.twin/digital_twin">
   <componentPackages>
-    <name content="New Component Package"/>
+    <name content="CP2"/>
     <description>
       <content>
         <value content="Component Description"/>
@@ -468,7 +468,7 @@
     <components xsi:type="component_:DirectedRelationship" source="//@componentPackages.0/@components.4" target="//@componentPackages.0/@components.1/@inputs.0"/>
   </componentPackages>
   <componentPackages>
-    <name content="New Component Package"/>
+    <name content="CP1"/>
     <description>
       <content>
         <value content="Component Description"/>
