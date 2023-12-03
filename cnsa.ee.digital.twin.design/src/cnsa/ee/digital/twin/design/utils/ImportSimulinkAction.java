@@ -39,29 +39,33 @@ public class ImportSimulinkAction implements IExternalJavaAction {
 
 	@Override
 	public void execute(Collection<? extends EObject> selections, Map<String, Object> parameters) {
-		FileDialog fileDialog = new FileDialog(Display.getCurrent().getActiveShell());
-		fileDialog.setText("Locate file");
-		fileDialog.setFilterPath(getProjectPath());
-		String path = fileDialog.open();
-		if (path == null) {
-			return;
-		}
+		UtilityMethods.openDiagram("CP2");
+
 		
-		EObject focus = null;
-		for(EObject eobj: selections) {
-			focus = eobj;
-		}
-		ModelElement modelElement = (ModelElement) focus;
-		Component comp = transform(path);
-		if(modelElement instanceof ComponentPackage) {
-			ComponentPackage cp = (ComponentPackage) modelElement;
-			cp.getComponents().add(comp);
-		}
-		else if (modelElement instanceof Component) {
-			Component cp = (Component) modelElement;
-			cp.getSub_components().add(comp);
-		}
-		System.out.println("Yangruizhe to validate");
+//		FileDialog fileDialog = new FileDialog(Display.getCurrent().getActiveShell());
+//		fileDialog.setText("Locate file");
+//		fileDialog.setFilterPath(getProjectPath());
+//		String path = fileDialog.open();
+//		if (path == null) {
+//			return;
+//		}
+//		
+//		EObject focus = null;
+//		for(EObject eobj: selections) {
+//			focus = eobj;
+//		}
+//		ModelElement modelElement = (ModelElement) focus;
+//		Component comp = transform(path);
+//		if(modelElement instanceof ComponentPackage) {
+//			ComponentPackage cp = (ComponentPackage) modelElement;
+//			cp.getComponents().add(comp);
+//		}
+//		else if (modelElement instanceof Component) {
+//			Component cp = (Component) modelElement;
+//			cp.getSub_components().add(comp);
+//		}
+//		
+//		System.out.println("Yangruizhe to validate");
 
 	}
 	

@@ -45,13 +45,14 @@ import org.eclipse.core.resources.IWorkspace;
 import org.eclipse.core.resources.IWorkspaceRoot;
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.FileLocator;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.FileLocator;
-
 import org.eclipse.emf.common.CommonPlugin;
 import org.eclipse.emf.common.ui.URIEditorInput;
+import org.eclipse.emf.common.util.BasicEList;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -74,15 +75,30 @@ import org.eclipse.epsilon.eol.exceptions.EolRuntimeException;
 import org.eclipse.epsilon.eol.exceptions.models.EolModelLoadingException;
 import org.eclipse.epsilon.eol.models.IModel;
 import org.eclipse.epsilon.eol.models.IRelativePathResolver;
+import org.eclipse.epsilon.eol.parse.Eol_EolParserRules.ifStatement_return;
+import org.eclipse.jface.viewers.IStructuredSelection;
+import org.eclipse.sirius.business.api.session.Session;
+import org.eclipse.sirius.business.api.session.SessionManager;
+import org.eclipse.sirius.diagram.model.business.internal.spec.DSemanticDiagramSpec;
+import org.eclipse.sirius.ui.business.api.dialect.DialectUIManager;
+import org.eclipse.sirius.viewpoint.DAnalysis;
+import org.eclipse.sirius.viewpoint.DRepresentation;
+import org.eclipse.sirius.viewpoint.DRepresentationDescriptor;
+import org.eclipse.sirius.viewpoint.DView;
 import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.PlatformUI;
 
+import base.LangString;
+import base.ModelElement;
 import cnsa.ee.digital.twin.design.Activator;
+import component.Component;
 //import cnsa.ee.digital.twin.design.com.net.CommClient;
 //import cnsa.ee.digital.twin.design.com.net.CommClient.MyListener;
+import component.ComponentElement;
+import component.ComponentPackage;
 
 public class UtilityMethods {
 
@@ -118,6 +134,118 @@ public class UtilityMethods {
 		UtilityMethods.current_selection = current_selection;
 	}
 
+	public static void openDiagram(String string) {
+		
+		IWorkbenchWindow window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
+//		IStructuredSelection selection = (IStructuredSelection) window.getSelectionService().getSelection();
+
+		IWorkbenchPage activePage = window.getActivePage();
+
+		IEditorPart activeEditor = activePage.getActiveEditor();
+
+		if (activeEditor != null) {
+		   IEditorInput input = activeEditor.getEditorInput();
+
+		   IProject project = input.getAdapter(IProject.class);
+		   if (project == null) {
+		      IResource resource = input.getAdapter(IResource.class);
+		      if (resource != null) {
+		         project = resource.getProject();
+		      }
+		   }
+		   IFile airdFile = project.getFile("representations.aird");
+		   URI representationsFileURI = URI.createPlatformResourceURI(airdFile
+					.getFullPath().toOSString(), true);
+			Session session = SessionManager.INSTANCE.getSession(
+					representationsFileURI, new NullProgressMonitor());
+
+			DAnalysis root = (DAnalysis) session.getSessionResource()
+					.getContents().get(0);
+			EList<DView> views = root.getOwnedViews();
+			
+			EList<DRepresentationDescriptor> representations = new BasicEList<DRepresentationDescriptor>();
+			
+			for(DView view: views) {
+				representations.addAll(view.getOwnedRepresentationDescriptors());
+
+			}
+			DRepresentation representation = null;
+			ModelElement modelElement = null;
+//			EObject rootObject = null;
+			for (DRepresentationDescriptor currentRep : representations) {
+				ModelElement temp = (ModelElement) currentRep.getTarget();
+				if(temp != null) {
+					LangString name = temp.getName();
+					if (name != null) {
+						String content = name.getContent();
+						if (string.equals(content)) {
+							modelElement = temp;
+							representation = currentRep.getRepresentation();
+						}
+						else if(isContainedWithin(temp, string)) {
+							modelElement = temp;
+							representation = currentRep.getRepresentation();
+						}
+					}
+				}
+			}
+			DialectUIManager.INSTANCE.openEditor(session, representation,
+					new NullProgressMonitor());
+		}
+	}
+	
+	private static boolean isContainedWithin(ModelElement modelElement, String s) {
+		if(modelElement instanceof Component) {
+			Component temp = (Component) modelElement;
+			for(ComponentElement c: temp.getSub_components()) {
+				LangString name = c.getName();
+				if (name!= null && name.getContent() != null) {
+					if(name.getContent().equals(s)) {
+						return true;
+					}
+				}
+			}
+		}
+		else if(modelElement instanceof ComponentPackage) {
+			ComponentPackage temp = (ComponentPackage) modelElement;
+			for(ComponentElement c: temp.getComponents()) {
+				LangString name = c.getName();
+				if (name!= null && name.getContent() != null) {
+					if(name.getContent().equals(s)) {
+						return true;
+					}
+				}
+			}
+		}
+		return false;
+	}
+	
+	public static String getProjectPath() {
+	    IWorkbenchWindow window = PlatformUI.getWorkbench()
+	            .getActiveWorkbenchWindow();
+
+		IWorkbenchPage activePage = window.getActivePage();
+
+		IEditorPart activeEditor = activePage.getActiveEditor();
+
+		if (activeEditor != null) {
+		   IEditorInput input = activeEditor.getEditorInput();
+
+		   IProject project = input.getAdapter(IProject.class);
+		   if (project == null) {
+		      IResource resource = input.getAdapter(IResource.class);
+		      if (resource != null) {
+		         project = resource.getProject();
+		         return project.getFullPath().toOSString();
+		      }
+		   }
+		   else {
+			  return project.getFullPath().toOSString();
+		   }
+		}
+		return null;
+	}
+	
 	public static String executeQuery(EObject obj, String query, String... mmuri) throws Exception {
 		// FIXME: getArtifactProperty returns a list. In this implementation we assume
 		// the query model is the first property.
@@ -661,5 +789,4 @@ public class UtilityMethods {
 //		    }
 //		}
 //	}
-
 }
