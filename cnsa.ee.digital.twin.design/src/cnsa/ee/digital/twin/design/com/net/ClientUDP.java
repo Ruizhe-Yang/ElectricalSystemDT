@@ -54,7 +54,7 @@ public class ClientUDP {
 	}
     public static void main(String[] args) {
     	launch();
-//    	state1 = "123";
-//    	sendStateInfo();
+    	state1 = "123";
+    	sendStateInfo();
     }
 }
