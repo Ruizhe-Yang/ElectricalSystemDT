@@ -63,7 +63,11 @@ public class BrowseTypeAction implements IExternalJavaAction{
 	}
 	
 	protected ArrayList<String> getTerms(Component cp) {
-		ComponentPackage cpkg = (ComponentPackage) cp.eContainer();
+		ModelElement container = (ModelElement) cp.eContainer();
+		while (container.eContainer() != null && !(container instanceof ComponentPackage)) {
+			container = (ModelElement) container.eContainer();
+		}
+		ComponentPackage cpkg = (ComponentPackage) container;
 		DigitalTwinPackage mbsapkg = (DigitalTwinPackage) cpkg.eContainer();
 		ArrayList<String> ret = new ArrayList<>();
 		for(TerminologyPackage rp :mbsapkg.getTerminologyPackages()) {

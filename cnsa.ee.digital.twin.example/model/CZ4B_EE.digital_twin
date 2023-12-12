@@ -3863,17 +3863,17 @@
           </content>
         </description>
         <externalReference>
-          <location content="location"/>
+          <location content="\model\library.model"/>
           <type content="type"/>
-          <metadata content="metadata"/>
+          <metadata content="\model\library.ecore"/>
           <implementationConstraint>
             <content>
-              <value content="Query"/>
+              <value content="return Book.all().size();"/>
             </content>
           </implementationConstraint>
           <implementationConstraint>
             <content>
-              <value content="Query Result"/>
+              <value content="3"/>
             </content>
           </implementationConstraint>
           <implementationConstraint>

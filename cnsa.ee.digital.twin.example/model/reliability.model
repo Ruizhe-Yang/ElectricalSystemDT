@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<reli:ComponentList xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:reli="rel" xmi:id="_qig4YJixEe6x8bTqJ2z8sw">
+  <components xmi:id="_raK5IJixEe6x8bTqJ2z8sw" name="A" fit="1.0">
+    <failureModes xmi:id="_xmppgJixEe6x8bTqJ2z8sw" failure_mode="Open" distribution="0.3"/>
+    <failureModes xmi:id="_yqUF8JixEe6x8bTqJ2z8sw" failure_mode="Short" distribution="0.7"/>
+  </components>
+  <components xmi:id="_wrzx4JixEe6x8bTqJ2z8sw" name="B" fit="2.0"/>
+  <components xmi:id="_z8rFsJixEe6x8bTqJ2z8sw"/>
+  <components xmi:id="_0RmM0JixEe6x8bTqJ2z8sw"/>
+</reli:ComponentList>

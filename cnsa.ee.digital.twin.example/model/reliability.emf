@@ -1,0 +1,17 @@
+@namespace(uri="rel", prefix="reli")
+package reliability;
+
+class ComponentList {
+	val Component[*] components;
+}
+
+class Component {
+   attr String name;
+   attr float fit;
+   val FailureMode[*] failureModes;
+}
+
+class FailureMode {
+   attr String failure_mode;
+   attr float distribution;
+}
